@@ -5,7 +5,7 @@ permalink: "/"
 header:
   title: Werkstatt für Verantwortung und Führung
   subline: Bewusstsein, Möglichkeiten, Kompetenzen.
-  image: "/uploads/andrewlmoore-com-acrosanti.jpg"
+  image: "/_site/uploads/andrewlmoore-com-acrosanti.jpg"
   copyright: Foto [©Andrew Moore](andrewlmoore.com)
 wants:
 - title: Verantwortung übernehmen und neue Wege gehen
