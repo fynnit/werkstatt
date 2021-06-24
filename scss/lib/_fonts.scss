@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'brandon';
+    font-display: swap;
+    src: url(/assets/fonts/hdv_brandon_text_regular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'brandon';
+    font-display: swap;
+    src: url(/assets/fonts/hdv_brandon_text_bold.otf);
+    font-weight: 600;
+}
+
+$font-family: 'brandon','Helvetica Neue', Arial, sans-serif;
+
+h1, h2, .bold {
+    font-weight: 600;
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $font-family;
+    font-weight: 400;
+    color: inherit;
+}
+
+h1, h2 {
+    font-size: 6rem;
+}
+
+h3, h4 {
+    font-size: 40px;
+}
+
+.page-subtitle {
+    font-size: 23px;
+}

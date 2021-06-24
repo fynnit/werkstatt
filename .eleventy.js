@@ -3,10 +3,7 @@ moment.tz.add("Europe/Berlin|CET CEST CEMT|-10 -20 -30|0101010101010121010121010
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.setTemplateFormats("html, liquid, njk, md");
-    eleventyConfig.addPassthroughCopy({"assets/": "/assets/"});
-    eleventyConfig.addPassthroughCopy({"uploads/": "/uploads/"});
-    eleventyConfig.addWatchTarget("./scss/");
-
+    eleventyConfig.setBrowserSyncConfig({files: './_site/css/**/*.css'});
     eleventyConfig.setFrontMatterParsingOptions({
       excerpt: true,
       excerpt_separator: "---"

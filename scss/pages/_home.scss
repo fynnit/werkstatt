@@ -1,0 +1,50 @@
+header {
+    padding: 115px 32px 50px;
+    color: $white;
+    background-size: cover;
+    background-position: center;
+}
+
+.i-want {
+    margin: 170px 6% 0;
+    padding: 40px 80px 64px;
+    border-radius: 32px;
+    -webkit-backdrop-filter: blur(4px) saturate(100%);
+    backdrop-filter: blur(4px) saturate(100%);
+    background-color: rgba(170, 170, 170, 0.68);
+    .wants {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 70px;
+        row-gap: 20px;
+    }
+    h2 {
+        font-size: 6rem;
+        text-align: center;
+    }
+}
+.want-item {
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px -12px rgba(0, 0, 0, 0.5);
+    background-color: $white;
+    color: $dark;
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    font-size: 23px;
+    cursor: pointer;
+
+    &.active .box {
+        background-color: $active;
+    }
+}
+.box {
+    display: inline-block;
+    margin-right: 20px;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    flex:0 0 auto;
+    background-color: $grey;
+}

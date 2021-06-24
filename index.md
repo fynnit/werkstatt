@@ -4,15 +4,24 @@ layout: home.liquid
 permalink: "/"
 header:
   title: Werkstatt für Verantwortung und Führung
-  subline: Bewusstsein, Möglichkeiten, Kompetenzen.
-  image: "/_site/uploads/andrewlmoore-com-acrosanti.jpg"
+  subtitle: Bewusstsein, Möglichkeiten, Kompetenzen.
+  image: "/uploads/andrewlmoore-com-acrosanti.jpg"
   copyright: Foto [©Andrew Moore](andrewlmoore.com)
-wants:
-- title: Verantwortung übernehmen und neue Wege gehen
-- title: Bewusst führen
-- title: Ko-kreieren
-- title: Meine Schatten integrieren & transformieren
-- title: Führungswerkzeuge nutzen
-- title: Wertvolles realisieren
+
+i_want:
+  title: Ich Will
+  wants:
+  - title: Verantwortung übernehmen und neue Wege gehen
+    bool: false
+  - title: Bewusst führen
+    bool: false
+  - title: Ko-kreieren
+    bool: false
+  - title: Meine Schatten integrieren & transformieren
+    bool: false
+  - title: Führungswerkzeuge nutzen
+    bool: false
+  - title: Wertvolles realisieren
+    bool: false
 
 ---

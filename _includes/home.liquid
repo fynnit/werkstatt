@@ -3,21 +3,27 @@ layout: base.liquid
 ---
 
 <header style="background-image: url({{header.image}});">
+
     <div class="header-content">
-        <h2>{{header.title}}</h2>
-        <h5>{{header.subline}}</h5>
-        <span>{{header.copyright}}</span>
+        <h1 class="page-title">{{header.title}}</h1>
+        <h5 class="page-subtitle">{{header.subtitle}}</h5>
     </div>
+
     <div class="i-want">
-        {% for item in wants %}
-            <div class="want-item">
-                <h6>{{-item.title}}</h6>
-            </div>
-        {% endfor %}
+        <h2>{{i_want.title}}</h2>
+        <div class="wants">
+            {% for item in i_want.wants %}
+                <div class="want-item {{bool ? 'active': ''}}" onclick="this.classList.toggle('active');">
+                <span class="box"></span> <h6>{{-item.title}}</h6>
+                </div>
+            {% endfor %}
+        </div>
     </div>
+
+    <span>{{-header.copyright}}</span>
+
 </header>
 <main class="home">
 
     
 </main>
-
