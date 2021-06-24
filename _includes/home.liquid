@@ -1,0 +1,23 @@
+---
+layout: base.liquid
+---
+
+<header style="background-image: url({{header.image}});">
+    <div class="header-content">
+        <h2>{{header.title}}</h2>
+        <h5>{{header.subline}}</h5>
+        <span>{{header.copyright}}</span>
+    </div>
+    <div class="i-want">
+        {% for item in wants %}
+            <div class="want-item">
+                <h6>{{-item.title}}</h6>
+            </div>
+        {% endfor %}
+    </div>
+</header>
+<main class="home">
+
+    
+</main>
+

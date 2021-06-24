@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{{title}}</title>
+
+    
+    <!-- Meta Tags Generated via http://heymeta.com -->
+</head>
+<body id="body" class="loading">
+    {% include _menu.liquid %}
+
+    {{content}}
+
+    {% include _footer.liquid %}
+</body>
+
+<script>
+setTimeout(function(){
+    document.getElementById('body').classList.remove('loading');
+},300);
+
+</script>
+</html>
