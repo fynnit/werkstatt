@@ -1,3 +1,5 @@
 README.md
 _drafts/
 ./.netlify/
+./.forestry/
+./node_modules/

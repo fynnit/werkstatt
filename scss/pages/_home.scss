@@ -40,7 +40,7 @@ header {
     cursor: pointer;
 
     &.active {
-    padding: 10px 18px 10px 20px;
+        padding: 10px 18px 10px 20px;
 
         h6 {
             font-weight: 600;
@@ -54,45 +54,86 @@ header {
             }
         }
     }
+
+    .box {
+        display: inline-block;
+        margin-right: 20px;
+        width: 26px;
+        height: 26px;
+        border-radius: 6px;
+        flex: 0 0 auto;
+        background-color: $grey;
+
+        svg {
+            margin: -3px 0 0 5px;
+            display: none;
+
+            path {
+                stroke-dashoffset: -1;
+                stroke-linejoin: round;
+                stroke-linecap: round;
+                animation: draw 300ms ease-in;
+                stroke: #0eaa3d;
+
+            }
+
+            @keyframes draw {
+                0% {
+                    stroke-dasharray: 0 83;
+                    fill-opacity: 0;
+                }
+
+                90% {
+                    stroke-dasharray: 83 0;
+                    fill-opacity: 0;
+                }
+
+                100% {
+                    stroke-dasharray: 83 0;
+                    fill-opacity: 1;
+                }
+            }
+        }
+    }
 }
 
-.box {
+
+section {
+    padding: 130px 32px;
+}
+
+.teasers {
+    display: flex;
+
+}
+
+.teaser {
+
+    padding: 31px 7px 30px 34px;
     display: inline-block;
-    margin-right: 20px;
-    width: 26px;
-    height: 26px;
-    border-radius: 6px;
-    flex: 0 0 auto;
-    background-color: $grey;
 
-    svg {
-        margin: -3px 0 0 5px;
-        display: none;
+    &.forschungsraum {
+        color: $forschungsraum;
+        background-color: $forschungsraum-background;
+    }
 
-        path {
-            stroke-dashoffset: -1;
-            stroke-linejoin: round;
-            stroke-linecap: round;
-            animation: draw 300ms ease-in;
-            stroke: #0eaa3d;
+    &.next-level {
+        color: $next-level;
+        background-color: $next-level-background;
+    }
 
-        }
+    &.freisinn {
+        color: $freisinn;
+        background-color: $freisinn-background;
+    }
 
-        @keyframes draw {
-            0% {
-                stroke-dasharray: 0 83;
-                fill-opacity: 0;
-            }
+    &.coaching {
+        color: $coaching;
+        background-color: $coaching-background;
+    }
 
-            90% {
-                stroke-dasharray: 83 0;
-                fill-opacity: 0;
-            }
-
-            100% {
-                stroke-dasharray: 83 0;
-                fill-opacity: 1;
-            }
-        }
+    &.projekte {
+        color: $projekte;
+        background-color: $projekte-background;
     }
 }
