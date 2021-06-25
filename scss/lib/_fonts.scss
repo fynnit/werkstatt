@@ -40,7 +40,11 @@ h5, h6 {
 h5, h6, p {
     font-size: 23px;
 }
-
+a {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid;
+}
 .page-subtitle {
     font-size: 23px;
 }

@@ -44,10 +44,33 @@ layout: base.liquid
 <section class="teasers">
     {% for item in teaser %}
         <div class="teaser {{item.link.url}}">
-        <h5>{{item.headline}}</h5>
-        <p>{{item.description}}</p>
-        <img src="{{item.icon}}" alt="">
-        <a href="/{{item.link.url}}">{{item.link.text}}</a>
+            <h5 class="headline">{{item.headline}}</h5>
+            <p class="description">{{item.description}}</p>
+            <img class="teaser-icon" src="{{item.icon.url}}" alt="{{item.icon.name}}">
+            <a href="/{{item.link.url}}">{{item.link.text}}</a>
         </div>
     {% endfor %}
 </section>
+
+
+
+<section class="team">
+    {% for item in team %}
+        <div class="member-images">
+            <div class="member-image">
+                <img class="teaser-icon" src="{{item.icon.url}}" alt="{{item.icon.name}}">
+                <h5>{{item.name}}</h5>
+            </div>
+
+        </div>
+    {% endfor %}
+
+    {% for item in team %}
+        <div class="member-description">
+            <p>{{item.description}}</p>
+        </div>
+    {% endfor %}
+</section>
+
+
+
