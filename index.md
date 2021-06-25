@@ -78,6 +78,24 @@ teaser:
     text: Mehr erfahren
     url: projekte
 team:
+- name: Andreas
+  image: ''
+  description: |
+    Dr. Andreas Beutler
+    Humansynergetiker
+    Physiker in einem mittelständischen Unternehmen
+    Trainer für Gefühlsarbeit und Possibility-Management
+
+    Neue ungewöhnliche Wege zu gehen und Herausforderungen, für die es keine Standardlösungen gibt, ziehen mich besonders an. Dem Kontakt mit anderen und auch mit mir selbst gilt meiner besonderen Aufmerksamkeit. Ich fühle mich beschenkt, wenn Menschen sich wirklich begegnen.
+
+    Nach der Promotion in Schweden Gruppen- und Projektleiter im Unternehmenskontext. Weltweites Netzwerken und Betreuung von Projekten in verschiedenen kulturellen Hintergründen. Changemanagement, Leitung von Workshops und Mitarbeiterentwicklung.
+    In den letzten Jahren kamen hinzu die Betreuung von Gruppenseminaren wie Possibility-Management-Teams, Gefühlsseminare und Wutworkshops, Einzel- und Paarcoaching.
+
+
+
+    Marietta über Andreas:
+
+    Andreas ist ein Mann der stillen Tiefe. Seine sanfte Behutsamkeit gepaart mit klarer Unbestechlichkeit machen ihn zu einem kostbaren Wegbegleiter zu Selbstverantwortung und Selbstwahrnehmung. Seiner Genauigkeit gewürzt mit einer Prise feinem Humor ist es zu verdanken, dass sich „Schattenabsichten“ in Schätze verwandeln können.
 - name: Marietta
   image:
     url: ''
@@ -95,5 +113,8 @@ team:
     Dasein mit allem ein, was ist. Sie liebt Klarheit und Humor, Ehrlichkeit und Scheitern
     können. Dabei hinterfragt sie kritisch, sucht weiter, weil sie weiß, dass Ausweichen
     sinnlos ist. "
+- name: Martin
+  image: ''
+  description: ''
 
 ---
