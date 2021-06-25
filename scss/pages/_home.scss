@@ -11,22 +11,26 @@ header {
     border-radius: 32px;
     -webkit-backdrop-filter: blur(4px) saturate(100%);
     backdrop-filter: blur(4px) saturate(100%);
-    background-color: rgba(170, 170, 170, 0.68);
+    background-color: rgba(#bbb, 0.6);
+
     .wants {
         display: grid;
         grid-template-columns: 50% 50%;
         column-gap: 70px;
         row-gap: 20px;
     }
+
     h2 {
         font-size: 6rem;
         text-align: center;
+        margin-bottom: 20px;
     }
 }
+
 .want-item {
     padding: 10px 20px;
     border-radius: 15px;
-    box-shadow: 0 2px 20px -12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 20px -12px rgba($dark, 0.5);
     background-color: $white;
     color: $dark;
     justify-self: start;
@@ -35,16 +39,60 @@ header {
     font-size: 23px;
     cursor: pointer;
 
-    &.active .box {
-        background-color: $active;
+    &.active {
+    padding: 10px 18px 10px 20px;
+
+        h6 {
+            font-weight: 600;
+        }
+
+        .box {
+            background-color: #fff59d;
+
+            svg {
+                display: block;
+            }
+        }
     }
 }
+
 .box {
     display: inline-block;
     margin-right: 20px;
     width: 26px;
     height: 26px;
     border-radius: 6px;
-    flex:0 0 auto;
+    flex: 0 0 auto;
     background-color: $grey;
+
+    svg {
+        margin: -3px 0 0 5px;
+        display: none;
+
+        path {
+            stroke-dashoffset: -1;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            animation: draw 300ms ease-in;
+            stroke: #0eaa3d;
+
+        }
+
+        @keyframes draw {
+            0% {
+                stroke-dasharray: 0 83;
+                fill-opacity: 0;
+            }
+
+            90% {
+                stroke-dasharray: 83 0;
+                fill-opacity: 0;
+            }
+
+            100% {
+                stroke-dasharray: 83 0;
+                fill-opacity: 1;
+            }
+        }
+    }
 }
