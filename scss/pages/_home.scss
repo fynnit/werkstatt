@@ -111,9 +111,6 @@ header {
     padding: 130px 32px;
 }
 
-section {
-    
-}
 
 .teasers {
     display: flex;
@@ -183,6 +180,14 @@ section {
 .members {
     display: flex;
     justify-content: space-around;
+
+    .member {
+        cursor: pointer;
+        img {
+            max-height: 250px;
+        }
+
+    }
 }
 
 .member-description {

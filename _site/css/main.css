@@ -274,6 +274,12 @@ header {
   display: flex;
   justify-content: space-around;
 }
+.members .member {
+  cursor: pointer;
+}
+.members .member img {
+  max-height: 250px;
+}
 
 .member-description {
   display: none;
