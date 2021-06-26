@@ -111,4 +111,4 @@ fields:
     config:
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
