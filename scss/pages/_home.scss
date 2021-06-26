@@ -8,10 +8,11 @@ header {
 .i-want {
     margin: 170px auto 0;
     padding: 40px 80px 64px;
+    max-width: 1032px;
     border-radius: 32px;
-    -webkit-backdrop-filter: blur(4px) saturate(100%);
-    backdrop-filter: blur(4px) saturate(100%);
-    background-color: rgba(#bbb, 0.6);
+    -webkit-backdrop-filter: blur(2px) saturate(100%);
+    backdrop-filter: blur(2px) saturate(100%);
+    background-color: rgba(#bbb, 0.2);
 
     .wants {
         display: grid;
@@ -24,6 +25,7 @@ header {
         font-size: 6rem;
         text-align: center;
         margin-bottom: 20px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -39,16 +41,8 @@ header {
     font-size: 23px;
     cursor: pointer;
     align-self: flex-start;
-    h6 {
-        font-weight: 500;
-    }
 
     &.active {
-        padding: 10px 18px 10px 20px;
-
-        h6 {
-            font-weight: 600;
-        }
 
         .box {
             background-color: #ffd59d;
@@ -101,20 +95,21 @@ header {
     }
 }
 
+.text-block {
+    padding: 130px 32px;
+}
 
 section {
-    padding: 130px 32px;
+    
 }
 
 .teasers {
     display: flex;
     flex-flow: row wrap;
     // justify-content: center;
-    max-width: 800px;
+    max-width: 1096px;
     margin: 0 auto;
-    @media (min-width: 864px) {
-        padding: 0;
-    }
+    padding: 0 32px;
 
 }
 
@@ -124,24 +119,37 @@ section {
     display: inline-block;
     flex-grow: 0;
     align-self: flex-start;
+    position: relative;
     &.forschungsraum {
         color: $forschungsraum;
         background-color: $forschungsraum-background;
+        .teaser-icon {
+            height: 60px;
+        }
     }
 
     &.next-level {
         color: $next-level;
         background-color: $next-level-background;
+        .teaser-icon {
+            height: 57px;
+        }
     }
-
+    
     &.freisinn {
         color: $freisinn;
         background-color: $freisinn-background;
+        .teaser-icon {
+            height: 46px;
+        }
     }
-
+    
     &.coaching {
         color: $coaching-text;
         background-color: $coaching-background;
+        .teaser-icon {
+            height: 60px;
+        }
     }
 
     &.projekte {
@@ -153,8 +161,21 @@ section {
         text-align: left;
         padding-bottom: 16px;
     }
+    img.teaser-icon {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+    }
+}
 
-    img:empty {
-        display: none;
+.members {
+    display: flex;
+    justify-content: space-around;
+}
+
+.member-description {
+    display: none;
+    &.active {
+        display: block;
     }
 }

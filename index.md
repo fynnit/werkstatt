@@ -38,7 +38,7 @@ teaser:
   description: 'Themen und Methoden: Fokus finden, Absichten klären, experimentelle
     Arbeit mit realen Berufssituationen'
   icon:
-    url: ''
+    url: '/assets/icons/forschungsraum-icon@3x.png'
     name: Fünf Pfeile zeigen auf einen Kreis
   link:
     text: Raum öffnen
@@ -47,7 +47,7 @@ teaser:
   description: Ein mehrtägiger Intensiv Workshop, um die Grundlagen für eine verantwortliche
     und wertschöpfende Zusammenarbeit zu legen
   icon:
-    url: ''
+    url: '/assets/icons/next-level-icon@3x.png'
     name: Fokuspunkt
   link:
     text: Raum öffnen
@@ -55,7 +55,7 @@ teaser:
 - headline: Freisinn
   description: Künstlerische Medien, kontemplative Wege, Natur erleben
   icon:
-    url: ''
+    url: '/assets/icons/freisinn-icon@3x.png'
     name: Rechtecke übereinander die neue Rechtecke bilden
   link:
     text: Raum öffnen
@@ -63,7 +63,7 @@ teaser:
 - headline: Coaching
   description: Einzelbegleitung, persönliche Möglichkeiten bei individuellen Herausforderungen
   icon:
-    url: ''
+    url: '/assets/icons/coaching-icon@3x.png'
     name: Kleine Ringe im Kreis um einen größeren Ring
   link:
     text: Mehr erfahren
@@ -82,26 +82,21 @@ team:
   image:
     url: ''
     name: Marietta
-  description: "Dr. Marietta Johanna Schürholz In Prozessen auf Antworten kommen,
-    schöpferisch erforschen, dabei erleben wie Verbundenheit trägt, Heilung und Transformation
-    passieren. Bewusst und künstlerisch leben, Verantwortung nehmen, lieben - darum
-    geht es mir.\nMich interessiert die Berührbarkeit von Menschen und ihr Zugang
-    zu einer transzendenten Dimension: Studium der Kunstgeschichte, Promotion bei
-    Michael Bockemühl, langjährige kuratorische Praxis, Pilgerreisen in Asien, journalistisches
-    Schreiben als Erkenntnisprozess, Kunstprojekte, die Essen als Kommunion erfahrbar
-    machen, Forschung und filmische Veröffentlichung zu rituellen Räumen Heute überwiegend:
-    Journalistin, Trainerin und Coach für persönliche und kollektive Entwicklung.\nAndreas
-    B. über Marietta Marietta ist Freude und Verbindung, lädt zu Miteinander und zum
-    Dasein mit allem ein, was ist. Sie liebt Klarheit und Humor, Ehrlichkeit und Scheitern
-    können. Dabei hinterfragt sie kritisch, sucht weiter, weil sie weiß, dass Ausweichen
-    sinnlos ist. "
+  description: "**Dr. Marietta Johanna Schürholz**
+  In Prozessen auf Antworten kommen, schöpferisch erforschen, dabei erleben wie Verbundenheit trägt, Heilung und Transformation passieren. Bewusst und künstlerisch leben, Verantwortung nehmen, lieben - darum geht es mir.
+
+Mich interessiert die Berührbarkeit von Menschen und ihr Zugang zu einer transzendenten Dimension: Studium der Kunstgeschichte, Promotion bei Michael Bockemühl, langjährige kuratorische Praxis, Pilgerreisen in Asien, journalistisches Schreiben als Erkenntnisprozess, Kunstprojekte, die Essen als Kommunion erfahrbar machen, Forschung und filmische Veröffentlichung zu rituellen Räumen
+Heute überwiegend: Journalistin, Trainerin und Coach für persönliche und kollektive Entwicklung.
+
+Andreas B. über Marietta
+Marietta ist Freude und Verbindung, lädt zu Miteinander und zum Dasein mit allem ein, was ist. Sie liebt Klarheit und Humor, Ehrlichkeit und Scheitern können. Dabei hinterfragt sie kritisch, sucht weiter, weil sie weiß, dass Ausweichen sinnlos ist. "
 - name: Martin
   image: ''
-  description: |-
+  description: "Martin Lehnert
     Facilitator im Kraftfeld sozialer Plastik
     Rechtsanwalt, Mediator, Entwicklungsbegleiter, Dialog-Facilitator, Geschäftsführer und Vorstand in NPOs
     Mein Interesse an authentischen Begegnungen und dem dabei wirksamen Kraftfeld in der Beziehung führte mich in Führungs- und Beratungsaufgaben. Räume zu öffnen und eine Vertrauensatmosphäre zu halten, ist mir wichtig, damit Zukunfts-Perspektiven gemeinsam freigelegt, Wege aufgespürt und sie handhabbar ausgestaltet werden. Ich habe Freude daran, Spielräume auszuloten für inspirierende praktische Schritte und diese in wirtschaftlich und rechtlich fundierte Pfade zu lenken. Erfahrungen und Erkenntnisse sammelte ich in großen Kornzernen ebenso wie in kleinen Initiativen, in Fortbildungen und als Seminarleiter. Zu meinen Kompetenzen gehören Facilitator im Dialog nach David Bohm, Theorie U Praxis, Konflikt- und Projektmanagementtechniken, Qualitäts- und Organisationsentwicklung sowie spirituelle Wege, Karmaarbeit und kultur-ko-kreative Gestaltung der Sozialen Plastik im Bewusstsein für die Rhythmen des agilen Miteinanders.
-    Stefan über Martin: Bei Martins geht mir das Herz auf. Mit wertschätzendem Interesse, Humor und Selbstreflektion schafft er Vertrauen. Er hat große vielfältige Erfahrung in der Begleitung von Organisationen. Sein Sinn für soziale Prozesse und seine methodische Sicherheit bahnen produktive ko-kreative Wege.
+    Stefan über Martin: Bei Martins geht mir das Herz auf. Mit wertschätzendem Interesse, Humor und Selbstreflektion schafft er Vertrauen. Er hat große vielfältige Erfahrung in der Begleitung von Organisationen. Sein Sinn für soziale Prozesse und seine methodische Sicherheit bahnen produktive ko-kreative Wege."
 - name: Stefan
   image: ''
   description: "Prof. Dr. Stefan Ackermann\n\nAus der Begegnung das Wesen des Raumes
@@ -119,8 +114,7 @@ team:
     Mut machen neue Wege zu gehen."
 - name: Andreas
   image: ''
-  description: |
-    Dr. Andreas Beutler
+  description: "Dr. Andreas Beutler
     Humansynergetiker
     Physiker in einem mittelständischen Unternehmen
     Trainer für Gefühlsarbeit und Possibility-Management
@@ -134,6 +128,6 @@ team:
 
     Marietta über Andreas:
 
-    Andreas ist ein Mann der stillen Tiefe. Seine sanfte Behutsamkeit gepaart mit klarer Unbestechlichkeit machen ihn zu einem kostbaren Wegbegleiter zu Selbstverantwortung und Selbstwahrnehmung. Seiner Genauigkeit gewürzt mit einer Prise feinem Humor ist es zu verdanken, dass sich „Schattenabsichten“ in Schätze verwandeln können.
+    Andreas ist ein Mann der stillen Tiefe. Seine sanfte Behutsamkeit gepaart mit klarer Unbestechlichkeit machen ihn zu einem kostbaren Wegbegleiter zu Selbstverantwortung und Selbstwahrnehmung. Seiner Genauigkeit gewürzt mit einer Prise feinem Humor ist es zu verdanken, dass sich „Schattenabsichten“ in Schätze verwandeln können."
 
 ---

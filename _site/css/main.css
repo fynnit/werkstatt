@@ -75,8 +75,7 @@ nav {
   width: 100%;
   padding: 32px;
   position: fixed;
-  mix-blend-mode: exclusion;
-  -webkit-mix-blend-mode: exclusion;
+  z-index: 100;
 }
 
 .button-wrapper {
@@ -123,10 +122,11 @@ header {
 .i-want {
   margin: 170px auto 0;
   padding: 40px 80px 64px;
+  max-width: 1032px;
   border-radius: 32px;
-  -webkit-backdrop-filter: blur(4px) saturate(100%);
-  backdrop-filter: blur(4px) saturate(100%);
-  background-color: rgba(187, 187, 187, 0.6);
+  -webkit-backdrop-filter: blur(2px) saturate(100%);
+  backdrop-filter: blur(2px) saturate(100%);
+  background-color: rgba(187, 187, 187, 0.2);
 }
 .i-want .wants {
   display: grid;
@@ -138,6 +138,7 @@ header {
   font-size: 6rem;
   text-align: center;
   margin-bottom: 20px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .want-item {
@@ -152,15 +153,6 @@ header {
   font-size: 23px;
   cursor: pointer;
   align-self: flex-start;
-}
-.want-item h6 {
-  font-weight: 500;
-}
-.want-item.active {
-  padding: 10px 18px 10px 20px;
-}
-.want-item.active h6 {
-  font-weight: 600;
 }
 .want-item.active .box {
   background-color: #ffd59d;
@@ -203,20 +195,16 @@ header {
   }
 }
 
-section {
+.text-block {
   padding: 130px 32px;
 }
 
 .teasers {
   display: flex;
   flex-flow: row wrap;
-  max-width: 800px;
+  max-width: 1096px;
   margin: 0 auto;
-}
-@media (min-width: 864px) {
-  .teasers {
-    padding: 0;
-  }
+  padding: 0 32px;
 }
 
 .teaser {
@@ -225,22 +213,35 @@ section {
   display: inline-block;
   flex-grow: 0;
   align-self: flex-start;
+  position: relative;
 }
 .teaser.forschungsraum {
   color: #022659;
   background-color: #e8eff8;
 }
+.teaser.forschungsraum .teaser-icon {
+  height: 60px;
+}
 .teaser.next-level {
   color: #a20200;
   background-color: #ffecec;
+}
+.teaser.next-level .teaser-icon {
+  height: 57px;
 }
 .teaser.freisinn {
   color: #217cb0;
   background-color: #fffaf1;
 }
+.teaser.freisinn .teaser-icon {
+  height: 46px;
+}
 .teaser.coaching {
   color: #8d700f;
   background-color: #fff5ca;
+}
+.teaser.coaching .teaser-icon {
+  height: 60px;
 }
 .teaser.projekte {
   color: #1e2422;
@@ -253,8 +254,22 @@ section {
   text-align: left;
   padding-bottom: 16px;
 }
-.teaser img:empty {
+.teaser img.teaser-icon {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.members {
+  display: flex;
+  justify-content: space-around;
+}
+
+.member-description {
   display: none;
+}
+.member-description.active {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

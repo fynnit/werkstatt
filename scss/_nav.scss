@@ -3,8 +3,8 @@ nav {
     width: 100%;
     padding: 32px;
     position: fixed;
-    mix-blend-mode: exclusion;
-    -webkit-mix-blend-mode: exclusion;
+    z-index: 100;
+    // mix-blend-mode: exclusion;
 }
 .button-wrapper {
     width: 32px;

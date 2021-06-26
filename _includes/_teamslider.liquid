@@ -1,0 +1,32 @@
+{% if team %}
+    <section class="team">
+        <div class="members">
+            {% for item in team %}
+                <div class="member {{item.name | tlc}}" onclick="toogleMember(this)">
+                    <img class="member-image" src="{{item.image.url}}" alt="{{item.image.name}}">
+                    <h5>{{item.name}}</h5>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="member-descriptions">
+            {% for item in team %}
+                <div class="member-description {{item.name | tlc}} {% if forloop.first %}active{% endif %}">
+                    <p>{{item.description}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endif %}
+
+<script>
+    function toogleMember(el) {
+        const elem = el.classList[1];
+        const targ = document.querySelector(`.member-description.${elem}`);
+        const others = document.querySelectorAll('.member-description');
+        others.forEach(item => item.classList.remove('active'));
+
+        targ.classList.add('active');
+        // console.log(elem);
+        // console.log(targ);
+    }
+</script>

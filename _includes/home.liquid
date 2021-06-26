@@ -27,7 +27,7 @@ layout: base.liquid
                             </g>
                         </svg>
                     </span>
-                    <h6>{{-item.title}}</h6>
+                    <span class="title">{{-item.title}}</span>
                 </div>
             {% endfor %}
         </div>
@@ -46,31 +46,14 @@ layout: base.liquid
         <div class="teaser {{item.link.url}}">
             <h5 class="headline">{{item.headline}}</h5>
             <p class="description">{{item.description}}</p>
-            <img class="teaser-icon" src="{{item.icon.url}}" alt="{{item.icon.name}}">
+            {%if item.icon.url %}
+                <img class="teaser-icon" src="{{item.icon.url}}" alt="{{item.icon.name}}">
+            {% endif %}
             <a href="/{{item.link.url}}">{{item.link.text}}</a>
         </div>
     {% endfor %}
 </section>
 
-
-
-<section class="team">
-    {% for item in team %}
-        <div class="member-images">
-            <div class="member-image">
-                <img class="teaser-icon" src="{{item.icon.url}}" alt="{{item.icon.name}}">
-                <h5>{{item.name}}</h5>
-            </div>
-
-        </div>
-    {% endfor %}
-
-    {% for item in team %}
-        <div class="member-description">
-            <p>{{item.description}}</p>
-        </div>
-    {% endfor %}
-</section>
-
+{% include _teamslider.liquid %}
 
 
