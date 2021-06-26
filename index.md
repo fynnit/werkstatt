@@ -97,7 +97,7 @@ team:
     sinnlos ist. "
 - name: Martin
   image: ''
-  description: 'Martin Lehnert Facilitator im Kraftfeld sozialer Plastik Rechtsanwalt,
+  description: "Martin Lehnert \nFacilitator im Kraftfeld sozialer Plastik Rechtsanwalt,
     Mediator, Entwicklungsbegleiter, Dialog-Facilitator, Geschäftsführer und Vorstand
     in NPOs Mein Interesse an authentischen Begegnungen und dem dabei wirksamen Kraftfeld
     in der Beziehung führte mich in Führungs- und Beratungsaufgaben. Räume zu öffnen
@@ -114,7 +114,7 @@ team:
     Mit wertschätzendem Interesse, Humor und Selbstreflektion schafft er Vertrauen.
     Er hat große vielfältige Erfahrung in der Begleitung von Organisationen. Sein
     Sinn für soziale Prozesse und seine methodische Sicherheit bahnen produktive ko-kreative
-    Wege.'
+    Wege."
 - name: Stefan
   image: ''
   description: "Prof. Dr. Stefan Ackermann\n\nAus der Begegnung das Wesen des Raumes
