@@ -54,6 +54,10 @@ fields:
   - type: textarea
     name: copytext
     label: copytext
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
 - type: field_group_list
   name: teaser
   label: teaser
@@ -104,3 +108,7 @@ fields:
   - type: textarea
     name: description
     label: description
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
