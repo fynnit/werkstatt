@@ -153,6 +153,15 @@ header {
   font-size: 23px;
   cursor: pointer;
   align-self: flex-start;
+  transition: transform 500ms;
+}
+.want-item:hover {
+  transform: scale(1.02);
+  transition: transform 300ms;
+}
+.want-item:hover .box {
+  transition: background-color 300ms;
+  background-color: #ffd59d;
 }
 .want-item.active .box {
   background-color: #ffd59d;
@@ -168,6 +177,7 @@ header {
   border-radius: 6px;
   flex: 0 0 auto;
   background-color: #d8d8d8;
+  transition: background-color 300ms;
 }
 .want-item .box svg {
   margin: -3px 0 0 5px;

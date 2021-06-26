@@ -41,6 +41,16 @@ header {
     font-size: 23px;
     cursor: pointer;
     align-self: flex-start;
+    transition: transform 500ms;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: transform 300ms;
+        .box {
+            transition: background-color 300ms;
+            background-color: #ffd59d;
+        }
+    }
 
     &.active {
 
@@ -61,6 +71,7 @@ header {
         border-radius: 6px;
         flex: 0 0 auto;
         background-color: $grey;
+        transition: background-color 300ms;
 
         svg {
             margin: -3px 0 0 5px;
@@ -92,6 +103,7 @@ header {
                 }
             }
         }
+
     }
 }
 
