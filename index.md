@@ -82,7 +82,7 @@ team:
   image:
     url: ''
     name: Marietta
-  description: "**Dr. Marietta Johanna Schürholz** In Prozessen auf Antworten kommen,
+  description: "*Dr. Marietta Johanna Schürholz* In Prozessen auf Antworten kommen,
     schöpferisch erforschen, dabei erleben wie Verbundenheit trägt, Heilung und Transformation
     passieren. Bewusst und künstlerisch leben, Verantwortung nehmen, lieben - darum
     geht es mir.\nMich interessiert die Berührbarkeit von Menschen und ihr Zugang
