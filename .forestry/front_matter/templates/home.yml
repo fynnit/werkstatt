@@ -57,7 +57,7 @@ fields:
     config:
       wysiwyg: true
       schema:
-        format: html-blocks
+        format: markdown
 - type: field_group_list
   name: teaser
   label: teaser
@@ -111,4 +111,4 @@ fields:
     config:
       wysiwyg: true
       schema:
-        format: html-blocks
+        format: markdown
