@@ -1,0 +1,106 @@
+---
+label: Home
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: field_group
+  name: header
+  label: header
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: copyright
+    label: copyright
+- type: field_group
+  name: i_want
+  label: i_want
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: field_group_list
+    name: wants
+    label: wants
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: boolean
+      name: bool
+      label: bool
+- type: field_group
+  name: text_block
+  label: text_block
+  fields:
+  - type: text
+    name: headline
+    label: headline
+  - type: textarea
+    name: copytext
+    label: copytext
+- type: field_group_list
+  name: teaser
+  label: teaser
+  fields:
+  - type: text
+    name: headline
+    label: headline
+  - type: textarea
+    name: description
+    label: description
+  - type: field_group
+    name: icon
+    label: icon
+    fields:
+    - type: file
+      name: url
+      label: url
+    - type: text
+      name: name
+      label: name
+  - type: field_group
+    name: link
+    label: link
+    fields:
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: url
+      label: url
+- type: field_group_list
+  name: team
+  label: team
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: field_group
+    name: image
+    label: image
+    fields:
+    - type: text
+      name: url
+      label: url
+    - type: text
+      name: name
+      label: name
+  - type: textarea
+    name: description
+    label: description
