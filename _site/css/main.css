@@ -395,4 +395,8 @@ input.submit {
   text-align: center;
 }
 
+label.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
