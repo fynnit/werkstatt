@@ -137,5 +137,13 @@ Marietta ist Freude und Verbindung, lädt zu Miteinander und zum Dasein mit alle
     Marietta über Andreas:
     Andreas ist ein Mann der stillen Tiefe. Seine sanfte Behutsamkeit gepaart mit klarer Unbestechlichkeit machen ihn zu einem kostbaren Wegbegleiter zu Selbstverantwortung und Selbstwahrnehmung. Seiner Genauigkeit gewürzt mit einer Prise feinem Humor ist es zu verdanken, dass sich „Schattenabsichten“ in Schätze verwandeln können."
 
+form:
+  title: Kontakt
+  id: homepage
+  placeholder:
+    name: Ihr Name
+    email: Ihre E-Mail Addresse für unsere Antwort
+    textarea: Was Ihnen auf dem Herzen liegt
+    send: los!
 ---
 **hhh**
