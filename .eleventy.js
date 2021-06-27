@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
       excerpt: true,
       excerpt_separator: "---"
     });
+    eleventyConfig.addPassthroughCopy({"assets/": "/assets/"});
 
     eleventyConfig.addFilter("dateformat", (dateIn) => {
       return moment(dateIn).tz('CET').format('DD.MMMM');
