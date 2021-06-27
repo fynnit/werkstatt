@@ -290,13 +290,14 @@ Marietta über Andreas: Andreas ist ein Mann der stillen Tiefe. Seine sanfte Beh
 
 <section class="form-section">
     <h3>Kontakt</h3>
-    <form name="contact homepage" method="POST" data-netlify="true">
+    <form name="contact homepage" method="POST" data-netlify="true" data-netlify-recaptcha="true">
         <div class="part-one">
             <input type="text" name="name" id="name" placeholder="Ihr Name">
             <input type="email" name="email" id="email" placeholder="Ihre E-Mail Addresse für unsere Antwort">
         </div>
             <div class="part-two">
             <textarea name="message" id="message" placeholder="Was Ihnen auf dem Herzen liegt"></textarea>
+            <div class="captcha" data-netlify-recaptcha="true"></div>
 
             <input type="submit" class="submit" value="los!">
         </div>
