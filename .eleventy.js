@@ -12,11 +12,12 @@ const markdownItRenderer = new markdownIt({
 module.exports = function(eleventyConfig) {
     eleventyConfig.setTemplateFormats("html, liquid, md");
     eleventyConfig.setBrowserSyncConfig({files: './_site/css/**/*.css'});
+    eleventyConfig.addPassthroughCopy({"assets/": "/assets/"});
+    
     eleventyConfig.setFrontMatterParsingOptions({
       excerpt: true,
       excerpt_separator: "---"
     });
-    eleventyConfig.addPassthroughCopy({"assets/": "/assets/"});
 
     eleventyConfig.addFilter("dateformat", (dateIn) => {
       return moment(dateIn).tz('CET').format('DD.MMMM');
