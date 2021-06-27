@@ -1,15 +1,16 @@
 {% if team %}
     <section class="team">
+        <h3>{{team.title}}</h3>
         <div class="members">
-            {% for item in team %}
-                <div class="member {{item.name | tlc}}" onclick="toogleMember(this)">
+            {% for item in team.members %}
+                <div class="member {{item.name | tlc}} {% if forloop.first %}active{% endif %}" onclick="toogleMember(this)">
                     <img class="member-image" src="{{item.image.url}}" alt="{{item.image.name}}">
                     <h5>{{item.name}}</h5>
                 </div>
             {% endfor %}
         </div>
         <div class="member-descriptions">
-            {% for item in team %}
+            {% for item in team.members %}
                 <div class="member-description {{item.name | tlc}} {% if forloop.first %}active{% endif %}">
                     <p>{{item.description | markdownify }}</p>
                 </div>
@@ -20,13 +21,18 @@
 
 <script>
     function toogleMember(el) {
-        const elem = el.classList[1];
-        const targ = document.querySelector(`.member-description.${elem}`);
-        const others = document.querySelectorAll('.member-description');
-        others.forEach(item => item.classList.remove('active'));
+        const elClass = el.classList[1];
+        const targ = document.querySelector(`.member-description.${elClass}`);
 
+        const membersAll = document.querySelectorAll(`.member`);
+        const descriptionAll = document.querySelectorAll('.member-description');
+
+        membersAll.forEach(item => item.classList.remove('active'));
+        descriptionAll.forEach(item => item.classList.remove('active'));
+        
         targ.classList.add('active');
-        // console.log(elem);
+        el.classList.add('active');
+        // console.log(elClass);
         // console.log(targ);
     }
 </script>

@@ -9,31 +9,9 @@ layout: base.liquid
         <h5 class="page-subtitle">{{header.subtitle}}</h5>
     </div>
 
-    <div class="i-want">
-        <h2>{{i_want.title}}</h2>
-        <div class="wants">
-            {% for item in i_want.wants %}
-                <div class="want-item {{bool ? 'active': ''}}" onclick="this.classList.toggle('active');">
-                <span class="box">
-                    <?xml version="1.0" encoding="UTF-8"?>
-                        <svg width="23px" height="26px" viewBox="0 0 23 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>Path 2</title>
-                            <g id="wireframes-v0.6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-                                <g id="Home" transform="translate(-179.000000, -914.000000)" stroke="#B9F6B7" stroke-width="4">
-                                    <g id="Ich-will" transform="translate(32.000000, 690.000000)">
-                                        <path d="M149.012766,240.121743 C152.41821,244.234547 155.360711,249.072161 157.430655,246.887042 C159.687055,243.221728 163.21017,236.40295 168,226.430705" id="Path-2"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </span>
-                    <span class="title">{{-item.title}}</span>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
+    {% include _iwant.liquid %}
 
-    <span>{{-header.copyright}}</span>
+    <span class="copyright">{{header.copyright | markdownify}}</span>
 
 </header>
 <section class="text-block">

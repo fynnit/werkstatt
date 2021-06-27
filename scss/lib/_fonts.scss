@@ -25,7 +25,10 @@ h1, h2, .bold {
 }
 
 h1, h2 {
-    font-size: 6rem;
+    font-size: 4rem;
+    @media (min-width: 777px) {
+        font-size: 6rem;
+    }
 }
 
 h3, h4 {
@@ -48,8 +51,11 @@ a {
 .page-subtitle {
     font-size: 23px;
 }
-
+strong {
+    font-weight: 600;
+}
 p,p.copytext, .copytext {
-    max-width: 800px;margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
     text-align: justify;
 }
