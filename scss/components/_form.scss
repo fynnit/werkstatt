@@ -1,0 +1,47 @@
+.form-section {
+    padding: 130px 32px;
+}
+form {
+    display: flex;
+    flex-flow: column;
+    width: 400px;
+    [class^='part'] {
+        width: 100%;
+    }
+    @media (min-width: 900px) {
+        flex-flow: row;
+        justify-content: space-between;
+        width: 832px;
+        gap: 32px;
+        [class^='part'] {
+            width: 50%;
+        }
+    }
+    margin: 0 auto ;
+}
+input,
+textarea {
+    border-radius: 16px;
+    background-color: $projekte-background;
+    padding: 11px 20px;
+    border: none;
+    margin-bottom: 16px;
+    color: $dark;
+    &:not(.submit){min-width: 100%;}
+    
+    &:focus {
+        outline: $active;
+    }
+    
+}
+textarea {
+    resize: hidden;
+    max-width: 100%;
+    height: 100px;
+}
+input.submit {
+    flex-grow: 0;
+    align-self: flex-start;
+    width: 80px;
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+<section class="form-section">
+    <h3>{{form.title}}</h3>
+    <form name="contact" method="POST" data-netlify="true">
+        <div class="part-one">
+            <input type="text" name="name" id="name" placeholder="{{form.placeholder.name}}">
+            <input type="email" name="email" id="email" placeholder="{{form.placeholder.email}}">
+        </div>
+            <div class="part-two">
+            <textarea name="message" id="message" placeholder="{{form.placeholder.textarea}}"></textarea>
+
+            <input type="submit" class="submit" value="{{form.placeholder.send}}">
+        </div>
+    </form>
+
+</section>

@@ -1,13 +1,14 @@
 header {
     padding: 115px 32px 50px;
+
     @media (min-width: 777px) {
         padding: 115px 64px 50px;
     }
+
     color: $white;
     background-size: cover;
     background-position: center;
 }
-
 
 
 .teasers {
@@ -27,9 +28,11 @@ header {
     flex-grow: 0;
     align-self: flex-start;
     position: relative;
+
     &.forschungsraum {
         color: $forschungsraum;
         background-color: $forschungsraum-background;
+
         .teaser-icon {
             height: 60px;
         }
@@ -38,22 +41,25 @@ header {
     &.next-level {
         color: $next-level;
         background-color: $next-level-background;
+
         .teaser-icon {
             height: 57px;
         }
     }
-    
+
     &.freisinn {
         color: $freisinn;
         background-color: $freisinn-background;
+
         .teaser-icon {
             height: 46px;
         }
     }
-    
+
     &.coaching {
         color: $coaching-text;
         background-color: $coaching-background;
+
         .teaser-icon {
             height: 60px;
         }
@@ -63,11 +69,16 @@ header {
         color: $projekte;
         background-color: $projekte-background;
     }
-    .headline {padding-bottom: 12px;}
+
+    .headline {
+        padding-bottom: 12px;
+    }
+
     .description {
         text-align: left;
         padding-bottom: 16px;
     }
+
     img.teaser-icon {
         position: absolute;
         bottom: 16px;
@@ -78,6 +89,7 @@ header {
 .team {
     padding: 130px 32px;
 }
+
 .members {
     display: flex;
     justify-content: space-around;
@@ -88,10 +100,15 @@ header {
     .member {
         cursor: pointer;
         max-width: 25%;
+
         h5 {
             font-weight: 500;
         }
-        &.active h5 { font-weight: 600;}
+
+        &.active h5 {
+            font-weight: 600;
+        }
+
         img {
             max-width: 100%;
         }
@@ -104,7 +121,9 @@ header {
         text-align: left;
         white-space: break-spaces;
     }
+
     display: none;
+
     &.active {
         display: block;
     }

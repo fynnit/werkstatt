@@ -335,4 +335,60 @@ header {
   padding: 130px 32px;
 }
 
+.form-section {
+  padding: 130px 32px;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  width: 400px;
+  margin: 0 auto;
+}
+form [class^=part] {
+  width: 100%;
+}
+@media (min-width: 900px) {
+  form {
+    flex-flow: row;
+    justify-content: space-between;
+    width: 832px;
+    gap: 32px;
+  }
+  form [class^=part] {
+    width: 50%;
+  }
+}
+
+input,
+textarea {
+  border-radius: 16px;
+  background-color: #ffe8ce;
+  padding: 11px 20px;
+  border: none;
+  margin-bottom: 16px;
+  color: #1e2422;
+}
+input:not(.submit),
+textarea:not(.submit) {
+  min-width: 100%;
+}
+input:focus,
+textarea:focus {
+  outline: #ff8a4d;
+}
+
+textarea {
+  resize: hidden;
+  max-width: 100%;
+  height: 100px;
+}
+
+input.submit {
+  flex-grow: 0;
+  align-self: flex-start;
+  width: 80px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
