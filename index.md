@@ -135,7 +135,7 @@ Marietta ist Freude und Verbindung, lädt zu Miteinander und zum Dasein mit alle
     In den letzten Jahren kamen hinzu die Betreuung von Gruppenseminaren wie Possibility-Management-Teams, Gefühlsseminare und Wutworkshops, Einzel- und Paarcoaching.
 
     Marietta über Andreas:
-    Andreas ist ein Mann der stillen Tiefe. Seine sanfte Behutsamkeit gepaart mit klarer Unbestechlichkeit machen ihn zu einem kostbaren Wegbegleiter zu Selbstverantwortung und Selbstwahrnehmung. Seiner Genauigkeit gewürzt mit einer Prise feinem Humor ist es zu verdanken, dass sich „Schattenabsichten“ in Schätze verwandeln können.
+    Andreas ist ein Mann der stillen Tiefe. Seine sanfte Behutsamkeit gepaart mit klarer Unbestechlichkeit machen ihn zu einem kostbaren Wegbegleiter zu Selbstverantwortung und Selbstwahrnehmung. Seiner Genauigkeit gewürzt mit einer Prise feinem Humor ist es zu verdanken, dass sich „Schattenabsichten“ in Schätze verwandeln können."
 
 ---
 **hhh**
