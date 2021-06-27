@@ -5,7 +5,7 @@ permalink: "/"
 header:
   title: Werkstatt für Verantwortung und Führung
   subtitle: Bewusstsein, Möglichkeiten, Kompetenzen.
-  image: "/uploads/andrewlmoore-com-acrosanti.jpg"
+  image: "/assets/arco.jpg"
   copyright: Foto <a href="https://andrewlmoore.com/?from=werkstatt-fuer-verantwortung-und-fuehrung.de" target="_blank">©Andrew Moore</a>
 i_want:
   title: Ich will
@@ -136,7 +136,6 @@ Marietta ist Freude und Verbindung, lädt zu Miteinander und zum Dasein mit alle
 
     Marietta über Andreas:
     Andreas ist ein Mann der stillen Tiefe. Seine sanfte Behutsamkeit gepaart mit klarer Unbestechlichkeit machen ihn zu einem kostbaren Wegbegleiter zu Selbstverantwortung und Selbstwahrnehmung. Seiner Genauigkeit gewürzt mit einer Prise feinem Humor ist es zu verdanken, dass sich „Schattenabsichten“ in Schätze verwandeln können."
-
 form:
   title: Kontakt
   id: homepage
