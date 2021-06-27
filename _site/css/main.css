@@ -132,6 +132,10 @@ header {
     padding: 115px 64px 50px;
   }
 }
+header .copyright {
+  display: inline-block;
+  margin-top: 32px;
+}
 
 .teasers {
   display: flex;

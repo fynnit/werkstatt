@@ -6,7 +6,7 @@ header:
   title: Werkstatt für Verantwortung und Führung
   subtitle: Bewusstsein, Möglichkeiten, Kompetenzen.
   image: "/uploads/andrewlmoore-com-acrosanti.jpg"
-  copyright: Foto [©Andrew Moore](andrewlmoore.com)
+  copyright: Foto <a href="https://andrewlmoore.com/?from=werkstatt-fuer-verantwortung-und-fuehrung.de" target="_blank">©Andrew Moore</a>
 i_want:
   title: Ich will
   wants:

@@ -8,6 +8,11 @@ header {
     color: $white;
     background-size: cover;
     background-position: center;
+
+    .copyright {
+        display: inline-block;
+        margin-top: 32px;
+    }
 }
 
 
