@@ -129,7 +129,6 @@ Marietta ist Freude und Verbindung, lädt zu Miteinander und zum Dasein mit alle
     Humansynergetiker
     Physiker in einem mittelständischen Unternehmen
     Trainer für Gefühlsarbeit und Possibility-Management
-
     Neue ungewöhnliche Wege zu gehen und Herausforderungen, für die es keine Standardlösungen gibt, ziehen mich besonders an. Dem Kontakt mit anderen und auch mit mir selbst gilt meiner besonderen Aufmerksamkeit. Ich fühle mich beschenkt, wenn Menschen sich wirklich begegnen.
 
     Nach der Promotion in Schweden Gruppen- und Projektleiter im Unternehmenskontext. Weltweites Netzwerken und Betreuung von Projekten in verschiedenen kulturellen Hintergründen. Changemanagement, Leitung von Workshops und Mitarbeiterentwicklung.
