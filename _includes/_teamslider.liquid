@@ -1,23 +1,21 @@
-{% if team %}
-    <section class="team">
-        <h3>{{team.title}}</h3>
-        <div class="members">
-            {% for item in team.members %}
-                <div class="member {{item.name | tlc}} {% if forloop.first %}active{% endif %}" onclick="toogleMember(this)">
-                    <img class="member-image" src="{{item.image.url}}" alt="{{item.image.name}}">
-                    <h5>{{item.name}}</h5>
-                </div>
-            {% endfor %}
-        </div>
-        <div class="member-descriptions">
-            {% for item in team.members %}
-                <div class="member-description {{item.name | tlc}} {% if forloop.first %}active{% endif %}">
-                    <p>{{item.description | markdownify }}</p>
-                </div>
-            {% endfor %}
-        </div>
-    </section>
-{% endif %}
+<section class="team">
+    <h3>{{team.title}}</h3>
+    <div class="members">
+        {% for item in team.members %}
+            <div class="member {{item.name | tlc}} {% if forloop.first %}active{% endif %}" onclick="toogleMember(this)">
+                <img class="member-image" src="{{item.image.url}}" alt="{{item.image.name}}">
+                <h5>{{item.name}}</h5>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="member-descriptions">
+        {% for item in team.members %}
+            <div class="member-description {{item.name | tlc}} {% if forloop.first %}active{% endif %}">
+                <p>{{item.description | markdownify }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</section>
 
 <script>
     function toogleMember(el) {
@@ -32,7 +30,5 @@
         
         targ.classList.add('active');
         el.classList.add('active');
-        // console.log(elClass);
-        // console.log(targ);
     }
 </script>
