@@ -15,7 +15,7 @@ layout: base.liquid
         {% assign template = block.template %}
         {% case template %}
             {% when 'quote' %}
-                {% include _quote.liquid title=block.title text=block.text %}
+                {% include _quote.liquid, title=block.title text=block.text %}
             {% when 'text_image_block' %}
                 {% include _text_image_block.liquid image=block.image text=block.text %}
             {% when 'form' %}

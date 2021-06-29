@@ -1,14 +1,14 @@
 <section class="form-section">
-    <h3>{{form.title}}</h3>
-    <form name="contact {{form.id}}" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <h3>{{form.title | markdownify}}{{block.form.title | markdownify}}</h3>
+    <form name="contact {{form.id }}{{ block.form.id}}" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <div class="part-one">
-            <input type="text" name="name" id="name" placeholder="{{form.placeholder.name}}">
-            <input type="email" name="email" id="email" placeholder="{{form.placeholder.email}}">
+            <input type="text" name="name" id="name" placeholder="{{form.placeholder.name }}{{ block.form.placeholder.name}}">
+            <input type="email" name="email" id="email" placeholder="{{form.placeholder.email }}{{ block.form.placeholder.email}}">
         </div>
             <div class="part-two">
-            <textarea name="message" id="message" placeholder="{{form.placeholder.textarea}}"></textarea>
+            <textarea name="message" id="message" placeholder="{{form.placeholder.textarea }}{{ block.form.placeholder.textarea}}"></textarea>
             <label class="hidden"> Don’t fill this out if you’re human: <input name="bot-field" /></label>
-            <input type="submit" class="submit" value="{{form.placeholder.send}}">
+            <input type="submit" class="submit" value="{{form.placeholder.send }}{{ block.form.placeholder.send}}">
         </div>
     </form>
 
