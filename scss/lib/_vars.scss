@@ -19,6 +19,29 @@ $active: #ff8a4d;
 $white: #ffffff;
 $grey: #d8d8d8;
 
+:root {
+--dark: #{$dark};
+--next-level: #{$next-level};
+--forschungsraum: #{$forschungsraum};
+--freisinn: #{$freisinn};
+--next-level-dark: #{$next-level-dark};
+--coaching: #{$coaching};
+--coaching-text: #{$coaching-text};
+--projekte: #{$projekte};
+--next-level-light: #{$next-level-light};
+--next-level-pink: #{$next-level-pink};
+--forschungsraum-background: #{$forschungsraum-background};
+--next-level-background: #{$next-level-background};
+--freisinn-background: #{$freisinn-background};
+--projekte-background: #{$projekte-background};
+--coaching-background: #{$coaching-background};
+--active: #{$active};
+--white: #{$white};
+--grey: #{$grey};
+}
+
+
+
 $breakpoints: (
   xs: 0,
   xsm: 316px,

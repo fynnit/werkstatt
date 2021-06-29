@@ -23,14 +23,16 @@ module.exports = function(eleventyConfig) {
       return moment(dateIn).tz('CET').format('DD.MMMM');
     });
     eleventyConfig.addFilter("markdownify", (str) => {
-      return markdownItRenderer.renderInline(str);
+      if (str) {
+        return markdownItRenderer.renderInline(str);
+      } 
     });
 
     eleventyConfig.addFilter("tlc", (val) => {
       if(val) {
       return val.toLowerCase();}
     });
-
+    
     // eleventyConfig.addCollection("newsrev", function(collectionApi) {
     //   return collectionApi.getFilteredByTag("news").slice(0,2).sort(function(a, b) {
     //     return b.date - a.date;

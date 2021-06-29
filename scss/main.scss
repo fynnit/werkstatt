@@ -1,5 +1,5 @@
 @import 'lib/reset';
-@import 'lib/functions';
+// @import 'lib/functions';
 @import 'lib/vars';
 @import 'lib/fonts';
 
@@ -8,6 +8,7 @@
 
 
 @import 'pages/home';
+@import 'pages/page';
 @import 'components/iwant';
 @import 'components/textblock';
 @import 'components/form';

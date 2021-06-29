@@ -13,6 +13,27 @@ p:empty {
   display: none;
 }
 
+:root {
+  --dark: #1e2422;
+  --next-level: #a20200;
+  --forschungsraum: #022659;
+  --freisinn: #217cb0;
+  --next-level-dark: #560707;
+  --coaching: #e5b900;
+  --coaching-text: #8d700f;
+  --projekte: #1e2422;
+  --next-level-light: #e43d24;
+  --next-level-pink: #a5213b;
+  --forschungsraum-background: #e8eff8;
+  --next-level-background: #ffecec;
+  --freisinn-background: #fffaf1;
+  --projekte-background: #ffe8ce;
+  --coaching-background: #fff5ca;
+  --active: #ff8a4d;
+  --white: #ffffff;
+  --grey: #d8d8d8;
+}
+
 @font-face {
   font-family: "brandon";
   font-display: swap;
@@ -78,6 +99,10 @@ p, p.copytext, .copytext {
   max-width: 800px;
   margin: 0 auto;
   text-align: justify;
+}
+
+::placeholder {
+  color: #1e2422;
 }
 
 nav {
@@ -199,7 +224,7 @@ header .copyright {
 }
 
 .team {
-  padding: 130px 32px;
+  padding: 130px 32px 0;
 }
 
 .members {
@@ -216,11 +241,17 @@ header .copyright {
 .members .member h5 {
   font-weight: 500;
 }
-.members .member.active h5 {
-  font-weight: 600;
-}
 .members .member img {
   max-width: 100%;
+  filter: brightness(100%) contrast(100%);
+  transition: filter 300ms;
+}
+.members .member.active img {
+  filter: brightness(110%) contrast(105%);
+  transition: filter 300ms;
+}
+.members .member.active h5 {
+  font-weight: 600;
 }
 
 .member-description {
@@ -232,6 +263,13 @@ header .copyright {
 }
 .member-description.active {
   display: block;
+}
+
+header.page {
+  text-align: center;
+}
+header.page.next-level {
+  color: #fff;
 }
 
 .i-want {
@@ -340,7 +378,7 @@ header .copyright {
 }
 
 .form-section {
-  padding: 130px 32px;
+  padding: 130px 32px 32px;
 }
 
 form {
@@ -366,8 +404,7 @@ form [class^=part] {
 
 input,
 textarea {
-  border-radius: 16px;
-  background-color: #ffe8ce;
+  background-color: #efe4d8;
   padding: 11px 20px;
   border: none;
   margin-bottom: 16px;

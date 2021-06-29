@@ -1,5 +1,5 @@
 .form-section {
-    padding: 130px 32px;
+    padding: 130px 32px 32px;
 }
 form {
     display: flex;
@@ -21,8 +21,8 @@ form {
 }
 input,
 textarea {
-    border-radius: 16px;
-    background-color: $projekte-background;
+    // border-radius: 16px;
+    background-color: #efe4d8;
     padding: 11px 20px;
     border: none;
     margin-bottom: 16px;

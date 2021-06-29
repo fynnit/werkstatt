@@ -59,3 +59,6 @@ p,p.copytext, .copytext {
     margin: 0 auto;
     text-align: justify;
 }
+::placeholder {
+    color: $dark;
+}

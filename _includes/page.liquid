@@ -1,0 +1,27 @@
+---
+
+layout: base.liquid
+
+---
+
+<header class="page {{title | slug }}" style="background-image: url({{header.image}});">
+    <h1>{{title}}</h1>
+    {% if subtitle %}<span>{{subtitle}}</span>{% endif %}
+</header>
+
+<main class="{{title | slug }}">
+
+    {% for block in sections %}
+        {% assign template = block.template %}
+        {% case template %}
+            {% when 'quote' %}
+                {% include _quote.liquid title=block.title text=block.text %}
+            {% when 'text_image_block' %}
+                {% include _text_image_block.liquid image=block.image text=block.text %}
+            {% when 'form' %}
+                {% include _form.liquid %}
+        {% endcase %}
+    {% endfor %}
+
+
+</main>

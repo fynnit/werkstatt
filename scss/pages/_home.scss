@@ -92,7 +92,7 @@ header {
 }
 
 .team {
-    padding: 130px 32px;
+    padding: 130px 32px 0;
 }
 
 .members {
@@ -110,13 +110,24 @@ header {
             font-weight: 500;
         }
 
-        &.active h5 {
-            font-weight: 600;
-        }
-
         img {
             max-width: 100%;
+            filter: brightness(100%) contrast(100%);
+            transition: filter 300ms;;
+
         }
+
+        &.active {
+            img {
+                filter: brightness(110%) contrast(105%);
+                transition: filter 300ms;
+            }
+
+            h5 {
+                font-weight: 600;
+            }
+        }
+
 
     }
 }
