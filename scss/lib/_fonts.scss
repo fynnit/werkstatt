@@ -54,10 +54,8 @@ a {
 strong {
     font-weight: 600;
 }
-p,p.copytext, .copytext {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: justify;
+p {
+    line-height: 1.52;
 }
 ::placeholder {
     color: $dark;

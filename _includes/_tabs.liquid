@@ -1,0 +1,37 @@
+<section class="section-tabs">
+    <div class="tabs">
+        {% for column in block.columns %}
+            <div class="tab {{column.title | slug}} {% if forloop.first %}active{% endif %}" onclick="toogleTab(this)">{{column.title}}</div>
+        {% endfor %}
+    </div>
+    
+    {% for column in block.columns %}
+        <p class="tab-content {{column.title | slug}} {% if column.items.size > 1 %} multiple{%endif%} {% if forloop.first %}active{% endif %}">
+            {% for item in column.items %}
+                {% if column.items.size > 1 %}
+                    <span>{{item.item | markdownify}}</span>
+                {% else %}
+                    {{item.item | markdownify}}
+                {% endif%}
+            {% endfor %}
+        </p>
+    {% endfor %}
+</section>
+<script>
+    function toogleTab(el) {
+
+        const elClass = el.classList[1];
+
+        const tabsAll = document.querySelectorAll(`.tab`);
+        tabsAll.forEach(item => item.classList.remove('active'));
+        el.classList.add('active');
+    
+        const targContent = document.querySelector(`.tab-content.${elClass}`);
+
+        const tabContentAll = document.querySelectorAll('.tab-content');
+        tabContentAll.forEach(item => item.classList.remove('active'));
+        
+        targContent.classList.add('active');
+        el.classList.add('active');
+    }
+</script>

@@ -20,8 +20,10 @@ layout: base.liquid
                 {% include _quote.liquid, title=block.title text=block.text %}
             {% when 'text_image_block' %}
                 {% include _text_image_block.liquid image=block.image text=block.text %}
+            {% when 'tabs' %}
+                {% include _tabs.liquid image=block.image text=block.text %}
             {% when 'form' %}
-                {% include _form.liquid %}
+                {% include _form.liquid title=block.tab items=block%}
         {% endcase %}
     {% endfor %}
 

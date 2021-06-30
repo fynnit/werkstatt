@@ -1,0 +1,16 @@
+.section-tabs {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.tabs {
+    display: flex; gap:32px
+}
+.tab {
+    font-size: 40px;
+    &.active  {
+        font-weight: 600;
+    }
+}
+
+.tab-content { display: none;}
+.tab-content.active  { display: block;}
