@@ -3,5 +3,17 @@
         <span class="button button-top"></span>
         <span class="button button-bottom"></span>
     </div>
+    <div class="nav-container">
 
+        <div class="mainpages">
+            {%- for item in collections.page -%}
+                <a href="{{item.url}}" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.data.title }}</a>
+            {%- endfor -%}
+        </div>
+        <div class="secondarypages">
+            {% comment %} {%- for item in collections.secondarypage -%}
+                <a href="{{item.url}}" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.data.title }}</a> {% endcomment %}
+            {%- endfor -%}
+        </div>
+    </div>
 </nav>

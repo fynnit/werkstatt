@@ -2,6 +2,8 @@
 title: Werkstatt für Verantwortung und Führung
 layout: home.liquid
 permalink: "/"
+tags: page
+
 header:
   title: Werkstatt für Verantwortung und Führung
   subtitle: Bewusstsein, Möglichkeiten, Kompetenzen.

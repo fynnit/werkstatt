@@ -4,6 +4,7 @@ subtitle: '»Next Level« bildet den Rahmen unserer
 gemeinsamen Arbeit und ist gleichzeitig ein Basis-Tool.'
 layout: page.liquid
 permalink: "/next-level/"
+tags: page
 
 header: 
     image: /assets/next-level-bg.jpg
