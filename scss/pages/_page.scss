@@ -1,15 +1,80 @@
 header.page {
     text-align: center;
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    .copyright {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        opacity: 0.5;
+    }
     &.forschungsraum {
         color: $forschungsraum;
+        + main {
+            color: $forschungsraum;
+            background-color: $forschungsraum-background;
+            input, textarea {
+                background-color: $forschungsraum;
+                color: $white;
+            }
+            ::placeholder {
+                color: white;
+            }
+
+        }
     }
     &.next-level {
         color: $white;
+        + main {
+            color: $next-level;
+            background-color: $next-level-background;
+            input, textarea {
+                background-color: $next-level;
+                color: $white;
+            }
+            ::placeholder {
+                color: white;
+            }
+
+        }
     }
     &.freisinn {
         color: $freisinn;
+        + main {
+            color: $freisinn;
+            background-color: $freisinn-background;
+            input, textarea {
+                background-color: $freisinn;
+                color: $white;
+            }
+            ::placeholder {
+                color: white;
+            }
+
+        }
     }
     &.projekte {
         color: $projekte;
+        + main {
+            color: $projekte;
+            background-color: $projekte-background;
+            input, textarea {
+                background-color: $projekte;
+                color: $white;
+            }
+            ::placeholder {
+                color: white;
+            }
+
+        }
+    }
+
+    + main {
+        padding-top: 50px;
     }
 }

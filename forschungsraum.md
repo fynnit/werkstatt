@@ -27,9 +27,9 @@ sections:
   - template: text_image_block
     image: /assets/icons/forschungsraum-3.svg
     text: 'Mit Blick auf Ihre jeweiligen Alltagssituationen gewinnen Sie neue Perspektiven und erleben ein tragfähiges Team als kontinuiertlichen Begleiter. Bereichert und inspieriert begegnen Sie Ihrem beruflichen Kontext mit der Lust auf Wachstum und Entwicklung.'
-  - template: contact
+  - template: form
     form:
-        title: Treten Sie hier mit uns in den Kontakt\nund wir eröffen gemeinsam einen Forschungsraum 
+        title: Treten Sie hier mit uns in den Kontakt und wir eröffen gemeinsam einen Forschungsraum 
         id: forschungsraum
         placeholder:
             name: Ihr Name

@@ -7,9 +7,11 @@ layout: base.liquid
 <header class="page {{title | slug }}" style="background-image: url({{header.image}});">
     <h1>{{title}}</h1>
     {% if subtitle %}<span>{{subtitle}}</span>{% endif %}
+    {% if header.copyright %}<span class="copyright">{{header.copyright}}</span>{% endif %}
+
 </header>
 
-<main class="{{title | slug }}">
+<main class="page {{title | slug }}">
 
     {% for block in sections %}
         {% assign template = block.template %}

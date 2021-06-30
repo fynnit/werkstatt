@@ -14,10 +14,8 @@ layout: base.liquid
     <span class="copyright">{{header.copyright | markdownify}}</span>
 
 </header>
-<section class="text-block">
-    <h3>{{text_block.headline}}</h3>
-    <p class="copytext">{{text_block.copytext}}</p>
-</section>
+
+{% include _text_block.liquid %}
 
 <section class="teasers">
     {% for item in teaser %}

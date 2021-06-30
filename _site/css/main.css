@@ -268,18 +268,78 @@ header .copyright {
 
 header.page {
   text-align: center;
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+header.page .copyright {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  opacity: 0.5;
 }
 header.page.forschungsraum {
   color: #022659;
 }
+header.page.forschungsraum + main {
+  color: #022659;
+  background-color: #e8eff8;
+}
+header.page.forschungsraum + main input, header.page.forschungsraum + main textarea {
+  background-color: #022659;
+  color: #ffffff;
+}
+header.page.forschungsraum + main ::placeholder {
+  color: white;
+}
 header.page.next-level {
   color: #ffffff;
+}
+header.page.next-level + main {
+  color: #a20200;
+  background-color: #ffecec;
+}
+header.page.next-level + main input, header.page.next-level + main textarea {
+  background-color: #a20200;
+  color: #ffffff;
+}
+header.page.next-level + main ::placeholder {
+  color: white;
 }
 header.page.freisinn {
   color: #217cb0;
 }
+header.page.freisinn + main {
+  color: #217cb0;
+  background-color: #fffaf1;
+}
+header.page.freisinn + main input, header.page.freisinn + main textarea {
+  background-color: #217cb0;
+  color: #ffffff;
+}
+header.page.freisinn + main ::placeholder {
+  color: white;
+}
 header.page.projekte {
   color: #1e2422;
+}
+header.page.projekte + main {
+  color: #1e2422;
+  background-color: #ffe8ce;
+}
+header.page.projekte + main input, header.page.projekte + main textarea {
+  background-color: #1e2422;
+  color: #ffffff;
+}
+header.page.projekte + main ::placeholder {
+  color: white;
+}
+header.page + main {
+  padding-top: 50px;
 }
 
 .i-want {
@@ -450,9 +510,24 @@ label.hidden {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 800px;
+  margin: 0 auto 80px;
+  gap: 50px;
 }
 .text_image_block:nth-child(odd) {
   flex-flow: row-reverse;
+}
+
+.section-quote {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.section-quote .quote {
+  font-size: 40px;
+  max-width: 800px;
 }
 
 /*# sourceMappingURL=main.css.map */
