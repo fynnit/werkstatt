@@ -1,6 +1,15 @@
 header.page {
     text-align: center;
+    &.forschungsraum {
+        color: $forschungsraum;
+    }
     &.next-level {
-        color: #fff;
+        color: $white;
+    }
+    &.freisinn {
+        color: $freisinn;
+    }
+    &.projekte {
+        color: $projekte;
     }
 }

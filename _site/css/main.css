@@ -269,8 +269,17 @@ header .copyright {
 header.page {
   text-align: center;
 }
+header.page.forschungsraum {
+  color: #022659;
+}
 header.page.next-level {
-  color: #fff;
+  color: #ffffff;
+}
+header.page.freisinn {
+  color: #217cb0;
+}
+header.page.projekte {
+  color: #1e2422;
 }
 
 .i-want {
@@ -435,6 +444,15 @@ input.submit {
 
 label.hidden {
   display: none;
+}
+
+.text_image_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text_image_block:nth-child(odd) {
+  flex-flow: row-reverse;
 }
 
 /*# sourceMappingURL=main.css.map */
