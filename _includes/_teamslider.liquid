@@ -11,7 +11,7 @@
     <div class="member-descriptions">
         {% for item in team.members %}
             <div class="member-description {{item.name | tlc}} {% if forloop.first %}active{% endif %}">
-                <p>{{item.description | eleventyComputed }}</p>
+                <p>{{item.description | mdfy }}</p>
             </div>
         {% endfor %}
     </div>

@@ -46,11 +46,12 @@ sections:
     - column: 
       title: Logistik
       items:
-      - item: "* Trainingsdauer: 3-4 Tage 
-      * Termin und Zeit: Siehe Kalender bzw. je nach Nachfrage 
-      * Kosten: 650 € -950 € nach Selbsteinschätzung für Einzelpersonen, für Coaches, Berater und  Unternehmensleitungen 950 € -1500 €; Geringverdiener können einen Antrag auf ergänzende alternative Möglichkeiten stellen. Zuzüglich Kosten für Vollverpflegung und Übernachtung 
-      * Ort: Seminarort wie dem Zürnshof, Hassendorf oder bei Ihnen 
-      * Trainer: Prof. Dr. Stefan Ackermann, Dr. Marietta Schürholz, Dr. Andreas Beutler"
+      - item: '
+        + Trainingsdauer: 3-4 Tage 
+        + Termin und Zeit: Siehe Kalender bzw. je nach Nachfrage 
+        + Kosten: 650 € -950 € nach Selbsteinschätzung für Einzelpersonen, für Coaches, Berater und  Unternehmensleitungen 950 € -1500 €; Geringverdiener können einen Antrag auf ergänzende alternative Möglichkeiten stellen. Zuzüglich Kosten für Vollverpflegung und Übernachtung 
+        + Ort: Seminarort wie dem Zürnshof, Hassendorf oder bei Ihnen 
+        + Trainer: Prof. Dr. Stefan Ackermann, Dr. Marietta Schürholz, Dr. Andreas Beutler'
 
   - template: form
     form:

@@ -1,5 +1,5 @@
 <section class="form-section">
-    <h3>{{form.title | eleventyComputed}}{{block.form.title | eleventyComputed}}</h3>
+    <h3>{{form.title | mdfy }}{{block.form.title | mdfy }}</h3>
     <form name="contact {{form.id }}{{ block.form.id}}" method="POST" data-netlify="true" netlify-honeypot="bot-field">
         <div class="part-one">
             <input type="text" name="name" id="name" placeholder="{{form.placeholder.name }}{{ block.form.placeholder.name}}">

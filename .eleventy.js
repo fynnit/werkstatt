@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("dateformat", (dateIn) => {
       return moment(dateIn).tz('CET').format('DD.MMMM');
     });
-    eleventyConfig.addFilter("eleventyComputed", (str) => {
+    eleventyConfig.addFilter("mdfy", (str) => {
       if (str) {
         return markdownItRenderer.renderInline(str);
       } 
