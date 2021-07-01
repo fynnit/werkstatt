@@ -10,37 +10,51 @@ const markdownItRenderer = new markdownIt({
 });
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.setTemplateFormats("html, liquid, md");
+    eleventyConfig.setTemplateFormats('md, liquid');
     eleventyConfig.setBrowserSyncConfig({files: './_site/css/**/*.css'});
-    eleventyConfig.addPassthroughCopy({"assets/": "/assets/"});
+    eleventyConfig.addPassthroughCopy({'assets/': '/assets/'});
     
     eleventyConfig.setFrontMatterParsingOptions({
       excerpt: true,
-      excerpt_separator: "---"
+      excerpt_separator: '---'
     });
 
-    eleventyConfig.addFilter("dateformat", (dateIn) => {
+    eleventyConfig.addFilter('dateformat', (dateIn) => {
       return moment(dateIn).tz('CET').format('DD.MMMM');
     });
-    eleventyConfig.addFilter("mdfy", (str) => {
+
+    // render as markdown
+    eleventyConfig.addFilter('mdfy', (str) => {
       if (str) {
-        return markdownItRenderer.renderInline(str);
+        markdownItRenderer.renderInline(str);
+        return str 
       } 
     });
 
-    eleventyConfig.addFilter("tlc", (val) => {
+    // to lower case 
+    eleventyConfig.addFilter('tlc', (val) => {
       if(val) {
       return val.toLowerCase();}
     });
 
-    eleventyConfig.addFilter("fw", (val) => {
+    // render only first word
+    eleventyConfig.addFilter('fw', (val) => {
       if(val) {
         return val.substr(0,val.indexOf(' '));
       }
     });
+
+    // make list
+    // eleventyConfig.addFilter('toList', (str) => {
+    //   if(str) {
+    //     str.split("*").join("</li><li>")
+    //     str = '<ul><li>' + str + '</li></ul>'; 
+    //     return str;
+    //   }
+    // });
     
-    // eleventyConfig.addCollection("newsrev", function(collectionApi) {
-    //   return collectionApi.getFilteredByTag("news").slice(0,2).sort(function(a, b) {
+    // eleventyConfig.addCollection('newsrev', function(collectionApi) {
+    //   return collectionApi.getFilteredByTag('news').slice(0,2).sort(function(a, b) {
     //     return b.date - a.date;
     //   });
     // });

@@ -88,7 +88,8 @@ h6 {
 
 h5,
 h6,
-p {
+p,
+li {
   font-size: 23px;
 }
 
@@ -342,7 +343,7 @@ header.page.next-level {
   color: #ffffff;
 }
 header.page.next-level + main {
-  color: #a20200;
+  color: #7b192c;
   background-color: #ffecec;
 }
 header.page.next-level + main input, header.page.next-level + main textarea {
@@ -586,6 +587,7 @@ label.hidden {
   display: flex;
   gap: 32px;
   gap: 64px;
+  margin-bottom: 16px;
 }
 
 .tab {

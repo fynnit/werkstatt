@@ -6,15 +6,19 @@
     </div>
     
     {% for column in block.columns %}
-        <p class="tab-content {{column.title | slug}} {% if column.items.size > 1 %} multiple{%endif%} {% if forloop.first %}active{% endif %}">
-            {% for item in column.items %}
+        <div class="tab-content {{column.title | slug}} {% if column.items.size > 1 %} multiple{%endif%} {% if forloop.first %}active{% endif %}">
                 {% if column.items.size > 1 %}
-                    <span>{{item.item | mdfy }}</span>
+                    <ul>
+                    {% for item in column.items %}
+                        <li>
+                            {{item.item | toList }}
+                        </li>
+                    {% endfor %}
+                    </ul>
                 {% else %}
-                    {{item.item | mdfy }}
+                    <p>{{column.items[0].item | mdfy }}</p>
                 {% endif%}
-            {% endfor %}
-        </p>
+        </div>
     {% endfor %}
 </section>
 <script>

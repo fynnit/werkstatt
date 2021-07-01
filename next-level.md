@@ -41,18 +41,20 @@ sections:
     - column: 
       title: Arbeitsweisen
       items:
-      - item: "Unsere Trainings basieren auf den vielfältigen Werkzeugen evolutionärer sozialer Kunst. Dazu gehören die des Possibility Managements, des Presencing Instituts und der Dialogischen Intelligenz. Erfahrenen Raumhaltenden gestalten mit den Teilnehmenden ein kokreatives Lernfeld, wofür sie ihre handlungsorientierten sozialen Techniken sowie ihre persönlichen und sozialkommunikativen Fähigkeiten einbringen.
-      Der Fokus der Trainings zielt darauf, Inhalte für die Teilnehmenden erfahrbar und handhabbar zu machen. Entsprechend: 75% dynamischen Übungen und 25% Hintergrund-Kontext. Feedback und Coaching durch Teilnehmende wie Raumhalter sind elementare Bestandteile der Trainings. Wir arbeiten einzeln, paarweise, in Kleingruppen und mit der ganzen Gruppe. Die vielseitigen persönlichen Erfahrungen der Teilnehmenden werden zu einer soliden Basis um neu entdecktes für eine nachhaltige Transformation zu nutzen. Hierzu dienen auch eine Vielzahl von fortführenden Angeboten. (siehe Angebote und Kalender)"
+      - item: |-
+          Unsere Trainings basieren auf den vielfältigen Werkzeugen evolutionärer sozialer Kunst. Dazu gehören die des Possibility Managements, des Presencing Instituts und der Dialogischen Intelligenz. Erfahrenen Raumhaltenden gestalten mit den Teilnehmenden ein kokreatives Lernfeld, wofür sie ihre handlungsorientierten sozialen Techniken sowie ihre persönlichen und sozialkommunikativen Fähigkeiten einbringen.
+            
+          Der Fokus der Trainings zielt darauf, Inhalte für die Teilnehmenden erfahrbar und handhabbar zu machen. Entsprechend: 75% dynamischen Übungen und 25% Hintergrund-Kontext. Feedback und Coaching durch Teilnehmende wie Raumhalter sind elementare Bestandteile der Trainings. Wir arbeiten einzeln, paarweise, in Kleingruppen und mit der ganzen Gruppe. Die vielseitigen persönlichen Erfahrungen der Teilnehmenden werden zu einer soliden Basis um neu entdecktes für eine nachhaltige Transformation zu nutzen. Hierzu dienen auch eine Vielzahl von fortführenden Angeboten. (siehe Angebote und Kalender) 
     - column: 
       title: Logistik
       items:
-      - item: '
-        + Trainingsdauer: 3-4 Tage 
-        + Termin und Zeit: Siehe Kalender bzw. je nach Nachfrage 
-        + Kosten: 650 € -950 € nach Selbsteinschätzung für Einzelpersonen, für Coaches, Berater und  Unternehmensleitungen 950 € -1500 €; Geringverdiener können einen Antrag auf ergänzende alternative Möglichkeiten stellen. Zuzüglich Kosten für Vollverpflegung und Übernachtung 
-        + Ort: Seminarort wie dem Zürnshof, Hassendorf oder bei Ihnen 
-        + Trainer: Prof. Dr. Stefan Ackermann, Dr. Marietta Schürholz, Dr. Andreas Beutler'
-
+      - item: |-
+          Trainingsdauer: 3-4 Tage
+          Termin und Zeit: Siehe Kalender bzw. je nach Nachfrage
+          Kosten: 650 € -950 € nach Selbsteinschätzung für Einzelpersonen, für Coaches, Berater und  
+          Unternehmensleitungen 950 € -1500 €; Geringverdiener können einen Antrag auf ergänzende alternative Möglichkeiten stellen. Zuzüglich Kosten für Vollverpflegung und Übernachtung
+          Ort: Seminarort wie dem Zürnshof, Hassendorf oder bei Ihnen
+          Trainer: Prof. Dr. Stefan Ackermann, Dr. Marietta Schürholz, Dr. Andreas Beutler
   - template: form
     form:
         title: Treten Sie hier mit uns in den Kontakt und wir besprechen gemeinsam Ihr Next Level 

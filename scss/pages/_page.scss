@@ -31,7 +31,7 @@ header.page {
     &.next-level {
         color: $white;
         + main {
-            color: $next-level;
+            color: darken($next-level-pink,10%);
             background-color: $next-level-background;
             input, textarea {
                 background-color: $next-level;
