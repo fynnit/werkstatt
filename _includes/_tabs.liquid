@@ -9,9 +9,9 @@
         <p class="tab-content {{column.title | slug}} {% if column.items.size > 1 %} multiple{%endif%} {% if forloop.first %}active{% endif %}">
             {% for item in column.items %}
                 {% if column.items.size > 1 %}
-                    <span>{{item.item | markdownify}}</span>
+                    <span>{{item.item | eleventyComputed}}</span>
                 {% else %}
-                    {{item.item | markdownify}}
+                    {{item.item | eleventyComputed}}
                 {% endif%}
             {% endfor %}
         </p>

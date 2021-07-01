@@ -1,4 +1,9 @@
 
 .text-block {
     padding: 130px 32px;
+    .copytext {
+        text-align: justify;
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }

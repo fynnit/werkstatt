@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("dateformat", (dateIn) => {
       return moment(dateIn).tz('CET').format('DD.MMMM');
     });
-    eleventyConfig.addFilter("markdownify", (str) => {
+    eleventyConfig.addFilter("eleventyComputed", (str) => {
       if (str) {
         return markdownItRenderer.renderInline(str);
       } 
@@ -31,6 +31,12 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("tlc", (val) => {
       if(val) {
       return val.toLowerCase();}
+    });
+
+    eleventyConfig.addFilter("fw", (val) => {
+      if(val) {
+        return val.substr(0,val.indexOf(' '));
+      }
     });
     
     // eleventyConfig.addCollection("newsrev", function(collectionApi) {

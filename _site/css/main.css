@@ -46,7 +46,9 @@ p:empty {
   src: url(/assets/fonts/hdv_brandon_text_bold.otf);
   font-weight: 600;
 }
-h1, h2, .bold {
+h1,
+h2,
+.bold {
   font-weight: 600;
 }
 
@@ -58,31 +60,42 @@ h1, h2, .bold {
   color: inherit;
 }
 
-h1, h2 {
+h1,
+h2,
+.large-type {
   font-size: 4rem;
+  font-weight: 600;
 }
 @media (min-width: 777px) {
-  h1, h2 {
+  h1,
+h2,
+.large-type {
     font-size: 6rem;
   }
 }
 
-h3, h4 {
+h3,
+h4 {
   font-size: 40px;
   text-align: center;
   margin-bottom: 32px;
 }
 
-h5, h6 {
+h5,
+h6 {
   font-weight: bold;
 }
 
-h5, h6, p {
+h5,
+h6,
+p {
   font-size: 23px;
 }
 
 a {
   text-decoration: none;
+}
+a.link {
   display: inline-block;
   border-bottom: 1px solid;
 }
@@ -155,9 +168,9 @@ nav {
   height: 100vh;
   width: 100vw;
   padding: 150px 32px 32px;
-  -webkit-backdrop-filter: blur(10px) saturate(150%);
-  backdrop-filter: blur(10px) saturate(150%);
-  background-color: rgba(187, 187, 187, 0.2);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  backdrop-filter: blur(20px) saturate(150%);
+  background-color: rgba(77, 77, 77, 0.65);
 }
 
 .mainpages {
@@ -165,8 +178,12 @@ nav {
   flex-flow: column;
   color: #ffffff;
 }
-.mainpages a {
+.mainpages a:not(.large-type) {
   text-decoration: none;
+  font-size: 23px;
+}
+.mainpages a:not(.large-type).active {
+  font-weight: 600;
 }
 
 header {
@@ -279,6 +296,8 @@ header .copyright {
 }
 
 .member-description {
+  max-width: 800px;
+  margin: 0 auto;
   display: none;
 }
 .member-description p {
@@ -469,6 +488,11 @@ header.page + main {
 .text-block {
   padding: 130px 32px;
 }
+.text-block .copytext {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 .form-section {
   padding: 130px 32px 32px;
@@ -561,10 +585,12 @@ label.hidden {
 .tabs {
   display: flex;
   gap: 32px;
+  gap: 64px;
 }
 
 .tab {
   font-size: 40px;
+  cursor: pointer;
 }
 .tab.active {
   font-weight: 600;

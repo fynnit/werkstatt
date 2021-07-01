@@ -11,7 +11,7 @@ layout: base.liquid
 
     {% include _iwant.liquid %}
 
-    <span class="copyright">{{header.copyright | markdownify}}</span>
+    <span class="copyright">{{header.copyright | eleventyComputed}}</span>
 
 </header>
 
@@ -25,7 +25,7 @@ layout: base.liquid
             {%if item.icon.url %}
                 <img class="teaser-icon" src="{{item.icon.url}}" alt="{{item.icon.name}}">
             {% endif %}
-            <a href="/{{item.link.url}}">{{item.link.text}}</a>
+            <a href="/{{item.link.url}}" class="link">{{item.link.text}}</a>
         </div>
     {% endfor %}
 </section>

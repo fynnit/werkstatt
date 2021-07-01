@@ -3,10 +3,13 @@
     margin: 0 auto;
 }
 .tabs {
-    display: flex; gap:32px
+    display: flex; 
+    gap:32px;
+    gap:64px;
 }
 .tab {
     font-size: 40px;
+    cursor: pointer;
     &.active  {
         font-weight: 600;
     }

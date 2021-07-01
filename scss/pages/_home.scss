@@ -133,6 +133,8 @@ header {
 }
 
 .member-description {
+    max-width: 800px;
+    margin: 0 auto;
     p {
         text-align: left;
         white-space: break-spaces;

@@ -4,6 +4,7 @@
     src: url(/assets/fonts/hdv_brandon_text_regular.otf);
     font-weight: 400;
 }
+
 @font-face {
     font-family: 'brandon';
     font-display: swap;
@@ -11,11 +12,17 @@
     font-weight: 600;
 }
 
-$font-family: 'brandon','Helvetica Neue', Arial, sans-serif;
+$font-family: 'brandon',
+'Helvetica Neue',
+Arial,
+sans-serif;
 
-h1, h2, .bold {
+h1,
+h2,
+.bold {
     font-weight: 600;
 }
+
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -24,39 +31,55 @@ h1, h2, .bold {
     color: inherit;
 }
 
-h1, h2 {
+h1,
+h2,
+.large-type  {
     font-size: 4rem;
+    font-weight: 600;
     @media (min-width: 777px) {
         font-size: 6rem;
     }
 }
 
-h3, h4 {
+h3,
+h4 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 32px;
 }
-h5, h6 {
+
+h5,
+h6 {
     font-weight: bold;
 }
 
-h5, h6, p {
+h5,
+h6,
+p {
     font-size: 23px;
 }
+
 a {
     text-decoration: none;
-    display: inline-block;
-    border-bottom: 1px solid;
+
+    &.link {
+        display: inline-block;
+        border-bottom: 1px solid;
+    }
 }
+
 .page-subtitle {
     font-size: 23px;
 }
+
 strong {
     font-weight: 600;
 }
+
 p {
     line-height: 1.52;
 }
+
 ::placeholder {
     color: $dark;
 }
