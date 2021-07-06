@@ -78,3 +78,17 @@ header.page {
         padding-top: 50px;
     }
 }
+
+main {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }   
+    @media (min-width: 1024px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }   
+}
