@@ -3,6 +3,8 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 100;
+    height: 64px;
+
     // mix-blend-mode: exclusion;
 }
 .button-wrapper {
@@ -25,7 +27,7 @@ nav {
         + .nav-container {
             opacity: 1;
             transform: translate(0);
-            height: auto;
+            height: 100vh;
             // rein
             transition: opacity 300ms, transform 0ms 0ms, height 0ms 0ms;
         }

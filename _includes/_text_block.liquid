@@ -1,4 +1,6 @@
 <section class="text-block">
-    <h3 class="{text_block.headline || block.headline ? '': 'dry'}">{{text_block.headline}}{{block.headline}}</h3>
-    <p class="copytext">{{text_block.copytext}}{{block.copytext}}</p>
+{% if text_block.headline or block.headline %} 
+    <h3 class="headline">{{text_block.headline or block.headline}}</h3>
+{% endif %} 
+    <p class="copytext">{{text_block.copytext or block.copytext | mdfy }}</p>
 </section>

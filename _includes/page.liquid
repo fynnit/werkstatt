@@ -1,7 +1,6 @@
 ---
 
 layout: base.liquid
-
 ---
 
 <header class="page {{title | slug }}" style="background-image: url({{header.image}});">
@@ -18,10 +17,16 @@ layout: base.liquid
         {% case template %}
             {% when 'quote' %}
                 {% include _quote.liquid, title=block.title text=block.text %}
+            
             {% when 'text_image_block' %}
                 {% include _text_image_block.liquid image=block.image text=block.text %}
+            
+            {% when 'text' %}
+                {% include _text_block.liquid copytext=block.copytext %}
+
             {% when 'tabs' %}
                 {% include _tabs.liquid image=block.image text=block.text %}
+            
             {% when 'form' %}
                 {% include _form.liquid title=block.tab items=block%}
         {% endcase %}
