@@ -4,8 +4,8 @@ layout: base.liquid
 ---
 
 <header class="page {{title | slug }}" style="background-image: url({{header.image}});">
-    <h1>{{title}}</h1>
-    {% if subtitle %}<span>{{subtitle}}</span>{% endif %}
+    <h1 class="page-title">{{title}}</h1>
+    {% if subtitle %}<span class="page-subtitle">{{subtitle}}</span>{% endif %}
     {% if header.copyright %}<span class="copyright">{{header.copyright}}</span>{% endif %}
 
 </header>
@@ -16,21 +16,24 @@ layout: base.liquid
         {% assign template = block.template %}
         {% case template %}
             {% when 'quote' %}
-                {% include _quote.liquid, title=block.title text=block.text %}
+                {% include _quote.liquid %}
             
             {% when 'text_image_block' %}
-                {% include _text_image_block.liquid image=block.image text=block.text %}
+                {% include _text_image_block.liquid %}
             
-            {% when 'text' %}
-                {% include _text_block.liquid copytext=block.copytext %}
+            {% when 'text_block' %}
+                {% include _text_block.liquid %}
 
             {% when 'tabs' %}
-                {% include _tabs.liquid image=block.image text=block.text %}
+                {% include _tabs.liquid %}
+
+            {% when 'image' %}
+                {% include _single_image.liquid %}
             
             {% when 'form' %}
-                {% include _form.liquid title=block.tab items=block%}
+                {% include _form.liquid %}
+
         {% endcase %}
     {% endfor %}
-
 
 </main>

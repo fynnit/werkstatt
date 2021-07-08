@@ -58,13 +58,13 @@ header.page {
 
         }
     }
-    &.projekte {
-        color: $projekte;
+    &.projekte-workshops {
+        color: $projekte-workshops;
         + main {
-            color: $projekte;
-            background-color: $projekte-background;
+            color: $projekte-workshops;
+            background-color: $projekte-workshops-background;
             input, textarea {
-                background-color: $projekte;
+                background-color: $projekte-workshops;
                 color: $white;
             }
             ::placeholder {
@@ -91,4 +91,11 @@ main {
         padding-left: 32px;
         padding-right: 32px;
     }   
+}
+.single-image {
+    text-align: center;
+}
+.text-block + .single-image,
+.single-image + .text-block {
+    margin-top: -50px;
 }

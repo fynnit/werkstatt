@@ -72,7 +72,7 @@ teaser:
     name: ''
   link:
     text: Mehr erfahren
-    url: projekte
+    url: projekte-workshops
 team:
   title: Die Begleiter:innen & Mitmacher:innen
   members:
@@ -93,7 +93,7 @@ team:
     image:
       url: "/uploads/martin.jpg"
       name: Martin Lehnert
-    description: |-
+    description: |- 
       **Martin Lehnert** 
       Facilitator im Kraftfeld sozialer Plastik Rechtsanwalt, Mediator, Entwicklungsbegleiter, Dialog-Facilitator, Geschäftsführer und Vorstand in NPOs 
       
