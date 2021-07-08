@@ -7,6 +7,26 @@ sections:
 - type: document
   path: index.md
   label: Home
+- type: document
+  path: forschungsraum.md
+  label: Forschungsraum
+  match: "**/*"
+- type: document
+  path: next-level.md
+  label: Next Level
+  match: "**/*"
+- type: document
+  path: freisinn.md
+  label: Freisinn
+  match: "**/*"
+- type: document
+  path: coaching.md
+  label: Coaching
+  match: "**/*"
+- type: document
+  path: projekte-workshops.md
+  label: Projekte Workshops
+  match: "**/*"
 upload_dir: uploads
 public_path: _site/uploads
 front_matter_path: ''
