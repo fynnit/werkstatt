@@ -15,6 +15,10 @@ header {
     }
 }
 
+.header-content {
+    max-width: 1032px;
+    margin: 0 auto;
+}
 
 .teasers {
     display: flex;
@@ -98,7 +102,7 @@ header {
 .members {
     display: flex;
     justify-content: space-around;
-    max-width: 940px;
+    max-width: 800px;
     margin: 0 auto 32px;
     gap: 16px;
 
@@ -113,7 +117,8 @@ header {
         img {
             max-width: 100%;
             filter: brightness(100%) contrast(100%);
-            transition: filter 300ms;;
+            transition: filter 300ms;
+            ;
 
         }
 
@@ -133,8 +138,9 @@ header {
 }
 
 .member-description {
-    max-width: 940px;
+    max-width: 800px;
     margin: 0 auto;
+
     p {
         text-align: left;
         white-space: break-spaces;

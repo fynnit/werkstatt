@@ -53,14 +53,5 @@ sections:
         <br>Unternehmensleitungen 950 € -1500 €; Geringverdiener können einen Antrag auf ergänzende alternative Möglichkeiten stellen. Zuzüglich Kosten für Vollverpflegung und Übernachtung
         <br>Ort: Seminarort wie dem Zürnshof, Hassendorf oder bei Ihnen  
         <br>Trainer: Prof. Dr. Stefan Ackermann, Dr. Marietta Schürholz, Dr. Andreas Beutler"
-  - template: form
-    form:
-        title: Treten Sie hier mit uns in den Kontakt und wir besprechen gemeinsam Ihr Next Level 
-        id: next-level
-        placeholder:
-            name: Ihr Name
-            email: Ihre E-Mail Addresse für unsere Antwort
-            textarea: Was Ihnen auf dem Herzen liegt
-            send: los!
-
+  
 ---

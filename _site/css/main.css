@@ -76,7 +76,7 @@ h2,
 
 h3,
 h4 {
-  font-size: 40px;
+  font-size: 32px;
   text-align: center;
   margin-bottom: 32px;
 }
@@ -89,8 +89,9 @@ h6 {
 h5,
 h6,
 p,
+div,
 li {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 a {
@@ -117,6 +118,14 @@ p {
   color: #1e2422;
 }
 
+li {
+  list-style-image: url(/assets/icons/bullet-icon.svg);
+  list-style-position: inside;
+}
+li::marker {
+  padding-right: 8px;
+}
+
 nav {
   width: 100%;
   position: fixed;
@@ -139,6 +148,7 @@ nav {
 }
 .button-wrapper.active .button {
   transform-origin: center;
+  background-color: #fff;
 }
 .button-wrapper.active .button-top {
   transform: rotate(-45deg) translate(0, 1px);
@@ -156,7 +166,7 @@ nav {
 .button {
   width: 32px;
   height: 2px;
-  background-color: #fff;
+  background-color: #000;
   display: block;
   border-radius: 50px;
   transition: all 300ms;
@@ -217,6 +227,11 @@ header {
 header .copyright {
   display: inline-block;
   margin-top: 32px;
+}
+
+.header-content {
+  max-width: 1032px;
+  margin: 0 auto;
 }
 
 .teasers {
@@ -288,7 +303,7 @@ header .copyright {
 .members {
   display: flex;
   justify-content: space-around;
-  max-width: 940px;
+  max-width: 800px;
   margin: 0 auto 32px;
   gap: 16px;
 }
@@ -313,7 +328,7 @@ header .copyright {
 }
 
 .member-description {
-  max-width: 940px;
+  max-width: 800px;
   margin: 0 auto;
   display: none;
 }
@@ -334,12 +349,16 @@ header.page {
   align-items: center;
   justify-content: center;
   padding: 32px;
+  color: #1e2422;
 }
 header.page .copyright {
   position: absolute;
   bottom: 16px;
   right: 16px;
   opacity: 0.5;
+}
+header.page + main {
+  color: #1e2422;
 }
 header.page.forschungsraum {
   color: #022659;
@@ -384,7 +403,10 @@ header.page.freisinn + main ::placeholder {
   color: white;
 }
 header.page.projekte-workshops {
-  color: #1e2422;
+  color: white;
+}
+header.page.projekte-workshops h1 {
+  max-width: 50%;
 }
 header.page.projekte-workshops + main {
   color: #1e2422;
@@ -395,6 +417,23 @@ header.page.projekte-workshops + main input, header.page.projekte-workshops + ma
   color: #ffffff;
 }
 header.page.projekte-workshops + main ::placeholder {
+  color: white;
+}
+header.page + main {
+  padding-top: 50px;
+}
+header.page.coaching {
+  color: #e5b900;
+}
+header.page.coaching + main {
+  color: #1e2422;
+  background-color: #fff5ca;
+}
+header.page.coaching + main input, header.page.coaching + main textarea {
+  background-color: #e5b900;
+  color: #ffffff;
+}
+header.page.coaching + main ::placeholder {
   color: white;
 }
 header.page + main {
@@ -420,6 +459,7 @@ main {
 
 .single-image {
   text-align: center;
+  padding: 48px 0;
 }
 
 .text-block + .single-image,
@@ -529,12 +569,19 @@ main {
 }
 
 .text-block {
-  padding: 130px 32px;
+  padding: 50px 0px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .text-block .copytext {
   text-align: justify;
-  max-width: 940px;
+  max-width: 800px;
   margin: 0 auto;
+}
+.text-block .centered {
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .form-section {
@@ -601,7 +648,7 @@ label.hidden {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 940px;
+  max-width: 800px;
   margin: 0 auto 80px;
   gap: 50px;
 }
@@ -617,12 +664,12 @@ label.hidden {
   margin-bottom: 70px;
 }
 .section-quote .quote {
-  font-size: 40px;
-  max-width: 940px;
+  font-size: 32px;
+  max-width: 800px;
 }
 
 .section-tabs {
-  max-width: 940px;
+  max-width: 800px;
   margin: 0 auto;
 }
 

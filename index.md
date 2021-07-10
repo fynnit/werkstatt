@@ -81,12 +81,12 @@ team:
       url: "/uploads/marietta.jpg"
       name: Dr. Marietta Johanna Schürholz
     description: |-
-      **Dr. Marietta Johanna Schürholz** 
+      <strong>Dr. Marietta Johanna Schürholz</strong> 
       In Prozessen auf Antworten kommen, schöpferisch erforschen, dabei erleben wie Verbundenheit trägt, Heilung und Transformation passieren. Bewusst und künstlerisch leben, Verantwortung nehmen, lieben - darum geht es mir.
       
       Mich interessiert die Berührbarkeit von Menschen und ihr Zugang zu einer transzendenten Dimension: Studium der Kunstgeschichte, Promotion bei Michael Bockemühl, langjährige kuratorische Praxis, Pilgerreisen in Asien, journalistisches Schreiben als Erkenntnisprozess, Kunstprojekte, die Essen als Kommunion erfahrbar machen, Forschung und filmische Veröffentlichung zu rituellen Räumen Heute überwiegend: Journalistin, Trainerin und Coach für persönliche und kollektive Entwicklung. 
       
-      **Andreas über Marietta**
+      <strong>Andreas über Marietta</strong>
       Marietta ist Freude und Verbindung, lädt zu Miteinander und zum Dasein mit allem ein, was ist. Sie liebt Klarheit und Humor, Ehrlichkeit und Scheitern können. Dabei hinterfragt
       sie kritisch, sucht weiter, weil sie weiß, dass Ausweichen sinnlos ist.
   - name: Martin
@@ -94,38 +94,38 @@ team:
       url: "/uploads/martin.jpg"
       name: Martin Lehnert
     description: |- 
-      **Martin Lehnert** 
+      <strong>Martin Lehnert</strong> 
       Facilitator im Kraftfeld sozialer Plastik Rechtsanwalt, Mediator, Entwicklungsbegleiter, Dialog-Facilitator, Geschäftsführer und Vorstand in NPOs 
       
       Mein Interesse an authentischen Begegnungen und dem dabei wirksamen Kraftfeld in der Beziehung führte mich in Führungs- und Beratungsaufgaben. Räume zu öffnen und eine Vertrauensatmosphäre zu halten, ist mir wichtig, damit Zukunfts-Perspektiven gemeinsam freigelegt, Wege aufgespürt und sie handhabbar ausgestaltet werden. 
       Ich habe Freude daran, Spielräume auszuloten für inspirierende praktische Schritte und diese in wirtschaftlich und rechtlich fundierte Pfade zu lenken. Erfahrungen und Erkenntnisse sammelte ich in großen Kornzernen ebenso wie in kleinen Initiativen, in Fortbildungen und als Seminarleiter. Zu meinen Kompetenzen gehören Facilitator im Dialog nach David Bohm, Theorie U Praxis, Konflikt- und Projektmanagementtechniken,
       Qualitäts- und Organisationsentwicklung sowie spirituelle Wege, Karmaarbeit und kultur-ko-kreative Gestaltung der Sozialen Plastik im Bewusstsein für die Rhythmen des agilen Miteinanders. 
       
-      **Stefan über Martin**
+      <strong>Stefan über Martin</strong>
       Bei Martins geht mir das Herz auf. Mit wertschätzendem Interesse, Humor und Selbstreflektion schafft er Vertrauen. Er hat große vielfältige Erfahrung in der Begleitung von Organisationen. Sein Sinn für soziale Prozesse und seine methodische Sicherheit bahnen produktive ko-kreative Wege.
   - name: Stefan
     image:
       url: "/uploads/stefan.jpg"
       name: Prof. Dr. Stefan Ackermann
     description: |-
-      **Prof. Dr. Stefan Ackermann** 
+      <strong>Prof. Dr. Stefan Ackermann</strong> 
       Aus der Begegnung das Wesen des Raumes erspüren und erlebbar werden lassen; die Spielwelten der Systeme erforschen und gestalten, damit sie Verantwortung generieren und komplexitätsangemessen Menschen einladen, inspirieren und ermutigen, das System selbst mit zu transformieren.
       
       Mich interessieren die unbekannten Räume, die aus der Zukunft kommen und die Initiationsmarker, die uns unser Leben geschenkt haben. Seit meiner Promotion über organisches Denken interessieren mich offene, lebendige und künstlerische Prozesse. Die Frage der Anerkennung und der Zugehörigkeit in Freiheit insbesondere im Prüf(ungs)Wesen bewegen mich in Projekten der Qualitätssicherung und Entwicklung, Organisationsgestaltung, Zertifizierung, bewusstem Fühlen und (Selbst-)Führung.
       
-      **Martin über Stefan**
+      <strong>Martin über Stefan</strong>
       Stefan bringt die Freude des Entdeckers und Philosophen in die Werkstatt. Komplexe  Situationen geht er lösungsorientiert an, bringt Wärme und helle Prinzipien in den Raum, die Mut machen neue Wege zu gehen.
   - name: Andreas
     image:
       url: "/uploads/andreas.jpg"
       name: Dr. Andreas Beutler
     description: |-
-      **Dr. Andreas Beutler**
+      <strong>Dr. Andreas Beutler</strong>
       Humansynergetiker Physiker in einem mittelständischen Unternehmen Trainer für Gefühlsarbeit und Possibility-Management Neue ungewöhnliche Wege zu gehen und Herausforderungen, für die es keine Standardlösungen gibt, ziehen mich besonders an. Dem Kontakt mit anderen und auch mit mir selbst gilt meiner besonderen Aufmerksamkeit. Ich fühle mich beschenkt, wenn Menschen sich wirklich begegnen.
       
       Nach der Promotion in Schweden Gruppen- und Projektleiter im Unternehmenskontext. Weltweites Netzwerken und Betreuung von Projekten in verschiedenen kulturellen Hintergründen. Changemanagement, Leitung von Workshops und Mitarbeiterentwicklung. In den letzten Jahren kamen hinzu die Betreuung von Gruppenseminaren wie Possibility-Management-Teams, Gefühlsseminare und Wutworkshops, Einzel- und Paarcoaching.
       
-      **Marietta über Andreas** 
+      <strong>Marietta über Andreas</strong> 
       Andreas ist ein Mann der stillen Tiefe. Seine sanfte Behutsamkeit gepaart mit klarer Unbestechlichkeit machen ihn zu einem kostbaren Wegbegleiter zu Selbstverantwortung und Selbstwahrnehmung. Seiner Genauigkeit gewürzt mit einer Prise feinem Humor ist es zu verdanken, dass sich „Schattenabsichten“ in Schätze verwandeln können.
 form:
   title: Kontakt
@@ -137,4 +137,3 @@ form:
     send: los!
 
 ---
-**hhh**

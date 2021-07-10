@@ -19,24 +19,15 @@ sections:
     image: /assets/icons/forschungsraum-2.svg
     text:  |- 
       Wiederkehrende Themen könnten sein: 
-      - Rollen in Organisationen 
-      - Verantwortung, Agilität
-      - nötige strukturelle Veränderungen und geeignete Wege dafür
-      - Führen & Gefühle 
-      - unbewusste Schattenabsichten und deren Klärung
-      - dialogische Bearbeitung von Zielkonflikten
-      - kreative Strategiefindung im Kraftfeld der Gestaltungsfragen.
+      <ul><li>Rollen in Organisationen </li>
+      <li>Verantwortung, Agilität</li>
+      <li>nötige strukturelle Veränderungen und geeignete Wege dafür</li>
+      <li>Führen & Gefühle </li>
+      <li>unbewusste Schattenabsichten und deren Klärung</li>
+      <li>dialogische Bearbeitung von Zielkonflikten</li>
+      <li>kreative Strategiefindung im Kraftfeld der Gestaltungsfragen.</li></ul>
   - template: text_image_block
     image: /assets/icons/forschungsraum-3.svg
     text: 'Mit Blick auf Ihre jeweiligen Alltagssituationen gewinnen Sie neue Perspektiven und erleben ein tragfähiges Team als kontinuiertlichen Begleiter. Bereichert und inspieriert begegnen Sie Ihrem beruflichen Kontext mit der Lust auf Wachstum und Entwicklung.'
-  - template: form
-    form:
-        title: Treten Sie hier mit uns in den Kontakt und wir eröffen gemeinsam einen Forschungsraum 
-        id: forschungsraum
-        placeholder:
-            name: Ihr Name
-            email: Ihre E-Mail Addresse für unsere Antwort
-            textarea: Was Ihnen auf dem Herzen liegt
-            send: los!
-
+  
 ---
