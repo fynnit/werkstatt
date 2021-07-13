@@ -4,6 +4,7 @@ title: Projekte Workshops
 layout: page.liquid
 permalink: "/projekte-workshops/"
 tags: page
+date: 2021-05-01
 
 header: 
     image: /assets/projekte-bg.jpg

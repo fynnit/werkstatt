@@ -4,6 +4,7 @@ subtitle: 'Die Sinne freisetzen, meine Wahrnehmung erweitern, erleben, was sich 
 layout: page.liquid
 permalink: /freisinn/
 tags: page
+date: 2021-04-01
 
 header: 
     image: /assets/freisinn/freisinn-bg.jpg

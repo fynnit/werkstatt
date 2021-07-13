@@ -5,6 +5,7 @@ gemeinsamen Arbeit und ist gleichzeitig ein Basis-Tool."
 layout: page.liquid
 permalink: "/next-level/"
 tags: page
+date: 2021-03-01
 
 header: 
     image: /assets/next-level-bg.jpg

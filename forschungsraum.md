@@ -5,6 +5,7 @@ subtitle: Im Forschungsraum stehen Fragen und reale Situationen unserer Teilnehm
 layout: page.liquid
 permalink: "/forschungsraum/"
 tags: page
+date: 2021-02-01
 
 header: 
     image: /assets/forschungsraum-bg.jpg

@@ -3,6 +3,7 @@ title: Coaching
 layout: page.liquid
 permalink: "/coaching/"
 tags: page
+date: 2021-06-01
 
 header: 
     image: /assets/coaching-bg.jpg
