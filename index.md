@@ -3,6 +3,7 @@ title: Werkstatt für Verantwortung und Führung
 layout: home.liquid
 permalink: "/"
 tags: page
+date: 2021-01-01
 
 header:
   title: Werkstatt für Verantwortung und Führung
@@ -73,6 +74,14 @@ teaser:
   link:
     text: Mehr erfahren
     url: projekte-workshops
+- headline: Kalender
+  description: All unsere kommenden Termine
+  icon:
+    url: ''
+    name: ''
+  link:
+    text: Mehr erfahren
+    url: kalender
 team:
   title: Die Begleiter:innen & Mitmacher:innen
   members:
