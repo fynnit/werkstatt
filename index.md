@@ -13,7 +13,7 @@ i_want:
   wants:
   - title: Verantwortung übernehmen
   - title: Meine Schatten integrieren
-  - title: neue Wege gehen
+  - title: Neue Wege gehen
   - title: Meine Schatten transformieren
   - title: Bewusst führen
   - title: Führungswerkzeuge nutzen
@@ -74,6 +74,14 @@ teaser:
   link:
     text: Mehr erfahren
     url: projekte
+- headline: Kalender
+  description: Unserer Termine
+  icon:
+    url: ''
+    name: ''
+  link:
+    text: Mehr erfahren
+    url: kalender
 team:
   title: Die Begleiter:innen & Mitmacher:innen
   members:
