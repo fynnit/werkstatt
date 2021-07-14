@@ -11,22 +11,14 @@ header:
 i_want:
   title: Ich will
   wants:
-  - title: Verantwortung übernehmen und neue Wege gehen
-    bool: false
-  - title: Meine Schatten integrieren & transformieren
-    bool: false
   - title: Verantwortung übernehmen
-    bool: ''
-  - title: ''
-    bool: ''
+  - title: Meine Schatten integrieren
+  - title: neue Wege gehen
+  - title: Meine Schatten transformieren
   - title: Bewusst führen
-    bool: false
   - title: Führungswerkzeuge nutzen
-    bool: false
   - title: Ko-kreieren
-    bool: false
   - title: Wertvolles realisieren
-    bool: false
 text_block:
   headline: Willkommen in der Werkstatt
   copytext: 'Die Werkstatt dient der gemeinsamen Entwicklung von Verantwortung und

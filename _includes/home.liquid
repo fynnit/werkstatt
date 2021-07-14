@@ -9,13 +9,15 @@ layout: base.liquid
         <h5 class="page-subtitle">{{header.subtitle}}</h5>
     </div>
 
-    {% include _iwant.liquid %}
 
     <span class="copyright">{{header.copyright | mdfy }}</span>
 
 </header>
 
+
 {% include _text_block.liquid %}
+
+{% include _iwant.liquid %}
 
 <section class="teasers">
     {% for item in teaser %}
