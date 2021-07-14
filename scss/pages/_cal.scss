@@ -1,0 +1,34 @@
+.calendar {
+
+    .grid {
+        grid: auto auto auto auto auto auto;
+        gap: 16px;
+
+    }
+
+    .item {
+        padding: 16px;
+        display: flex;
+        flex-flow: column;
+        &.forschungsraum {
+            color: $forschungsraum;
+            background-color: $forschungsraum-background;
+        }
+        &.next-level {
+            color: darken($next-level-pink,10%);
+            background-color: $next-level-background;
+        }
+        &.freisinn {
+            color: $freisinn;
+            background-color: $freisinn-background;
+        }
+        &.projekte-workshops {
+            color: $projekte-workshops;
+            background-color: $projekte-workshops-background;
+        }
+        &.coaching {
+            color: $coaching;
+            background-color: $coaching-background;
+        }
+    }
+}

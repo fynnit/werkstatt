@@ -696,4 +696,34 @@ label.hidden {
   display: block;
 }
 
+.calendar .grid {
+  grid: auto auto auto auto auto auto;
+  gap: 16px;
+}
+.calendar .item {
+  padding: 16px;
+  display: flex;
+  flex-flow: column;
+}
+.calendar .item.forschungsraum {
+  color: #022659;
+  background-color: #e8eff8;
+}
+.calendar .item.next-level {
+  color: #7b192c;
+  background-color: #ffecec;
+}
+.calendar .item.freisinn {
+  color: #217cb0;
+  background-color: #fffaf1;
+}
+.calendar .item.projekte-workshops {
+  color: #1e2422;
+  background-color: #ffe8ce;
+}
+.calendar .item.coaching {
+  color: #e5b900;
+  background-color: #fff5ca;
+}
+
 /*# sourceMappingURL=main.css.map */
