@@ -1,14 +1,25 @@
-.calendar {
-
+.kalender {
+    header {
+        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        h1 {
+            text-align: center;
+            text-shadow: none;
+            color: $dark;
+        }
+    }
+    main {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
     .grid {
-        grid: auto auto auto auto auto auto;
+        grid-template-columns: repeat(5, 1fr);
         gap: 16px;
 
     }
 
     .item {
         padding: 16px;
-        display: flex;
+        display: inline-flex;
         flex-flow: column;
         &.forschungsraum {
             color: $forschungsraum;
@@ -29,6 +40,16 @@
         &.coaching {
             color: $coaching;
             background-color: $coaching-background;
+        }
+        .more {
+            display: none;
+        }
+        &.active .more {
+            display: block;
+        }
+
+        .title {
+            font-weight: 600;
         }
     }
 }

@@ -700,34 +700,55 @@ label.hidden {
   display: block;
 }
 
-.calendar .grid {
-  grid: auto auto auto auto auto auto;
+.kalender header {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.kalender header h1 {
+  text-align: center;
+  text-shadow: none;
+  color: #1e2422;
+}
+.kalender main {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.kalender .grid {
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
 }
-.calendar .item {
+.kalender .item {
   padding: 16px;
-  display: flex;
+  display: inline-flex;
   flex-flow: column;
 }
-.calendar .item.forschungsraum {
+.kalender .item.forschungsraum {
   color: #022659;
   background-color: #e8eff8;
 }
-.calendar .item.next-level {
+.kalender .item.next-level {
   color: #7b192c;
   background-color: #ffecec;
 }
-.calendar .item.freisinn {
+.kalender .item.freisinn {
   color: #217cb0;
   background-color: #fffaf1;
 }
-.calendar .item.projekte-workshops {
+.kalender .item.projekte-workshops {
   color: #1e2422;
   background-color: #ffe8ce;
 }
-.calendar .item.coaching {
+.kalender .item.coaching {
   color: #e5b900;
   background-color: #fff5ca;
+}
+.kalender .item .more {
+  display: none;
+}
+.kalender .item.active .more {
+  display: block;
+}
+.kalender .item .title {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

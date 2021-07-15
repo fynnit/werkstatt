@@ -1,6 +1,6 @@
 ---
 tags: calendar
-title: ETB Wilstedt Juli 2
+title: ETB Wilstedt Juli 21
 start_date: 2021-07-15
 end_date: 2021-07-19
 location: Vorwerkerstr. 12, 27412 Wilsted 

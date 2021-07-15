@@ -15,8 +15,7 @@ layout: base.liquid
                 <span class="title">{{ post.data.title }}</span>
                 <span class="description">{{ post.data.description }}</span>
                 <span class="trainer">{{ post.data.trainer }}</span>
-                <span class="start_date">{{ post.data.start_date }}</span>
-                <span class="end_date">{{ post.data.end_date }}</span>
+                <span class="dates"><span class="start_date">{{ post.data.start_date | dateformat }}</span> - <span class="end_date">{{ post.data.end_date | dateformat }}</span></span>
                     <div class="more">
                     <span class="location">{{ post.data.location }}</span>
                     <span class="time">{{ post.data.time }}</span>
