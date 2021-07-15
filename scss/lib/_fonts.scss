@@ -49,7 +49,9 @@ h4 {
 }
 
 h5,
-h6 {
+h6,
+strong,
+.big {
     font-weight: bold;
 }
 
@@ -70,7 +72,8 @@ a {
     }
 }
 
-.page-subtitle {
+.page-subtitle,
+.big {
     font-size: 23px;
 }
 

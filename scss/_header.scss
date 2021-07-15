@@ -1,3 +1,45 @@
-header .page-subtitle {
-    max-width: 667px;
+header:not(.home) {
+    text-align: center;
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    color: $dark;
+    background-size: cover;
+    background-position: center;
+
+    .page-subtitle {
+        max-width: 667px;
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        opacity: 0.5;
+    }
+
+    &.forschungsraum {
+        color: $forschungsraum;
+        background-color: $forschungsraum-background;
+    }
+    &.next-level {
+        color: darken($next-level-pink,10%);
+        background-color: $next-level-background;
+    }
+    &.freisinn {
+        color: $freisinn;
+        background-color: $freisinn-background;
+    }
+    &.projekte-workshops {
+        color: $projekte-workshops;
+        background-color: $projekte-workshops-background;
+    }
+    &.coaching {
+        color: $coaching;
+        background-color: $coaching-background;
+    }
 }

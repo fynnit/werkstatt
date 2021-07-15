@@ -1,6 +1,14 @@
 .kalender {
     header {
         background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        padding: 80px 32px;
+        background-position: center 10%;
+        background-size: cover;
+
+        @media (min-width: 777px) {
+            padding: 80px 32px;
+        }
+
         h1 {
             text-align: center;
             text-shadow: none;
@@ -12,14 +20,18 @@
         padding-bottom: 32px;
     }
     .grid {
+        display: grid;
         grid-template-columns: repeat(5, 1fr);
-        gap: 16px;
+        column-gap: 16px;
+        row-gap: 16px;
 
     }
 
     .item {
+        border: 1px solid $dark;
         padding: 16px;
         display: inline-flex;
+        gap: 4px;
         flex-flow: column;
         &.forschungsraum {
             color: $forschungsraum;
@@ -52,4 +64,12 @@
             font-weight: 600;
         }
     }
+}
+.calendar-post .form-section{
+    padding-top: 32px;
+}
+.post-description {
+    padding: 32px 0;
+    text-align: center;
+
 }

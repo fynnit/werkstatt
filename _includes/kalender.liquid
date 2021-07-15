@@ -2,7 +2,10 @@
 layout: base.liquid
 ---
 
-<header>
+<header style="
+        {% if header.image %} background-image: url({{header.image}}); {% endif %}
+        {% if header.color  %} background-color: {{header.color}};{% endif %}
+        ">
     <h1 class="page-title">{{title}}</h1>
     {% if subtitle %}<span class="page-subtitle">{{subtitle}}</span>{% endif %}
     {% if header.copyright %}<span class="copyright">{{header.copyright}}</span>{% endif %}
@@ -11,17 +14,23 @@ layout: base.liquid
 <main class="calendar">
     <div class="grid">
         {%- for post in collections.calendar -%}
-            <div class="item {{post.data.category}}">
-                <span class="title">{{ post.data.title }}</span>
-                <span class="description">{{ post.data.description }}</span>
+        <a class="item {{post.data.category}}" href="{{post.url}}">
+            <span class="title">{{ post.data.title }}</span>
+            {% if post.data.trainer %}
                 <span class="trainer">{{ post.data.trainer }}</span>
-                <span class="dates"><span class="start_date">{{ post.data.start_date | dateformat }}</span> - <span class="end_date">{{ post.data.end_date | dateformat }}</span></span>
-                    <div class="more">
-                    <span class="location">{{ post.data.location }}</span>
-                    <span class="time">{{ post.data.time }}</span>
-                    <span class="price">{{ post.data.price }}</span>        
-                </div>
+            {% endif %}
+            {% if post.data.description %}
+                <span class="description">{{ post.data.description }}</span>
+            {% endif %}
+            <span class="location">{{ post.data.location_ort }}</span>
+            
+            <span class="dates"><span class="start_date">{{ post.data.start_date | dateformat }}</span> - <span
+                    class="end_date">{{ post.data.end_date | dateformat }}</span></span>
+            <div class="more">
+                <span class="time">{{ post.data.time }}</span>
+                <span class="price">{{ post.data.price }}</span>
             </div>
+        </a>
         {%- endfor -%}
     </div>
 </main>

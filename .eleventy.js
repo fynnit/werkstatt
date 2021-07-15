@@ -31,7 +31,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addFilter('dateformat', (dateIn) => {
-      return moment(dateIn).tz('CET').format('DD.MMMM');
+      return moment(dateIn).tz('CET').format('DD. MMM');
     });
 
     // render as markdown

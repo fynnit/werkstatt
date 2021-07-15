@@ -1,0 +1,55 @@
+---
+layout: base.liquid
+form:
+  title: Kontakt
+  id: 
+  placeholder:
+    name: Ihr Name
+    email: Ihre E-Mail Addresse für unsere Antwort
+    textarea: Wollen wir loslegen?
+    send: los!
+---
+
+<header class="{{category}}">
+
+    <h1 class="title">{{ title }}</h1>
+    <span class="page-subtitle">
+        <span>{{ location_ort }}</span>
+        <div class="dates">
+            <span class="start_date">{{ start_date | dateformat }}</span> - <span
+                class="end_date">{{ end_date | dateformat }}</span>
+        </div>
+    </span>
+</header>
+
+<main class="calendar-post">
+<section class="post-description">
+    {% if description %}
+    <div class="description big">{{ description }}</div>
+    {% endif %}
+
+    {% if trainer %}
+    <div class="trainer">Mit: {{ trainer }}</div>
+    {% endif %}
+
+
+    <div class="time">Start um: {{ time }}</div>
+    <div class="price">Kosten: {{ price }}</div>
+    
+</section>
+    <section class="form-section">
+    <h3>{{form.title | mdfy }}</h3>
+    <form name="contact {{title}} {{start-date | dateformat }}" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <div class="part-one">
+            <input type="text" name="name" id="name" placeholder="{{form.placeholder.name }}">
+            <input type="email" name="email" id="email" placeholder="{{form.placeholder.email }}">
+        </div>
+            <div class="part-two">
+            <textarea name="message" id="message" placeholder="{{form.placeholder.textarea }}"></textarea>
+            <label class="hidden"> Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            <input type="submit" class="submit" value="{{form.placeholder.send }}">
+        </div>
+    </form>
+
+</section>
+</main>
