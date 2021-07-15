@@ -24,7 +24,7 @@ layout: base.liquid
             {% endif %}
             <span class="location">{{ post.data.location_ort }}</span>
             
-            <span class="dates"><span class="start_date">{{ post.data.start_date | dateformat }}</span> - <span
+            <span class="dates"><span class="date">{{ post.data.date | dateformat }}</span> - <span
                     class="end_date">{{ post.data.end_date | dateformat }}</span></span>
             <div class="more">
                 <span class="time">{{ post.data.time }}</span>
