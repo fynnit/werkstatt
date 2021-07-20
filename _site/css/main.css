@@ -330,6 +330,10 @@ main.home {
   color: #1e2422;
   background-color: #ffe8ce;
 }
+.teaser.kalender {
+  color: #1e2422;
+  background-color: #ffe8ce;
+}
 .teaser .headline {
   padding-bottom: 12px;
 }

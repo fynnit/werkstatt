@@ -73,7 +73,7 @@ teaser:
     name: ''
   link:
     text: Mehr erfahren
-    url: projekte
+    url: projekte-workshops
 - headline: Kalender
   description: Unserer Termine
   icon:

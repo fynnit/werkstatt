@@ -81,7 +81,11 @@ main.home {
         color: $projekte-workshops;
         background-color: $projekte-workshops-background;
     }
-
+    &.kalender {
+        color: $projekte-workshops;
+        background-color: $projekte-workshops-background;
+        
+    }
     .headline {
         padding-bottom: 12px;
     }

@@ -24,7 +24,7 @@ layout: base.liquid
         <div class="teaser {{item.link.url}}">
             <h5 class="headline">{{item.headline}}</h5>
             <p class="description">{{item.description}}</p>
-            {%if item.icon.url %}
+            {%if item.icon.url != '' %}
                 <img class="teaser-icon" src="{{item.icon.url}}" alt="{{item.icon.name}}">
             {% endif %}
             <a href="/{{item.link.url}}" class="link">{{item.link.text}}</a>
