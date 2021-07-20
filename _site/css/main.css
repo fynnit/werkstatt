@@ -356,7 +356,7 @@ main.home .text-block .copytext {
 }
 .teaser.kalender {
   color: #1e2422;
-  background-color: #ffe8ce;
+  background-color: #a1a7f7;
   align-self: auto;
   flex: 1 1 auto;
 }
@@ -387,6 +387,7 @@ main.home .text-block .copytext {
 .members .member {
   cursor: pointer;
   max-width: 25%;
+  transition: transform 400ms;
 }
 .members .member h5 {
   font-weight: 500;
@@ -395,6 +396,10 @@ main.home .text-block .copytext {
   max-width: 100%;
   filter: brightness(100%) contrast(100%);
   transition: filter 300ms;
+}
+.members .member.active {
+  transform: translate(0, -10px);
+  transition: transform 300ms;
 }
 .members .member.active img {
   filter: brightness(110%) contrast(105%);
