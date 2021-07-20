@@ -25,6 +25,7 @@
 
     h2 {
         text-align: center;
+        color: $forschungsraum;
     }
 }  
 .wants {
@@ -38,10 +39,16 @@
         &:nth-child(3) {
             // justify-self: start;
             transform: translate(-40%);
+            &:hover {
+            transform: scale(1.02) translate(-40%);
+            transition: transform 300ms;}
         }
         &:nth-child(4) {
             // justify-self: end;
             transform: translate(40%);
+            &:hover {
+            transform: scale(1.02) translate(40%);
+            transition: transform 300ms;}
         }
     }
     &:last-child .want-item {
@@ -54,10 +61,16 @@
         &:nth-child(1) {
             // justify-self: start;
             transform: translate(-40%);
+            &:hover {
+            transform: scale(1.02) translate(-40%);
+            transition: transform 300ms;}
         }
         &:nth-child(2) {
             // justify-self: end;
             transform: translate(40%);
+            &:hover {
+            transform: scale(1.02) translate(40%);
+            transition: transform 300ms;}
         }
     }
 }

@@ -289,6 +289,9 @@ header.home .copyright {
 main.home {
   background-color: #fffdfa;
 }
+main.home .text-block .copytext {
+  line-height: 1.7;
+}
 
 .teasers {
   display: flex;
@@ -306,6 +309,18 @@ main.home {
   flex-grow: 0;
   align-self: flex-start;
   position: relative;
+}
+.teaser:nth-child(1) {
+  border-top-left-radius: 32px;
+}
+.teaser:nth-child(2) {
+  border-top-right-radius: 32px;
+}
+.teaser:nth-child(5) {
+  border-bottom-left-radius: 32px;
+}
+.teaser:last-child {
+  border-bottom-right-radius: 32px;
 }
 .teaser.forschungsraum {
   color: #022659;
@@ -342,6 +357,8 @@ main.home {
 .teaser.kalender {
   color: #1e2422;
   background-color: #ffe8ce;
+  align-self: auto;
+  flex: 1 1 auto;
 }
 .teaser .headline {
   padding-bottom: 12px;
@@ -536,6 +553,7 @@ main {
 }
 .i-want h2 {
   text-align: center;
+  color: #022659;
 }
 
 .wants:first-child .want-item:nth-child(odd) {
@@ -547,8 +565,16 @@ main {
 .wants:first-child .want-item:nth-child(3) {
   transform: translate(-40%);
 }
+.wants:first-child .want-item:nth-child(3):hover {
+  transform: scale(1.02) translate(-40%);
+  transition: transform 300ms;
+}
 .wants:first-child .want-item:nth-child(4) {
   transform: translate(40%);
+}
+.wants:first-child .want-item:nth-child(4):hover {
+  transform: scale(1.02) translate(40%);
+  transition: transform 300ms;
 }
 .wants:last-child .want-item:nth-child(odd) {
   border-top-right-radius: 0;
@@ -559,8 +585,16 @@ main {
 .wants:last-child .want-item:nth-child(1) {
   transform: translate(-40%);
 }
+.wants:last-child .want-item:nth-child(1):hover {
+  transform: scale(1.02) translate(-40%);
+  transition: transform 300ms;
+}
 .wants:last-child .want-item:nth-child(2) {
   transform: translate(40%);
+}
+.wants:last-child .want-item:nth-child(2):hover {
+  transform: scale(1.02) translate(40%);
+  transition: transform 300ms;
 }
 
 .want-item {

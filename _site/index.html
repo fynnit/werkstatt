@@ -71,7 +71,7 @@
      
         <h3 class="headline">Willkommen in der Werkstatt</h3>
      
-    <p class="copytext">Die Werkstatt dient der gemeinsamen Entwicklung von Verantwortung und Führung auf der individuellen wie der beruflichen Ebene. Das wollen wir miteinander praktisch erforschen und lernen: Wie will ich Verantwortung übernehmen und tragen? Wie praktiziere ich Führung  (d. h. Selbst-, Team- und Organisationsführung)? Alle unsere Werkstatträume sind Lern- und Begegnungsräume, in denen aus dem konkreten »Material« einer Situation schöpferisch neue Möglichkeiten entwickelt werden. So erproben wir von Anfang an Lernen im Team, erleben uns im Spiegel anderer, erkunden kokreative Prozesse und gewinnen spielerisch Einsichten durch konkrete Beispiele.</p>
+    <p class="copytext">Die Werkstatt dient der gemeinsamen Entwicklung von Verantwortung und Führung auf der individuellen wie der beruflichen Ebene. Das wollen wir miteinander praktisch erforschen und lernen: Wie will ich Verantwortung übernehmen und tragen? Wie praktiziere ich Führung  (d. h. Selbst-, Team- und Organisationsführung)?  <br><br>Alle unsere Werkstatträume sind Lern- und Begegnungsräume, in denen aus dem konkreten »Material« einer Situation schöpferisch neue Möglichkeiten entwickelt werden. So erproben wir von Anfang an Lernen im Team, erleben uns im Spiegel anderer, erkunden kokreative Prozesse und gewinnen spielerisch Einsichten durch konkrete Beispiele.</p>
 </section>
 
 <div class="i-want">
@@ -132,7 +132,7 @@
             <h5 class="headline">Forschungsraum</h5>
             <p class="description">Themen und Methoden: Fokus finden, Absichten klären, experimentelle Arbeit mit realen Berufssituationen</p>
             
-                <img class="teaser-icon" src="/assets/icons/forschungsraum-icon.svg" alt="Fünf Pfeile zeigen auf einen Kreis">
+                <img class="teaser-icon" src="/assets/icons/forschungsraum-2.svg" alt="Fünf Pfeile zeigen auf einen Kreis">
             
             <a href="/forschungsraum" class="link">Raum öffnen</a>
         </div>
@@ -263,6 +263,13 @@ Nach der Promotion in Schweden Gruppen- und Projektleiter im Unternehmenskontext
         targ.classList.add('active');
         el.classList.add('active');
     }
+    function setRandomMember() {
+        const mems = document.querySelectorAll(`.member`);
+        const randomNumber =  Math.floor(Math.random() * mems.length);
+        const randomMember = mems[randomNumber];
+        toogleMember(randomMember);
+    }
+    setRandomMember();
 </script>
 
 </main>
