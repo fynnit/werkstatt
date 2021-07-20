@@ -31,4 +31,11 @@
         targ.classList.add('active');
         el.classList.add('active');
     }
+    function setRandomMember() {
+        const mems = document.querySelectorAll(`.member`);
+        const randomNumber =  Math.floor(Math.random() * mems.length);
+        const randomMember = mems[randomNumber];
+        toogleMember(randomMember);
+    }
+    setRandomMember();
 </script>

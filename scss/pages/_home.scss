@@ -28,6 +28,11 @@ header.home {
 }
 main.home {
     background-color: hsl(42, 100%, 99%);
+    .text-block {
+        .copytext {
+            line-height: 1.7;
+        }
+    }
 }
 .teasers {
     display: flex;
@@ -46,7 +51,18 @@ main.home {
     flex-grow: 0;
     align-self: flex-start;
     position: relative;
-
+    &:nth-child(1) {
+        border-top-left-radius: 32px;
+    }
+    &:nth-child(2) {
+        border-top-right-radius: 32px;
+    }
+    &:nth-child(5) {
+        border-bottom-left-radius: 32px;
+    }
+    &:last-child {
+        border-bottom-right-radius: 32px;
+    }
     &.forschungsraum {
         color: $forschungsraum;
         background-color: $forschungsraum-background;
@@ -90,6 +106,8 @@ main.home {
     &.kalender {
         color: $projekte-workshops;
         background-color: $projekte-workshops-background;
+        align-self: auto;
+        flex: 1 1 auto;
         
     }
     .headline {

@@ -21,21 +21,14 @@ i_want:
   - title: Bewusst führen
 text_block:
   headline: Willkommen in der Werkstatt
-  copytext: 'Die Werkstatt dient der gemeinsamen Entwicklung von Verantwortung und
-    Führung auf der individuellen wie der beruflichen Ebene. Das wollen wir miteinander
-    praktisch erforschen und lernen: Wie will ich Verantwortung übernehmen und tragen?
-    Wie praktiziere ich Führung  (d. h. Selbst-, Team- und Organisationsführung)?
-    Alle unsere Werkstatträume sind Lern- und Begegnungsräume, in denen aus dem konkreten
-    »Material« einer Situation schöpferisch neue Möglichkeiten entwickelt werden.
-    So erproben wir von Anfang an Lernen im Team, erleben uns im Spiegel anderer,
-    erkunden kokreative Prozesse und gewinnen spielerisch Einsichten durch konkrete
-    Beispiele.'
+  copytext: 'Die Werkstatt dient der gemeinsamen Entwicklung von Verantwortung und Führung auf der individuellen wie der beruflichen Ebene. Das wollen wir miteinander praktisch erforschen und lernen: Wie will ich Verantwortung übernehmen und tragen? Wie praktiziere ich Führung  (d. h. Selbst-, Team- und Organisationsführung)? 
+  <br><br>Alle unsere Werkstatträume sind Lern- und Begegnungsräume, in denen aus dem konkreten »Material« einer Situation schöpferisch neue Möglichkeiten entwickelt werden. So erproben wir von Anfang an Lernen im Team, erleben uns im Spiegel anderer, erkunden kokreative Prozesse und gewinnen spielerisch Einsichten durch konkrete Beispiele.'
 teaser:
 - headline: Forschungsraum
   description: 'Themen und Methoden: Fokus finden, Absichten klären, experimentelle
     Arbeit mit realen Berufssituationen'
   icon:
-    url: "/assets/icons/forschungsraum-icon.svg"
+    url: "/assets/icons/forschungsraum-2.svg"
     name: Fünf Pfeile zeigen auf einen Kreis
   link:
     text: Raum öffnen
