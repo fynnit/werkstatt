@@ -1,4 +1,3 @@
-
 // sick functions 
 
 /// Mixin to place items on a circle
@@ -9,69 +8,98 @@
 /// @param {Length} $item-size - Single item size
 @mixin on-circle($item-count, $circle-size, $item-size) {
   position: relative;
-  width:  $circle-size;
+  width: $circle-size;
   height: $circle-size;
   padding: 0;
-  border-radius: 50%; 
-  list-style: none;       
-  
-  > * {
+  border-radius: 50%;
+  list-style: none;
+
+  >* {
     display: block;
     position: absolute;
-    top:  50%; 
+    top: 50%;
     left: 50%;
-    width:  $item-size;
+    width: $item-size;
     height: $item-size;
     margin: -($item-size / 2);
-  
+
     $angle: (360 / $item-count);
     $rot: 0;
 
     @for $i from 1 through $item-count {
       &:nth-of-type(#{$i}) {
-        transform: 
-          rotate($rot * 1deg) 
-          translate($circle-size / 2) 
-          rotate($rot * -1deg);
+        transform:
+          rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
       }
 
-      $rot: $rot + $angle;
+      $rot: $rot+$angle;
     }
   }
 }
 
 
+@mixin hoverAnimation($del, $x, $name) {
+
+  @keyframes #{$name} {
+    0% {
+      transform: translate(#{$x}, 0);
+    }
+
+    25% {
+      // x -
+      transform: translate(#{$x}, 2px);
+    }
+    
+    50% {
+      transform: translate(#{$x}, 2px);
+    }
+    
+    75% {
+      // x +
+      transform: translate(#{$x}, 2px);
+    }
+
+    100% {
+      transform: translate(#{$x}, 0);
+    }
+  }
+  animation: #{$name} 2000ms $del ease-in-out  infinite;
+}
+
 @mixin container() {
   width: 100%;
   margin: 0 auto;
   padding: 0 $padding;
-  
+
   @include media-breakpoint-up(md) {
-    max-width: map-get($grid-sizes, md );
+    max-width: map-get($grid-sizes, md);
     padding: 0;
   }
+
   @include media-breakpoint-up(lg) {
-    max-width: map-get($grid-sizes, lg );
+    max-width: map-get($grid-sizes, lg);
   }
 }
 
 @mixin padding() {
   padding: 0 16px;
 
-    @include media-up(md) {
-        padding: 0 32px;
-    }
+  @include media-up(md) {
+    padding: 0 32px;
+  }
 
-    @include media-up(xl) {
-        padding: 0 48px;
-    }
+  @include media-up(xl) {
+    padding: 0 48px;
+  }
 }
 
 @mixin max-width() {
-  @each $breakpoint, $size in $grid-sizes {
-    @include media-breakpoint-up($breakpoint){
-        max-width: $size;
-        margin: 0 auto;
+
+  @each $breakpoint,
+  $size in $grid-sizes {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $size;
+      margin: 0 auto;
     }
   }
 }
@@ -89,9 +117,11 @@
     @media (min-width: $breakpoint-value) {
       @content;
     }
-  
-  // If the breakpoint doesn't exist in the map.
-  } @else {
+
+    // If the breakpoint doesn't exist in the map.
+  }
+
+  @else {
 
     // Log a warning.
     @warn 'Invalid breakpoint: #{$breakpoint}.';
@@ -111,9 +141,11 @@
     @media (max-width: ($breakpoint-value - 1)) {
       @content;
     }
-  
-  // If the breakpoint doesn't exist in the map.
-  } @else {
+
+    // If the breakpoint doesn't exist in the map.
+  }
+
+  @else {
 
     // Log a warning.
     @warn 'Invalid breakpoint: #{$breakpoint}.';
@@ -134,24 +166,24 @@
     @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
       @content;
     }
-  
-  // If one or both of the breakpoints don't exist.
-  } @else {
+
+    // If one or both of the breakpoints don't exist.
+  }
+
+  @else {
 
     // If lower breakpoint is invalid.
-    @if (map-has-key($breakpoints, $lower) == false) {
+    @if (map-has-key($breakpoints, $lower)==false) {
 
       // Log a warning.
       @warn 'Your lower breakpoint was invalid: #{$lower}.';
     }
 
     // If upper breakpoint is invalid.
-    @if (map-has-key($breakpoints, $upper) == false) {
+    @if (map-has-key($breakpoints, $upper)==false) {
 
       // Log a warning.
       @warn 'Your upper breakpoint was invalid: #{$upper}.';
     }
   }
 }
-
-

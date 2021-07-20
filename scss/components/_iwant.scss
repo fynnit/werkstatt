@@ -28,52 +28,6 @@
         color: $forschungsraum;
     }
 }  
-.wants {
-    &:first-child .want-item {
-        &:nth-child(odd) {
-            border-bottom-right-radius: 0;
-        }
-        &:nth-child(even) {
-            border-bottom-left-radius: 0;
-        }
-        &:nth-child(3) {
-            // justify-self: start;
-            transform: translate(-40%);
-            &:hover {
-            transform: scale(1.02) translate(-40%);
-            transition: transform 300ms;}
-        }
-        &:nth-child(4) {
-            // justify-self: end;
-            transform: translate(40%);
-            &:hover {
-            transform: scale(1.02) translate(40%);
-            transition: transform 300ms;}
-        }
-    }
-    &:last-child .want-item {
-        &:nth-child(odd) {
-            border-top-right-radius: 0;
-        }
-        &:nth-child(even) {
-            border-top-left-radius: 0;
-        }
-        &:nth-child(1) {
-            // justify-self: start;
-            transform: translate(-40%);
-            &:hover {
-            transform: scale(1.02) translate(-40%);
-            transition: transform 300ms;}
-        }
-        &:nth-child(2) {
-            // justify-self: end;
-            transform: translate(40%);
-            &:hover {
-            transform: scale(1.02) translate(40%);
-            transition: transform 300ms;}
-        }
-    }
-}
 
 .want-item {
     border: 1px solid #000;
@@ -92,73 +46,48 @@
     display: inline-flex;
     align-items: center;
     font-size: 23px;
-    cursor: pointer;
     align-self: flex-start;
     transition: transform 500ms;
 
-    &:hover {
-        transform: scale(1.02);
-        transition: transform 300ms;
-        // .box {
-        //     transition: background-color 300ms;
-        //     background-color: #ffd59d;
-        //     background-color: rgba(#2cd926,0.56);
-        // }
+}
+.wants {
+    &:first-child .want-item {
+        &:nth-child(1) {
+            border-bottom-right-radius: 0;
+            @include hoverAnimation(700ms, 0, regu);
+        }
+        &:nth-child(2) {
+            border-bottom-left-radius: 0;
+            @include hoverAnimation(900ms, 0, regu);
+        }
+        &:nth-child(3) {
+            border-bottom-right-radius: 0;
+            @include hoverAnimation(300ms, -40%, viermi);
+        }
+        &:nth-child(4) {
+            border-bottom-left-radius: 0;
+            @include hoverAnimation(1700ms, 40%, vierplu);
+        }
     }
 
-    // &.active {
+    &:last-child .want-item {
+        &:nth-child(1) {
+            border-top-right-radius: 0;
+            @include hoverAnimation(100ms, -40%, viermi);
+        }
+        &:nth-child(2) {
+            border-top-left-radius: 0;
+            @include hoverAnimation(900ms, 40%, vierplu);
+        }
+        &:nth-child(3) {
+            border-top-right-radius: 0;
+            @include hoverAnimation(400ms, 0, regu);
+        }
+        &:nth-child(4) {
+            border-top-left-radius: 0;
+            @include hoverAnimation(770ms, 0, regu);
 
-    //     .box {
-    //         background-color: #ffd59d;
-    //         background-color: #FFF3E4;
-
-    //         svg {
-    //             display: block;
-    //         }
-    //     }
-    // }
-
-    // .box {
-    //     display: inline-block;
-    //     margin-right: 20px;
-    //     width: 26px;
-    //     height: 26px;
-    //     border-radius: 6px;
-    //     flex: 0 0 auto;
-    //     background-color: $grey;
-    //     transition: background-color 300ms;
-
-    //     svg {
-    //         margin: -3px 0 0 5px;
-    //         display: none;
-
-    //         path {
-    //             stroke-dashoffset: -1;
-    //             stroke-linejoin: round;
-    //             stroke-linecap: round;
-    //             animation: draw 300ms ease-in;
-    //             stroke: #0eaa3d;
-    //             stroke: #2BD926;
-
-    //         }
-
-    //         @keyframes draw {
-    //             0% {
-    //                 stroke-dasharray: 0 83;
-    //                 fill-opacity: 0;
-    //             }
-
-    //             90% {
-    //                 stroke-dasharray: 83 0;
-    //                 fill-opacity: 0;
-    //             }
-
-    //             100% {
-    //                 stroke-dasharray: 83 0;
-    //                 fill-opacity: 1;
-    //             }
-    //         }
-    //     }
-
-    // }
+        }
+    }
 }
+
