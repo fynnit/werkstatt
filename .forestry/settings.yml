@@ -31,7 +31,6 @@ sections:
 - type: document
   path: impressum.md
   label: Impressum
-  match: "**/*"
 upload_dir: uploads
 public_path: _site/uploads
 front_matter_path: ''
