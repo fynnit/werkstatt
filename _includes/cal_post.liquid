@@ -29,12 +29,12 @@ form:
     {% endif %}
 
     {% if trainer %}
-    <div class="trainer">Mit: {{ trainer }}</div>
+    <div class="trainer">mit: {{ trainer }}</div>
     {% endif %}
 
 
-    <div class="time">Start um: {{ date | starttime }}</div>
-    <div class="price">Kosten: {{ price }}</div>
+    <div class="time">start um: {{ date | starttime }}</div>
+    <div class="price">Kosten: {{ price }}{% if price == '' %} auf Anfrage {% endif %}</div>
     
 </section>
     <section class="form-section">

@@ -9,7 +9,7 @@ location_ort: Hamburg
 time: 5pm
 description: Seminar Grundkenntnisse und Moderation
 trainer: Martin
-price: 650€ - 950€
+price: 
 category: forschungsraum
 
 ---

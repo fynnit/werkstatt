@@ -9,6 +9,6 @@ location_ort: Hamburg
 time: 5pm
 description: Aufbauseminar „Qualitätsarbeit intensivieren“ 
 trainer: Martin
-price: 650€ - 950€
+price: 
 category: forschungsraum
 ---
