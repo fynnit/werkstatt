@@ -51,6 +51,11 @@ main.home {
     flex-grow: 0;
     align-self: flex-start;
     position: relative;
+    transition: transform 600ms;
+    &:hover {
+        transform: scale(1.02);
+        transition: transform 300ms;
+    }
     &:nth-child(1) {
         border-top-left-radius: 32px;
     }
