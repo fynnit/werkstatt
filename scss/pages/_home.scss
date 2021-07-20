@@ -1,6 +1,10 @@
 header.home {
     padding: 80px 32px;
-
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: flex-start;
     @media (min-width: 777px) {
         padding: 80px 32px;
     }
@@ -8,11 +12,13 @@ header.home {
     color: $white;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     background-size: cover;
-    background-position: center 70%;
-
+    background-position: center 60%;
+    position: relative;
     .copyright {
         display: inline-block;
         margin-top: 32px;
+        position: absolute;
+        bottom: 32px;right: 32px;
     }
 }
 

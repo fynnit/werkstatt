@@ -13,12 +13,12 @@ i_want:
   wants:
   - title: Verantwortung übernehmen
   - title: Meine Schatten integrieren
-  - title: Neue Wege gehen
   - title: Meine Schatten transformieren
-  - title: Bewusst führen
   - title: Führungswerkzeuge nutzen
-  - title: Ko-kreieren
   - title: Wertvolles realisieren
+  - title: Neue Wege gehen
+  - title: Ko-kreieren
+  - title: Bewusst führen
 text_block:
   headline: Willkommen in der Werkstatt
   copytext: 'Die Werkstatt dient der gemeinsamen Entwicklung von Verantwortung und
