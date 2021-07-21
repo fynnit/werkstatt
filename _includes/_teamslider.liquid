@@ -37,5 +37,12 @@
         const randomMember = mems[randomNumber];
         toogleMember(randomMember);
     }
+    function shuffleMembers() {
+        const mems = document.querySelectorAll(`.member`);
+        let order = [1,2,3,4];
+        order.sort(() => (Math.random() > .5) ? 1 : -1);
+        mems.forEach((i, index) => { i.classList.add(`order-${order[index]}`)});
+    }
     setRandomMember();
+    shuffleMembers();
 </script>

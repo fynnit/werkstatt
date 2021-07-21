@@ -394,6 +394,18 @@ main.home .text-block .copytext {
   max-width: 25%;
   transition: transform 400ms;
 }
+.members .member.order-1 {
+  order: 1;
+}
+.members .member.order-2 {
+  order: 2;
+}
+.members .member.order-3 {
+  order: 3;
+}
+.members .member.order-4 {
+  order: 4;
+}
 .members .member h5 {
   font-weight: 500;
 }
@@ -563,16 +575,15 @@ main {
 }
 .i-want h2 {
   text-align: center;
-  color: #022659;
+  color: #a5213b;
 }
 
 .want-item {
-  border: 1px solid #000;
   padding: 10px 20px;
   border-radius: 16px;
-  box-shadow: 0 2px 20px -12px rgba(30, 36, 34, 0.5);
-  background-color: #ffffff;
-  color: #1e2422;
+  box-shadow: 0 2px 20px -12px rgba(30, 36, 34, 0.85);
+  background-color: #a5213b;
+  color: #ffecec;
   max-width: 100%;
   display: inline-flex;
   align-items: center;
