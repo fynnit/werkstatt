@@ -13,6 +13,22 @@ p:empty {
   display: none;
 }
 
+.alt-theme {
+  color: #658DA6;
+  color: #8C6542;
+  color: #59321B;
+  color: #D9BFB0;
+  color: #731702;
+}
+
+.alt-theme2 {
+  color: #6C6532;
+  color: #76894F;
+  color: #6286A3;
+  color: #C05900;
+  color: #EBBD90;
+}
+
 :root {
   --dark: #1e2422;
   --next-level: #a20200;
