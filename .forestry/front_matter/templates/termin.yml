@@ -31,7 +31,7 @@ fields:
 - type: text
   name: category
   label: category
-  default: forschungsraum
+  default: next-level
   description: forschungsraum<br>next-level<br>freisinn<br>projekte-workshops<br>coaching
 pages:
 - termine/etb-wilstedt.md
