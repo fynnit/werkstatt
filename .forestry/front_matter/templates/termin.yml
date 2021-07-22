@@ -5,6 +5,7 @@ fields:
 - type: text
   name: tags
   label: tags
+  default: calendar
   hidden: true
 - type: text
   name: title

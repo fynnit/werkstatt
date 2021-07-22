@@ -1,13 +1,27 @@
 header.page {
     
     
-    + main {
-        color: $dark;
-        padding-bottom: 180px;
+}
+main.page {
+    color: $dark;
+    padding-bottom: 180px;
+    padding-top: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }   
+    @media (min-width: 1024px) {
+        padding-left: 32px;
+        padding-right: 32px;
     }
+
     &.forschungsraum {
         color: darken($forschungsraum, 20%);
-        + main {
+        + main, 
+        + footer {
             color: darken($forschungsraum, 20%);
             background-color: $forschungsraum-background;
             input, textarea {
@@ -22,7 +36,8 @@ header.page {
     }
     &.next-level {
         color: $white;
-        + main {
+        + main, 
+        + footer {
             color: darken($next-level-pink,10%);
             background-color: $next-level-background;
             input, textarea {
@@ -37,7 +52,8 @@ header.page {
     }
     &.freisinn {
         color: darken($freisinn, 10%);
-        + main {
+        + main, 
+        + footer {
             color: darken($freisinn, 10%);
             background-color: $freisinn-background;
             input, textarea {
@@ -54,7 +70,8 @@ header.page {
         color: white;
         h1 {max-width: 50%;}
 
-        + main {
+        + main, 
+        + footer {
             color: $projekte-workshops;
             background-color: $projekte-workshops-background;
             input, textarea {
@@ -67,15 +84,12 @@ header.page {
 
         }
     }
-
-    + main {
-        padding-top: 50px;
-    }
     &.coaching {
         color: darken($coaching,5%);
         min-height: 40vh;
 
-        + main {
+        + main, 
+        + footer {
             color: darken($coaching, 50%);
             background-color: $coaching-background;
             input, textarea {
@@ -88,25 +102,8 @@ header.page {
 
         }
     }
-
-    + main {
-        padding-top: 50px;
-    }
 }
 
-main {
-    padding-left: 16px;
-    padding-right: 16px;
-
-    @media (min-width: 768px) {
-        padding-left: 32px;
-        padding-right: 32px;
-    }   
-    @media (min-width: 1024px) {
-        padding-left: 32px;
-        padding-right: 32px;
-    }   
-}
 .single-image {
     text-align: center;
     padding: 48px 0;
