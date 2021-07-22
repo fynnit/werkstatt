@@ -1,8 +1,8 @@
+<div class="button-wrapper" onclick="toggleMenu()">
+    <span class="button button-top"></span>
+    <span class="button button-bottom"></span>
+</div>
 <nav>
-    <div class="button-wrapper" onclick="this.classList.toggle('active');">
-        <span class="button button-top"></span>
-        <span class="button button-bottom"></span>
-    </div>
 
     <div class="nav-container">
         <div class="mainpages">
@@ -20,3 +20,11 @@
         </div>
     </div>
 </nav>
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('nav');
+        const button = document.querySelector('.button-wrapper');
+        menu.classList.toggle('active');
+        button.classList.toggle('active');
+    }
+</script>

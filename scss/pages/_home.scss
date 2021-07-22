@@ -5,10 +5,23 @@ header.home {
     justify-content: center;
     flex-flow: column;
     align-items: flex-start;
+
+    position: relative;
+    &:after {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(#222,0.25);
+        z-index: 1;
+    }
     @media (min-width: 777px) {
         padding: 80px 32px;
     }
-
+    
     color: $white;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     background-size: cover;
@@ -19,15 +32,19 @@ header.home {
         margin-top: 32px;
         position: absolute;
         bottom: 32px;right: 32px;
+        z-index: 2;
     }
 }
 
 .header-content {
+    position: relative;
+    z-index: 2;
     max-width: 1032px;
     margin: 0 auto;
 }
 main.home {
-    background-color: hsl(42, 100%, 99%);
+    padding-bottom: 180px;
+    background-color: hsl(30, 80%, 98%);
     .text-block {
         .copytext {
             line-height: 1.7;

@@ -9,5 +9,7 @@
     &:nth-child(odd) {
         flex-flow: row-reverse;
     }
-
+    .image img {
+        max-width: 180px;
+    }
 }

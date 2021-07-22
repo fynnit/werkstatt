@@ -5,9 +5,9 @@ nav {
     z-index: 100;
     height: 64px;
 
-    // mix-blend-mode: exclusion;
 }
 .button-wrapper {
+    mix-blend-mode: exclusion;
     width: 32px;
     height: 32px;
     display: flex;
@@ -15,8 +15,8 @@ nav {
     justify-content: center;
     cursor: pointer;
     align-items: center;
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 20000000000;
     top: 16px;
     left: 16px;
     &.active {
@@ -27,14 +27,14 @@ nav {
         .button-top {transform: rotate(-45deg) translate(0,1px);}
         .button-bottom {transform: rotate(45deg) translate(0,-1px);}
 
-        + .nav-container {
-            opacity: 1;
-            transform: translate(0);
-            height: 100vh;
-            // rein
-            transition: opacity 300ms, transform 0ms 0ms, height 0ms 0ms;
-        }
     }
+}
+nav.active .nav-container {
+    opacity: 1;
+    transform: translate(0);
+    height: 100vh;
+    // rein
+    transition: opacity 300ms, transform 0ms 0ms, height 0ms 0ms;
 }
 
 
@@ -47,7 +47,7 @@ nav {
     }
     width: 32px;
     height: 2px;
-    background-color: #000;
+    background-color: #fff;
     display: block;
     border-radius: 50px;
     transition: all 300ms;

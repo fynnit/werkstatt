@@ -3,11 +3,12 @@ header.page {
     
     + main {
         color: $dark;
+        padding-bottom: 180px;
     }
     &.forschungsraum {
-        color: $forschungsraum;
+        color: darken($forschungsraum, 20%);
         + main {
-            color: $forschungsraum;
+            color: darken($forschungsraum, 20%);
             background-color: $forschungsraum-background;
             input, textarea {
                 background-color: $forschungsraum;
@@ -35,9 +36,9 @@ header.page {
         }
     }
     &.freisinn {
-        color: $freisinn;
+        color: darken($freisinn, 10%);
         + main {
-            color: $freisinn;
+            color: darken($freisinn, 10%);
             background-color: $freisinn-background;
             input, textarea {
                 background-color: $freisinn;
@@ -71,10 +72,11 @@ header.page {
         padding-top: 50px;
     }
     &.coaching {
-        color: $coaching;
+        color: darken($coaching,5%);
+        min-height: 40vh;
 
         + main {
-            color: $dark;
+            color: darken($coaching, 50%);
             background-color: $coaching-background;
             input, textarea {
                 background-color: $coaching;

@@ -28,7 +28,7 @@ teaser:
   description: 'Themen und Methoden: Fokus finden, Absichten klären, experimentelle
     Arbeit mit realen Berufssituationen'
   icon:
-    url: "/assets/icons/forschungsraum-2.svg"
+    url: "/assets/icons/forschungsraum-icon.svg"
     name: Fünf Pfeile zeigen auf einen Kreis
   link:
     text: Raum öffnen

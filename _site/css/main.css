@@ -26,25 +26,27 @@ p:empty {
   color: #76894F;
   color: #6286A3;
   color: #C05900;
+  color: #D26412;
+  color: #5F0700;
   color: #EBBD90;
 }
 
 :root {
   --dark: #1e2422;
-  --next-level: #a20200;
-  --forschungsraum: #022659;
-  --freisinn: #217cb0;
+  --next-level: #D26412;
+  --forschungsraum: #6286A3;
+  --freisinn: #76894F;
   --next-level-dark: #560707;
-  --coaching: #e5b900;
+  --coaching: #EBBD90;
   --coaching-text: #8d700f;
-  --projekte-workshops: #1e2422;
+  --projekte-workshops: #6C6532;
   --next-level-light: #e43d24;
-  --next-level-pink: #a5213b;
-  --forschungsraum-background: #e8eff8;
-  --next-level-background: #ffecec;
-  --freisinn-background: #fffaf1;
-  --projekte-workshops-background: #ffe8ce;
-  --coaching-background: #fff5ca;
+  --next-level-pink: #920b00;
+  --forschungsraum-background: #e9eef2;
+  --next-level-background: #fad9c1;
+  --freisinn-background: #dbe2cc;
+  --projekte-workshops-background: #d3cda1;
+  --coaching-background: #f7e4d1;
   --active: #ff8a4d;
   --white: #ffffff;
   --grey: #d8d8d8;
@@ -153,6 +155,7 @@ nav {
 }
 
 .button-wrapper {
+  mix-blend-mode: exclusion;
   width: 32px;
   height: 32px;
   display: flex;
@@ -160,8 +163,8 @@ nav {
   justify-content: center;
   cursor: pointer;
   align-items: center;
-  position: absolute;
-  z-index: 2;
+  position: fixed;
+  z-index: 20000000000;
   top: 16px;
   left: 16px;
 }
@@ -175,7 +178,8 @@ nav {
 .button-wrapper.active .button-bottom {
   transform: rotate(45deg) translate(0, -1px);
 }
-.button-wrapper.active + .nav-container {
+
+nav.active .nav-container {
   opacity: 1;
   transform: translate(0);
   height: 100vh;
@@ -185,7 +189,7 @@ nav {
 .button {
   width: 32px;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
   display: block;
   border-radius: 50px;
   transition: all 300ms;
@@ -251,24 +255,24 @@ header:not(.home) .copyright {
   opacity: 0.5;
 }
 header:not(.home).forschungsraum {
-  color: #022659;
-  background-color: #e8eff8;
+  color: #6286A3;
+  background-color: #e9eef2;
 }
 header:not(.home).next-level {
-  color: #7b192c;
-  background-color: #ffecec;
+  color: #5f0700;
+  background-color: #fad9c1;
 }
 header:not(.home).freisinn {
-  color: #217cb0;
-  background-color: #fffaf1;
+  color: #76894F;
+  background-color: #dbe2cc;
 }
 header:not(.home).projekte-workshops {
-  color: #1e2422;
-  background-color: #ffe8ce;
+  color: #6C6532;
+  background-color: #d3cda1;
 }
 header:not(.home).coaching {
-  color: #e5b900;
-  background-color: #fff5ca;
+  color: #EBBD90;
+  background-color: #f7e4d1;
 }
 
 header.home {
@@ -278,11 +282,23 @@ header.home {
   justify-content: center;
   flex-flow: column;
   align-items: flex-start;
+  position: relative;
   color: #ffffff;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position: center 60%;
   position: relative;
+}
+header.home:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, 0.25);
+  z-index: 1;
 }
 @media (min-width: 777px) {
   header.home {
@@ -295,15 +311,19 @@ header.home .copyright {
   position: absolute;
   bottom: 32px;
   right: 32px;
+  z-index: 2;
 }
 
 .header-content {
+  position: relative;
+  z-index: 2;
   max-width: 1032px;
   margin: 0 auto;
 }
 
 main.home {
-  background-color: #fffdfa;
+  padding-bottom: 180px;
+  background-color: #fefaf6;
 }
 main.home .text-block .copytext {
   line-height: 1.7;
@@ -344,39 +364,39 @@ main.home .text-block .copytext {
   border-bottom-right-radius: 32px;
 }
 .teaser.forschungsraum {
-  color: #022659;
-  background-color: #e8eff8;
+  color: #6286A3;
+  background-color: #e9eef2;
 }
 .teaser.forschungsraum .teaser-icon {
   height: 60px;
 }
 .teaser.next-level {
-  color: #a20200;
-  background-color: #ffecec;
+  color: #D26412;
+  background-color: #fad9c1;
 }
 .teaser.next-level .teaser-icon {
   height: 57px;
 }
 .teaser.freisinn {
-  color: #217cb0;
-  background-color: #fffaf1;
+  color: #76894F;
+  background-color: #dbe2cc;
 }
 .teaser.freisinn .teaser-icon {
   height: 46px;
 }
 .teaser.coaching {
   color: #8d700f;
-  background-color: #fff5ca;
+  background-color: #f7e4d1;
 }
 .teaser.coaching .teaser-icon {
   height: 60px;
 }
 .teaser.projekte-workshops {
-  color: #1e2422;
-  background-color: #ffe8ce;
+  color: #6C6532;
+  background-color: #d3cda1;
 }
 .teaser.kalender {
-  color: #1e2422;
+  color: #6C6532;
   background-color: #a1a7f7;
   align-self: auto;
   flex: 1 1 auto;
@@ -457,16 +477,17 @@ main.home .text-block .copytext {
 
 header.page + main {
   color: #1e2422;
+  padding-bottom: 180px;
 }
 header.page.forschungsraum {
-  color: #022659;
+  color: #3b5264;
 }
 header.page.forschungsraum + main {
-  color: #022659;
-  background-color: #e8eff8;
+  color: #3b5264;
+  background-color: #e9eef2;
 }
 header.page.forschungsraum + main input, header.page.forschungsraum + main textarea {
-  background-color: #022659;
+  background-color: #6286A3;
   color: #ffffff;
 }
 header.page.forschungsraum + main ::placeholder {
@@ -476,25 +497,25 @@ header.page.next-level {
   color: #ffffff;
 }
 header.page.next-level + main {
-  color: #7b192c;
-  background-color: #ffecec;
+  color: #5f0700;
+  background-color: #fad9c1;
 }
 header.page.next-level + main input, header.page.next-level + main textarea {
-  background-color: #a20200;
+  background-color: #D26412;
   color: #ffffff;
 }
 header.page.next-level + main ::placeholder {
   color: white;
 }
 header.page.freisinn {
-  color: #217cb0;
+  color: #5a693c;
 }
 header.page.freisinn + main {
-  color: #217cb0;
-  background-color: #fffaf1;
+  color: #5a693c;
+  background-color: #dbe2cc;
 }
 header.page.freisinn + main input, header.page.freisinn + main textarea {
-  background-color: #217cb0;
+  background-color: #76894F;
   color: #ffffff;
 }
 header.page.freisinn + main ::placeholder {
@@ -507,11 +528,11 @@ header.page.projekte-workshops h1 {
   max-width: 50%;
 }
 header.page.projekte-workshops + main {
-  color: #1e2422;
-  background-color: #ffe8ce;
+  color: #6C6532;
+  background-color: #d3cda1;
 }
 header.page.projekte-workshops + main input, header.page.projekte-workshops + main textarea {
-  background-color: #1e2422;
+  background-color: #6C6532;
   color: #ffffff;
 }
 header.page.projekte-workshops + main ::placeholder {
@@ -521,14 +542,15 @@ header.page + main {
   padding-top: 50px;
 }
 header.page.coaching {
-  color: #e5b900;
+  color: #e7b07a;
+  min-height: 40vh;
 }
 header.page.coaching + main {
-  color: #1e2422;
-  background-color: #fff5ca;
+  color: #693e13;
+  background-color: #f7e4d1;
 }
 header.page.coaching + main input, header.page.coaching + main textarea {
-  background-color: #e5b900;
+  background-color: #EBBD90;
   color: #ffffff;
 }
 header.page.coaching + main ::placeholder {
@@ -591,15 +613,15 @@ main {
 }
 .i-want h2 {
   text-align: center;
-  color: #a5213b;
+  color: #920b00;
 }
 
 .want-item {
   padding: 10px 20px;
   border-radius: 16px;
   box-shadow: 0 2px 20px -12px rgba(30, 36, 34, 0.85);
-  background-color: #a5213b;
-  color: #ffecec;
+  background-color: #920b00;
+  color: #fad9c1;
   max-width: 100%;
   display: inline-flex;
   align-items: center;
@@ -803,32 +825,32 @@ main {
 }
 header.forschungsraum + main input,
 header.forschungsraum + main textarea {
-  color: #022659;
-  background-color: #e8eff8;
+  color: #6286A3;
+  background-color: #e9eef2;
 }
 
 header.next-level + main input,
 header.next-level + main textarea {
-  color: #7b192c;
-  background-color: #ffecec;
+  color: #5f0700;
+  background-color: #fad9c1;
 }
 
 header.freisinn + main input,
 header.freisinn + main textarea {
-  color: #217cb0;
-  background-color: #fffaf1;
+  color: #76894F;
+  background-color: #dbe2cc;
 }
 
 header.projekte-workshops + main input,
 header.projekte-workshops + main textarea {
-  color: #1e2422;
-  background-color: #ffe8ce;
+  color: #6C6532;
+  background-color: #d3cda1;
 }
 
 header.coaching + main input,
 header.coaching + main textarea {
-  color: #e5b900;
-  background-color: #fff5ca;
+  color: #EBBD90;
+  background-color: #f7e4d1;
 }
 
 form {
@@ -897,6 +919,9 @@ label.hidden {
 }
 .text_image_block:nth-child(odd) {
   flex-flow: row-reverse;
+}
+.text_image_block .image img {
+  max-width: 180px;
 }
 
 .section-quote {
@@ -974,24 +999,24 @@ label.hidden {
   flex-flow: column;
 }
 .kalender .item.forschungsraum {
-  color: #022659;
-  background-color: #e8eff8;
+  color: #6286A3;
+  background-color: #e9eef2;
 }
 .kalender .item.next-level {
-  color: #7b192c;
-  background-color: #ffecec;
+  color: #5f0700;
+  background-color: #fad9c1;
 }
 .kalender .item.freisinn {
-  color: #217cb0;
-  background-color: #fffaf1;
+  color: #76894F;
+  background-color: #dbe2cc;
 }
 .kalender .item.projekte-workshops {
-  color: #1e2422;
-  background-color: #ffe8ce;
+  color: #6C6532;
+  background-color: #d3cda1;
 }
 .kalender .item.coaching {
-  color: #e5b900;
-  background-color: #fff5ca;
+  color: #EBBD90;
+  background-color: #f7e4d1;
 }
 .kalender .item .more {
   display: none;
