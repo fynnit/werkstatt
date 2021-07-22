@@ -18,3 +18,10 @@
 @import 'components/tabs';
 @import 'pages/cal';
 
+footer {
+    padding: 16px 32px;
+    display: flex;
+    a {
+        padding-left: 32px;
+    }
+}

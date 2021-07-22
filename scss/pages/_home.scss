@@ -126,8 +126,8 @@ main.home {
         background-color: $projekte-workshops-background;
     }
     &.kalender {
-        color: $projekte-workshops;
-        background-color: hsl(236, 84%, 80%);
+        color: lighten($dark, 20%);
+        background-color: hsl(236, 21%, 87%);
         align-self: auto;
         flex: 1 1 auto;
         

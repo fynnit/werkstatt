@@ -396,8 +396,8 @@ main.home .text-block .copytext {
   background-color: #d3cda1;
 }
 .teaser.kalender {
-  color: #6C6532;
-  background-color: #a1a7f7;
+  color: #4c5c57;
+  background-color: #d7d8e5;
   align-self: auto;
   flex: 1 1 auto;
 }
@@ -1035,6 +1035,14 @@ label.hidden {
 .post-description {
   padding: 32px 0;
   text-align: center;
+}
+
+footer {
+  padding: 16px 32px;
+  display: flex;
+}
+footer a {
+  padding-left: 32px;
 }
 
 /*# sourceMappingURL=main.css.map */
