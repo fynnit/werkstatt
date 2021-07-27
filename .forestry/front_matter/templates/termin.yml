@@ -8,6 +8,11 @@ fields:
   default: calendar
   hidden: true
 - type: text
+  name: layout
+  label: layout
+  default: cal_post.liquid
+  hidden: true
+- type: text
   name: title
   label: title
 - type: datetime

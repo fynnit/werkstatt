@@ -994,17 +994,21 @@ label.hidden {
   color: #1e2422;
 }
 .kalender main {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px;
+}
+.kalender .switch {
+  display: flex;
+  margin: 0 auto 32px;
+  justify-content: space-between;
+  max-width: 600px;
 }
 .kalender .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 16px;
   row-gap: 16px;
 }
 .kalender .item {
-  border: 1px solid #1e2422;
   padding: 16px;
   display: inline-flex;
   gap: 4px;

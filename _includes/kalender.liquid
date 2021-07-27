@@ -12,6 +12,13 @@ layout: base.liquid
 </header>
 
 <main class="calendar">
+
+    <div class="switch">
+        <div class="forschungsraum">forschungsraum</div>
+        <div class="next-level">next-level</div>
+        <div class="freisinn">freisinn</div>
+        <div class="coaching">coaching</div>
+    </div>
     <div class="grid">
         {%- for post in collections.calendar -%}
         <a class="item {{post.data.category}}" href="{{post.url}}">
