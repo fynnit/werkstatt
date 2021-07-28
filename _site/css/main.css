@@ -518,6 +518,22 @@ main.home .text-block .copytext {
   display: block;
 }
 
+header.page.forschungsraum {
+  color: #3b5264;
+}
+header.page.next-level {
+  color: #ffffff;
+}
+header.page.freisinn {
+  color: #5a693c;
+}
+header.page.projekte-workshops {
+  color: white;
+}
+header.page.coaching {
+  color: #ebbd90;
+}
+
 main.page {
   color: #1e2422;
   padding-bottom: 180px;
@@ -540,95 +556,75 @@ main.page {
 main.page.forschungsraum {
   color: #3b5264;
 }
-main.page.forschungsraum + main,
 main.page.forschungsraum + footer {
-  color: #3b5264;
+  color: inherit;
   background-color: #e9eef2;
 }
-main.page.forschungsraum + main input, main.page.forschungsraum + main textarea,
-main.page.forschungsraum + footer input,
-main.page.forschungsraum + footer textarea {
+main.page.forschungsraum input, main.page.forschungsraum textarea {
   background-color: #6286A3;
   color: #ffffff;
 }
-main.page.forschungsraum + main ::placeholder,
-main.page.forschungsraum + footer ::placeholder {
+main.page.forschungsraum ::placeholder {
   color: white;
 }
 main.page.next-level {
-  color: #ffffff;
-}
-main.page.next-level + main,
-main.page.next-level + footer {
   color: #5f0700;
+}
+main.page.next-level + footer {
+  color: inherit;
   background-color: #fad9c1;
 }
-main.page.next-level + main input, main.page.next-level + main textarea,
-main.page.next-level + footer input,
-main.page.next-level + footer textarea {
+main.page.next-level input, main.page.next-level textarea {
   background-color: #D26412;
   color: #ffffff;
 }
-main.page.next-level + main ::placeholder,
-main.page.next-level + footer ::placeholder {
+main.page.next-level ::placeholder {
   color: white;
 }
 main.page.freisinn {
   color: #5a693c;
 }
-main.page.freisinn + main,
 main.page.freisinn + footer {
-  color: #5a693c;
+  color: inherit;
   background-color: #dbe2cc;
 }
-main.page.freisinn + main input, main.page.freisinn + main textarea,
-main.page.freisinn + footer input,
-main.page.freisinn + footer textarea {
+main.page.freisinn input, main.page.freisinn textarea {
   background-color: #76894F;
   color: #ffffff;
 }
-main.page.freisinn + main ::placeholder,
-main.page.freisinn + footer ::placeholder {
+main.page.freisinn ::placeholder {
   color: white;
 }
 main.page.projekte-workshops {
-  color: white;
+  color: #1e2422;
 }
 main.page.projekte-workshops h1 {
   max-width: 50%;
 }
-main.page.projekte-workshops + main,
 main.page.projekte-workshops + footer {
-  color: #6C6532;
+  color: inherit;
   background-color: #d3cda1;
 }
-main.page.projekte-workshops + main input, main.page.projekte-workshops + main textarea,
-main.page.projekte-workshops + footer input,
-main.page.projekte-workshops + footer textarea {
+main.page.projekte-workshops input, main.page.projekte-workshops textarea {
   background-color: #6C6532;
   color: #ffffff;
 }
-main.page.projekte-workshops + main ::placeholder,
-main.page.projekte-workshops + footer ::placeholder {
+main.page.projekte-workshops ::placeholder {
   color: white;
 }
 main.page.coaching {
-  color: #e7b07a;
+  color: #bf7023;
   min-height: 40vh;
 }
-main.page.coaching + main,
 main.page.coaching + footer {
-  color: #693e13;
+  color: inherit;
   background-color: #f7e4d1;
 }
-main.page.coaching + main input, main.page.coaching + main textarea,
-main.page.coaching + footer input,
-main.page.coaching + footer textarea {
+main.page.coaching input, main.page.coaching textarea {
   background-color: #EBBD90;
   color: #ffffff;
 }
-main.page.coaching + main ::placeholder,
-main.page.coaching + footer ::placeholder {
+main.page.coaching ::placeholder {
   color: white;
 }
 
@@ -1022,14 +1018,23 @@ label.hidden {
 
 .tabs {
   display: flex;
-  gap: 32px;
-  gap: 64px;
+  gap: 24px;
   margin-bottom: 16px;
+}
+@media (min-width: 775px) {
+  .tabs {
+    gap: 64px;
+  }
 }
 
 .tab {
-  font-size: 40px;
+  font-size: 24px;
   cursor: pointer;
+}
+@media (min-width: 775px) {
+  .tab {
+    font-size: 40px;
+  }
 }
 .tab.active {
   font-weight: 600;

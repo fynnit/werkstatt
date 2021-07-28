@@ -1,5 +1,23 @@
 header.page {
-    
+    &.forschungsraum {
+        color: darken($forschungsraum, 20%);
+        
+    }
+    &.next-level {
+        color: $white;
+        
+    }
+    &.freisinn {
+        color: darken($freisinn, 10%);
+        
+    }
+    &.projekte-workshops {
+        color: white;
+        
+    }
+    &.coaching {
+        color: darken($coaching, 0%);
+    }
     
 }
 main.page {
@@ -20,87 +38,82 @@ main.page {
 
     &.forschungsraum {
         color: darken($forschungsraum, 20%);
-        + main, 
         + footer {
-            color: darken($forschungsraum, 20%);
-            background-color: $forschungsraum-background;
-            input, textarea {
-                background-color: $forschungsraum;
-                color: $white;
-            }
-            ::placeholder {
-                color: white;
-            }
+            color: inherit;
+            background-color: $forschungsraum-background;}
 
+        input, textarea {
+            background-color: $forschungsraum;
+            color: $white;
         }
+        ::placeholder {
+            color: white;
+        }
+
     }
     &.next-level {
-        color: $white;
-        + main, 
+        color: darken($next-level-pink,10%);
         + footer {
-            color: darken($next-level-pink,10%);
-            background-color: $next-level-background;
-            input, textarea {
-                background-color: $next-level;
-                color: $white;
-            }
-            ::placeholder {
-                color: white;
-            }
+            color: inherit;
+            background-color: $next-level-background;}
 
+        input, textarea {
+            background-color: $next-level;
+            color: $white;
         }
+        ::placeholder {
+            color: white;
+        }
+
     }
     &.freisinn {
         color: darken($freisinn, 10%);
-        + main, 
         + footer {
-            color: darken($freisinn, 10%);
-            background-color: $freisinn-background;
-            input, textarea {
-                background-color: $freisinn;
-                color: $white;
-            }
-            ::placeholder {
-                color: white;
-            }
+            color: inherit;
+            background-color: $freisinn-background;}
 
+        input, textarea {
+            background-color: $freisinn;
+            color: $white;
         }
+        ::placeholder {
+            color: white;
+        }
+
     }
     &.projekte-workshops {
-        color: white;
+        color: $dark;
         h1 {max-width: 50%;}
 
-        + main, 
         + footer {
-            color: $projekte-workshops;
-            background-color: $projekte-workshops-background;
-            input, textarea {
-                background-color: $projekte-workshops;
-                color: $white;
-            }
-            ::placeholder {
-                color: white;
-            }
+            color: inherit;
+            background-color: $projekte-workshops-background;}
 
+        input, textarea {
+            background-color: $projekte-workshops;
+            color: $white;
         }
+        ::placeholder {
+            color: white;
+        }
+
     }
     &.coaching {
-        color: darken($coaching,5%);
+        color: darken($coaching,30%);
         min-height: 40vh;
 
-        + main, 
         + footer {
-            color: darken($coaching, 50%);
-            background-color: $coaching-background;
-            input, textarea {
-                background-color: $coaching;
-                color: $white;
-            }
-            ::placeholder {
-                color: white;
-            }
+            color: inherit;
+            background-color: $coaching-background;}
 
+        input, textarea {
+            background-color: $coaching;
+            color: $white;
         }
+        ::placeholder {
+            color: white;
+        }
+
     }
 }
 

@@ -4,12 +4,17 @@
 }
 .tabs {
     display: flex; 
-    gap:32px;
-    gap:64px;
+    gap:24px;
+    @media (min-width: 775px) {
+        gap:64px;
+    }
     margin-bottom: 16px;
 }
 .tab {
-    font-size: 40px;
+    font-size: 24px;
+    @media (min-width: 775px) {
+        font-size: 40px;
+    }
     cursor: pointer;
     &.active  {
         font-weight: 600;
