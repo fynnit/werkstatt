@@ -44,6 +44,20 @@ header.home {
 }
 main.home {
     padding-bottom: 180px;
+    padding-bottom: 180px;
+    padding-top: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @media (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }   
+    @media (min-width: 1024px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
     background-color: hsl(30, 80%, 98%);
     .text-block {
         .copytext {
@@ -62,7 +76,10 @@ main.home {
 }
 
 .teaser {
-    max-width: calc(50% - 16px);
+    max-width: 100%;
+    @media (min-width: 775px) {
+        max-width: calc(50% - 16px);
+    }    
     padding: 32px;
     display: inline-block;
     flex-grow: 0;
@@ -73,17 +90,19 @@ main.home {
         transform: scale(1.02);
         transition: transform 300ms;
     }
-    &:nth-child(1) {
-        border-top-left-radius: 32px;
-    }
-    &:nth-child(2) {
-        border-top-right-radius: 32px;
-    }
-    &:nth-child(5) {
-        border-bottom-left-radius: 32px;
-    }
-    &:last-child {
-        border-bottom-right-radius: 32px;
+    @media (min-width: 775px) {
+        &:nth-child(1) {
+            border-top-left-radius: 32px;
+        }
+        &:nth-child(2) {
+            border-top-right-radius: 32px;
+        }
+        &:nth-child(5) {
+            border-bottom-left-radius: 32px;
+        }
+        &:last-child {
+            border-bottom-right-radius: 32px;
+        }
     }
     &.forschungsraum {
         color: $forschungsraum;
@@ -162,6 +181,7 @@ main.home {
     .member {
         cursor: pointer;
         max-width: 25%;
+        min-width: 25%;
         transition: transform 400ms;
 
         &.order {

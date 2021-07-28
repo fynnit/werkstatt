@@ -20,6 +20,7 @@ nav {
     top: 16px;
     left: 16px;
     &.active {
+        mix-blend-mode: normal;
         .button {
             transform-origin: center;
             background-color: #fff;

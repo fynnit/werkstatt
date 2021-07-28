@@ -52,42 +52,45 @@
 
 }
 .wants {
-    &:first-child .want-item {
-        &:nth-child(1) {
-            border-bottom-right-radius: 0;
-            @include hoverAnimation(700ms, 0, regu);
-        }
-        &:nth-child(2) {
-            border-bottom-left-radius: 0;
-            @include hoverAnimation(900ms, 0, regu);
-        }
-        &:nth-child(3) {
-            border-bottom-right-radius: 0;
-            @include hoverAnimation(300ms, -40%, viermi);
-        }
-        &:nth-child(4) {
-            border-bottom-left-radius: 0;
-            @include hoverAnimation(1700ms, 40%, vierplu);
-        }
-    }
+    @media (min-width: 775px) {
 
-    &:last-child .want-item {
-        &:nth-child(1) {
-            border-top-right-radius: 0;
-            @include hoverAnimation(100ms, -40%, viermi);
+        &:first-child .want-item {
+            &:nth-child(1) {
+                border-bottom-right-radius: 0;
+                @include hoverAnimation(700ms, 0, regu);
+            }
+            &:nth-child(2) {
+                border-bottom-left-radius: 0;
+                @include hoverAnimation(900ms, 0, regu);
+            }
+            &:nth-child(3) {
+                border-bottom-right-radius: 0;
+                @include hoverAnimation(300ms, -40%, viermi);
+            }
+            &:nth-child(4) {
+                border-bottom-left-radius: 0;
+                @include hoverAnimation(1700ms, 40%, vierplu);
+            }
         }
-        &:nth-child(2) {
-            border-top-left-radius: 0;
-            @include hoverAnimation(900ms, 40%, vierplu);
-        }
-        &:nth-child(3) {
-            border-top-right-radius: 0;
-            @include hoverAnimation(400ms, 0, regu);
-        }
-        &:nth-child(4) {
-            border-top-left-radius: 0;
-            @include hoverAnimation(770ms, 0, regu);
 
+        &:last-child .want-item {
+            &:nth-child(1) {
+                border-top-right-radius: 0;
+                @include hoverAnimation(100ms, -40%, viermi);
+            }
+            &:nth-child(2) {
+                border-top-left-radius: 0;
+                @include hoverAnimation(900ms, 40%, vierplu);
+            }
+            &:nth-child(3) {
+                border-top-right-radius: 0;
+                @include hoverAnimation(400ms, 0, regu);
+            }
+            &:nth-child(4) {
+                border-top-left-radius: 0;
+                @include hoverAnimation(770ms, 0, regu);
+
+            }
         }
     }
 }
