@@ -14,10 +14,10 @@ layout: base.liquid
 <main class="calendar">
 
     <div class="switch">
-        <div class="forschungsraum">forschungsraum</div>
-        <div class="next-level">next-level</div>
-        <div class="freisinn">freisinn</div>
-        <div class="coaching">coaching</div>
+        <div class="switch-item forschungsraum" onclick="toggleGrid(this);">forschungsraum</div>
+        <div class="switch-item next-level" onclick="toggleGrid(this);">next-level</div>
+        <div class="switch-item freisinn" onclick="toggleGrid(this);">freisinn</div>
+        <div class="switch-item coaching" onclick="toggleGrid(this);">coaching</div>
     </div>
     <div class="grid">
         {%- for post in collections.calendar -%}
@@ -40,4 +40,13 @@ layout: base.liquid
         </a>
         {%- endfor -%}
     </div>
+<script>
+    function toggleGrid(el) {
+        const grid = document.querySelector('.grid');
+        el.classList.toggle('active');
+        let elClass = el.classList[1];
+        grid.classList.toggle(elClass);
+    }
+</script>
 </main>
+

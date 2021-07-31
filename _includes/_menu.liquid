@@ -2,10 +2,10 @@
     <span class="button button-top"></span>
     <span class="button button-bottom"></span>
 </div>
-<nav>
 
+<nav>
     <div class="nav-container">
-        <div class="mainpages">
+        <div class="nav-links mainpages">
             {% for item in collections.page %}
                 {% if item.url == '/' %}
                     <a href="{{item.url}}" class="large-type" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.data.title | fw }}</a>
@@ -15,8 +15,14 @@
             {% endfor %}
         </div>
 
-        <div class="secondarypages">
-        
+        <div class="nav-links secondarypages">
+            {% for item in collections.secpages %}
+                {% if item.url == '/' %}
+                    <a href="{{item.url}}" class="large-type" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.data.title | fw }}</a>
+                {% else %}
+                    <a href="{{item.url}}" {% if page.url == item.url %} aria-current="page" class="active"{% endif %}>{{ item.data.title }}</a>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </nav>

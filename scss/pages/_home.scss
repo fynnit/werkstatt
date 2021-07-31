@@ -76,7 +76,9 @@ main.home {
 }
 
 .teaser {
+    width: 100%;
     max-width: 100%;
+    cursor: pointer;
     @media (min-width: 775px) {
         max-width: calc(50% - 16px);
     }    

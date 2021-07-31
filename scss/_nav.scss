@@ -71,10 +71,13 @@ nav.active .nav-container {
     background-color: rgba(77, 77, 77, 0.65);
 }
 
-.mainpages {
+.nav-links {
     display: flex;
     flex-flow: column;
     color: $white;
+    &:first-child {
+        margin-bottom: 32px;
+    }
     a:not(.large-type) {
         text-decoration: none;
         font-size: 23px;

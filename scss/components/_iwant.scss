@@ -3,30 +3,24 @@
     margin: 0 auto ;
     padding: 40px 32px 64px;
     max-width: 1032px;
-    // border-radius: 32px;
-    // -webkit-backdrop-filter: blur(3px) saturate(100%);
-    // backdrop-filter: blur(3px) saturate(100%);
-    // background-color: rgba(#bbb, 0.2);
-
-    .wants {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 16px;
-        @media (min-width: 775px) {
-            display: grid;
-            column-gap: 32px;
-            grid-template-columns: repeat(2, calc(50% - 16px));
-        }
-        @media (min-width: 995px) {
-            column-gap: 70px;
-            grid-template-columns: repeat(2, calc(50% - 35px));
-        }
-        row-gap: 20px;
-    }
-
+    
     h2 {
         text-align: center;
         color: $next-level-pink;
+    }
+
+    @media (max-width: 503px) {
+        display: flex;
+        flex-flow: column;
+        h2 {
+            order: 1;
+        }
+        .wants {
+            order: 2;
+            &:first-child {
+                margin-bottom: 20px;
+            }
+        }
     }
 }  
 
@@ -34,15 +28,17 @@
     // border: 1px solid $next-level;
     padding: 10px 20px;
     border-radius: 16px;
-    box-shadow: 0 2px 20px -12px rgba($dark, 0.85);
-    background-color: $next-level-pink;
-    color: $next-level-background;
-    max-width: 100%;
-    &:nth-child(even) {
-        justify-self: start;
+    @media (min-width: 504px) {
+        box-shadow: 0 2px 20px -12px darken(rgba(#d0afac, 0.95), 30%);
     }
-    &:nth-child(odd) {
-        justify-self: end;
+    background-color: #d0afac;
+    color: $dark;
+    max-width: 100%;
+
+    @media (max-width: 873px) {
+        font-size: 18px;
+        text-align: center;
+        display: inline;
     }
     display: inline-flex;
     align-items: center;
@@ -52,8 +48,75 @@
 
 }
 .wants {
-    @media (min-width: 775px) {
+    // display: flex;
+    // flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 20px;
+    
+    @media (min-width: 504px) {
+        column-gap: 32px;
+        grid-template-columns: repeat(2, calc(50% - 16px));
+        .want-item {
+            &:nth-child(odd) {
+                text-align: right;
+                justify-self: end;
+            }
+            &:nth-child(even) {
+                justify-self: start;
+                text-align: left;
+            }
+        }
+    }
 
+    @media (min-width: 995px) {
+        column-gap: 70px;
+        grid-template-columns: repeat(2, calc(50% - 35px));
+    }
+
+    // WITH ANIMATION
+    @media (min-width: 873px) {
+        &:first-child .want-item {
+            &:nth-child(1) {
+                border-bottom-right-radius: 0;
+                @include hoverAnimation(700ms, 0, regu);
+            }
+            &:nth-child(2) {
+                border-bottom-left-radius: 0;
+                @include hoverAnimation(900ms, 0, regu);
+            }
+            &:nth-child(3) {
+                border-bottom-right-radius: 0;
+                @include hoverAnimation(300ms, -20%, viermi);
+            }
+            &:nth-child(4) {
+                border-bottom-left-radius: 0;
+                @include hoverAnimation(1700ms, 20%, vierplu);
+            }
+        }
+
+        &:last-child .want-item {
+            &:nth-child(1) {
+                border-top-right-radius: 0;
+                @include hoverAnimation(100ms, -20%, viermi);
+            }
+            &:nth-child(2) {
+                border-top-left-radius: 0;
+                @include hoverAnimation(900ms, 20%, vierplu);
+            }
+            &:nth-child(3) {
+                border-top-right-radius: 0;
+                @include hoverAnimation(400ms, 0, regu);
+            }
+            &:nth-child(4) {
+                border-top-left-radius: 0;
+                @include hoverAnimation(770ms, 0, regu);
+
+            }
+        }
+    }
+
+    @media (min-width: 1070px) {
         &:first-child .want-item {
             &:nth-child(1) {
                 border-bottom-right-radius: 0;

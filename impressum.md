@@ -2,6 +2,7 @@
 title: Impressum
 layout: page.liquid
 permalink: "/impressum/"
+tags: secpages
 
 header:
     color: '#ffeeee'

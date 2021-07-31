@@ -238,16 +238,19 @@ nav.active .nav-container {
   }
 }
 
-.mainpages {
+.nav-links {
   display: flex;
   flex-flow: column;
   color: #ffffff;
 }
-.mainpages a:not(.large-type) {
+.nav-links:first-child {
+  margin-bottom: 32px;
+}
+.nav-links a:not(.large-type) {
   text-decoration: none;
   font-size: 23px;
 }
-.mainpages a:not(.large-type).active {
+.nav-links a:not(.large-type).active {
   font-weight: 600;
 }
 
@@ -374,7 +377,9 @@ main.home .text-block .copytext {
 }
 
 .teaser {
+  width: 100%;
   max-width: 100%;
+  cursor: pointer;
   padding: 32px;
   display: inline-block;
   flex-grow: 0;
@@ -643,36 +648,31 @@ main.page.coaching ::placeholder {
   padding: 40px 32px 64px;
   max-width: 1032px;
 }
-.i-want .wants {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 16px;
-  row-gap: 20px;
-}
-@media (min-width: 775px) {
-  .i-want .wants {
-    display: grid;
-    column-gap: 32px;
-    grid-template-columns: repeat(2, calc(50% - 16px));
-  }
-}
-@media (min-width: 995px) {
-  .i-want .wants {
-    column-gap: 70px;
-    grid-template-columns: repeat(2, calc(50% - 35px));
-  }
-}
 .i-want h2 {
   text-align: center;
   color: #920b00;
+}
+@media (max-width: 503px) {
+  .i-want {
+    display: flex;
+    flex-flow: column;
+  }
+  .i-want h2 {
+    order: 1;
+  }
+  .i-want .wants {
+    order: 2;
+  }
+  .i-want .wants:first-child {
+    margin-bottom: 20px;
+  }
 }
 
 .want-item {
   padding: 10px 20px;
   border-radius: 16px;
-  box-shadow: 0 2px 20px -12px rgba(30, 36, 34, 0.85);
-  background-color: #920b00;
-  color: #fad9c1;
+  background-color: #d0afac;
+  color: #1e2422;
   max-width: 100%;
   display: inline-flex;
   align-items: center;
@@ -680,14 +680,215 @@ main.page.coaching ::placeholder {
   align-self: flex-start;
   transition: transform 500ms;
 }
-.want-item:nth-child(even) {
-  justify-self: start;
+@media (min-width: 504px) {
+  .want-item {
+    box-shadow: 0 2px 20px -12px rgba(145, 87, 82, 0.95);
+  }
 }
-.want-item:nth-child(odd) {
-  justify-self: end;
+@media (max-width: 873px) {
+  .want-item {
+    font-size: 18px;
+    text-align: center;
+    display: inline;
+  }
 }
 
-@media (min-width: 775px) {
+.wants {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  row-gap: 20px;
+}
+@media (min-width: 504px) {
+  .wants {
+    column-gap: 32px;
+    grid-template-columns: repeat(2, calc(50% - 16px));
+  }
+  .wants .want-item:nth-child(odd) {
+    text-align: right;
+    justify-self: end;
+  }
+  .wants .want-item:nth-child(even) {
+    justify-self: start;
+    text-align: left;
+  }
+}
+@media (min-width: 995px) {
+  .wants {
+    column-gap: 70px;
+    grid-template-columns: repeat(2, calc(50% - 35px));
+  }
+}
+@media (min-width: 873px) {
+  .wants:first-child .want-item:nth-child(1) {
+    border-bottom-right-radius: 0;
+    animation: regu 2000ms 700ms ease-in-out infinite;
+  }
+  @keyframes regu {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(0, 2px);
+    }
+    50% {
+      transform: translate(0, 2px);
+    }
+    75% {
+      transform: translate(0, 2px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  .wants:first-child .want-item:nth-child(2) {
+    border-bottom-left-radius: 0;
+    animation: regu 2000ms 900ms ease-in-out infinite;
+  }
+  @keyframes regu {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(0, 2px);
+    }
+    50% {
+      transform: translate(0, 2px);
+    }
+    75% {
+      transform: translate(0, 2px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  .wants:first-child .want-item:nth-child(3) {
+    border-bottom-right-radius: 0;
+    animation: viermi 2000ms 300ms ease-in-out infinite;
+  }
+  @keyframes viermi {
+    0% {
+      transform: translate(-20%, 0);
+    }
+    25% {
+      transform: translate(-20%, 2px);
+    }
+    50% {
+      transform: translate(-20%, 2px);
+    }
+    75% {
+      transform: translate(-20%, 2px);
+    }
+    100% {
+      transform: translate(-20%, 0);
+    }
+  }
+  .wants:first-child .want-item:nth-child(4) {
+    border-bottom-left-radius: 0;
+    animation: vierplu 2000ms 1700ms ease-in-out infinite;
+  }
+  @keyframes vierplu {
+    0% {
+      transform: translate(20%, 0);
+    }
+    25% {
+      transform: translate(20%, 2px);
+    }
+    50% {
+      transform: translate(20%, 2px);
+    }
+    75% {
+      transform: translate(20%, 2px);
+    }
+    100% {
+      transform: translate(20%, 0);
+    }
+  }
+  .wants:last-child .want-item:nth-child(1) {
+    border-top-right-radius: 0;
+    animation: viermi 2000ms 100ms ease-in-out infinite;
+  }
+  @keyframes viermi {
+    0% {
+      transform: translate(-20%, 0);
+    }
+    25% {
+      transform: translate(-20%, 2px);
+    }
+    50% {
+      transform: translate(-20%, 2px);
+    }
+    75% {
+      transform: translate(-20%, 2px);
+    }
+    100% {
+      transform: translate(-20%, 0);
+    }
+  }
+  .wants:last-child .want-item:nth-child(2) {
+    border-top-left-radius: 0;
+    animation: vierplu 2000ms 900ms ease-in-out infinite;
+  }
+  @keyframes vierplu {
+    0% {
+      transform: translate(20%, 0);
+    }
+    25% {
+      transform: translate(20%, 2px);
+    }
+    50% {
+      transform: translate(20%, 2px);
+    }
+    75% {
+      transform: translate(20%, 2px);
+    }
+    100% {
+      transform: translate(20%, 0);
+    }
+  }
+  .wants:last-child .want-item:nth-child(3) {
+    border-top-right-radius: 0;
+    animation: regu 2000ms 400ms ease-in-out infinite;
+  }
+  @keyframes regu {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(0, 2px);
+    }
+    50% {
+      transform: translate(0, 2px);
+    }
+    75% {
+      transform: translate(0, 2px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  .wants:last-child .want-item:nth-child(4) {
+    border-top-left-radius: 0;
+    animation: regu 2000ms 770ms ease-in-out infinite;
+  }
+  @keyframes regu {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(0, 2px);
+    }
+    50% {
+      transform: translate(0, 2px);
+    }
+    75% {
+      transform: translate(0, 2px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}
+@media (min-width: 1070px) {
   .wants:first-child .want-item:nth-child(1) {
     border-bottom-right-radius: 0;
     animation: regu 2000ms 700ms ease-in-out infinite;
@@ -1070,15 +1271,93 @@ label.hidden {
 }
 .kalender .switch {
   display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
   margin: 0 auto 32px;
   justify-content: space-between;
   max-width: 600px;
 }
+.kalender .switch-item {
+  padding: 8px 16px;
+  border-radius: 16px;
+  gap: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.kalender .switch-item.forschungsraum {
+  background-color: #e9eef2;
+}
+.kalender .switch-item.forschungsraum.active {
+  color: white;
+  background-color: #6286A3;
+}
+.kalender .switch-item.next-level {
+  background-color: #fad9c1;
+}
+.kalender .switch-item.next-level.active {
+  color: white;
+  background-color: #D26412;
+}
+.kalender .switch-item.freisinn {
+  background-color: #dbe2cc;
+}
+.kalender .switch-item.freisinn.active {
+  color: white;
+  background-color: #76894F;
+}
+.kalender .switch-item.coaching {
+  background-color: #f7e4d1;
+}
+.kalender .switch-item.coaching.active {
+  background-color: #EBBD90;
+}
+.kalender .switch-item.projekte-workshops {
+  background-color: #d3cda1;
+}
+.kalender .switch-item.projekte-workshops.active {
+  color: white;
+  background-color: #6C6532;
+}
 .kalender .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 16px;
   row-gap: 16px;
+}
+@media (min-width: 321px) {
+  .kalender .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 550px) {
+  .kalender .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 770px) {
+  .kalender .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .kalender .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.kalender .grid.forschungsraum .item:not(.forschungsraum) {
+  display: none;
+}
+.kalender .grid.next-level .item:not(.next-level) {
+  display: none;
+}
+.kalender .grid.freisinn .item:not(.freisinn) {
+  display: none;
+}
+.kalender .grid.coaching .item:not(.coaching) {
+  display: none;
+}
+.kalender .grid.projekte-workshops .item:not(.projekte-workshops) {
+  display: none;
 }
 .kalender .item {
   padding: 16px;
@@ -1129,8 +1408,25 @@ footer {
   padding: 16px 32px;
   display: flex;
 }
+@media (max-width: 774px) {
+  footer {
+    justify-content: center;
+  }
+  footer .inner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 footer a {
-  padding-left: 32px;
+  padding-top: 8px;
+}
+@media (min-width: 775px) {
+  footer a {
+    padding-top: 0;
+    padding-left: 32px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -15,10 +15,10 @@
     <span class="button button-top"></span>
     <span class="button button-bottom"></span>
 </div>
-<nav>
 
+<nav>
     <div class="nav-container">
-        <div class="mainpages">
+        <div class="nav-links mainpages">
             
                 
                     <a href="/" class="large-type" >Werkstatt</a>
@@ -46,8 +46,16 @@
             
         </div>
 
-        <div class="secondarypages">
-        
+        <div class="nav-links secondarypages">
+            
+                
+                    <a href="/kalender/"  aria-current="page" class="active">Kalender</a>
+                
+            
+                
+                    <a href="/impressum/" >Impressum</a>
+                
+            
         </div>
     </div>
 </nav>
@@ -73,10 +81,10 @@
 <main class="calendar">
 
     <div class="switch">
-        <div class="forschungsraum">forschungsraum</div>
-        <div class="next-level">next-level</div>
-        <div class="freisinn">freisinn</div>
-        <div class="coaching">coaching</div>
+        <div class="switch-item forschungsraum" onclick="toggleGrid(this);">forschungsraum</div>
+        <div class="switch-item next-level" onclick="toggleGrid(this);">next-level</div>
+        <div class="switch-item freisinn" onclick="toggleGrid(this);">freisinn</div>
+        <div class="switch-item coaching" onclick="toggleGrid(this);">coaching</div>
     </div>
     <div class="grid"><a class="item next-level" href="/termine/etb-wilstedt/">
             <span class="title">ETB September</span>
@@ -95,7 +103,17 @@
                 <span class="price">650€ - 950€</span>
             </div>
         </a></div>
+<script>
+    function toggleGrid(el) {
+        const grid = document.querySelector('.grid');
+        el.classList.toggle('active');
+        let elClass = el.classList[1];
+        grid.classList.toggle(elClass);
+    }
+</script>
 </main>
+
+
 
     <footer>
     <div class="inner">

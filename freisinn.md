@@ -1,6 +1,6 @@
 ---
 title: Freisinn
-subtitle: 'Die Sinne freisetzen, meine Wahrnehmung erweitern, erleben, was sich mit und jenseits des physisch Erscheinenden gestalten lässt.'
+subtitle: Die Sinne freisetzen, meine Wahrnehmung erweitern, erleben, was sich mit und jenseits des physisch Erscheinenden gestalten lässt.
 layout: page.liquid
 permalink: /freisinn/
 tags: page
