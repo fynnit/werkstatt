@@ -44,8 +44,8 @@ layout: base.liquid
     
     {% assign itemType = title | slug %} 
     {% comment %} itemType works {% endcomment %}
-    
-    {% if itemType != 'coaching' %}
+    '
+    {% if itemType != 'coaching' and itemType != 'impressum' %}
 
     <section class="kalender">
     <h3>Nächste Termine</h3>
