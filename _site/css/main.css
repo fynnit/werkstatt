@@ -1337,16 +1337,6 @@ label.hidden {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 770px) {
-  .kalender .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  .kalender .grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
 .kalender .grid.forschungsraum .item:not(.forschungsraum) {
   display: none;
 }
