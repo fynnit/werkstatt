@@ -24,7 +24,7 @@ fields:
 - type: text
   name: location
   label: location
-- type: text
+- type: textarea
   name: description
   label: description
 - type: text

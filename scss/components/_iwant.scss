@@ -29,9 +29,9 @@
     padding: 10px 20px;
     border-radius: 16px;
     @media (min-width: 504px) {
-        box-shadow: 0 2px 20px -12px darken(rgba(#d0afac, 0.95), 30%);
+        box-shadow: 0 2px 20px -12px $next-level;
     }
-    background-color: #d0afac;
+    background-color: #fada8e;
     color: $dark;
     max-width: 100%;
 

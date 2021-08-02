@@ -1,4 +1,7 @@
 header.page {
+    .copyright {
+        padding: 0 16px;
+    }
     &.forschungsraum {
         color: darken($forschungsraum, 20%);
         

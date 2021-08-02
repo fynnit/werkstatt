@@ -523,6 +523,9 @@ main.home .text-block .copytext {
   display: block;
 }
 
+header.page .copyright {
+  padding: 0 16px;
+}
 header.page.forschungsraum {
   color: #3b5264;
 }
@@ -671,7 +674,7 @@ main.page.coaching ::placeholder {
 .want-item {
   padding: 10px 20px;
   border-radius: 16px;
-  background-color: #d0afac;
+  background-color: #fada8e;
   color: #1e2422;
   max-width: 100%;
   display: inline-flex;
@@ -682,7 +685,7 @@ main.page.coaching ::placeholder {
 }
 @media (min-width: 504px) {
   .want-item {
-    box-shadow: 0 2px 20px -12px rgba(145, 87, 82, 0.95);
+    box-shadow: 0 2px 20px -12px #D26412;
   }
 }
 @media (max-width: 873px) {
