@@ -39,5 +39,6 @@ fields:
   default: next-level
   description: forschungsraum<br>next-level<br>freisinn<br>projekte-workshops<br>coaching
 pages:
+- termine/die-revolution-sind-wir-beuys-zum-100ersten-geburtstag.md
 - termine/etb-wilstedt.md
 - termine/freiheit-fuhrung-und-verantwortung-einfuhrungsworkshop-werkstattmethoden.md
