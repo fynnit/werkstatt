@@ -84,7 +84,7 @@
         <div class="switch-item forschungsraum" onclick="toggleGrid(this);">forschungsraum</div>
         <div class="switch-item next-level" onclick="toggleGrid(this);">next-level</div>
         <div class="switch-item freisinn" onclick="toggleGrid(this);">freisinn</div>
-        <div class="switch-item coaching" onclick="toggleGrid(this);">coaching</div>
+        <!--div class="switch-item coaching" onclick="toggleGrid(this);">coaching</div-->
         <div class="switch-item projekte-workshops" onclick="toggleGrid(this);">projekte workshops</div>
     </div>
     <div class="grid"><a class="item projekte-workshops" href="/termine/freiheit-fuhrung-und-verantwortung-einfuhrungsworkshop-werkstattmethoden/">
@@ -161,9 +161,11 @@
 <script>
     function toggleGrid(el) {
         const grid = document.querySelector('.grid');
+        const elType = el.classList[1];
+        const activeChild = document.querySelector('.switch-item.active');
+        grid.classList.value = 'grid';
         el.classList.toggle('active');
-        let elClass = el.classList[1];
-        grid.classList.toggle(elClass);
+        if (el !== activeChild) grid.classList.add(elType);
     }
 </script>
 </main>
