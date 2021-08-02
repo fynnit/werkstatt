@@ -1361,6 +1361,7 @@ label.hidden {
   padding: 16px;
   display: inline-flex;
   gap: 4px;
+  align-self: start;
   flex-flow: column;
 }
 .kalender .item.forschungsraum {
