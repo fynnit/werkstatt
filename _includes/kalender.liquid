@@ -27,9 +27,7 @@ layout: base.liquid
             {% if post.data.trainer %}
                 <span class="trainer">{{ post.data.trainer }}</span>
             {% endif %}
-            {% if post.data.description %}
-                <span class="description">{{ post.data.description }}</span>
-            {% endif %}
+            
             <span class="location">{{ post.data.location_ort }}</span>
             
             <span class="dates"><span class="date">{{ post.data.date | dateformat }}</span> - <span
