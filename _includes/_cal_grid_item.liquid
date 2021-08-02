@@ -1,0 +1,15 @@
+<a class="item {{post.data.category}}" href="{{post.url}}">
+    <span class="title">{{ post.data.title }}</span>
+    {% if post.data.trainer %}
+        <span class="trainer">{{ post.data.trainer }}</span>
+    {% endif %}
+    
+    <span class="location">{{ post.data.location_ort }}</span>
+    
+    <span class="dates"><span class="date">{{ post.data.date | dateformat }}</span> - <span
+            class="end_date">{{ post.data.end_date | dateformat }}</span></span>
+    <div class="more">
+        <span class="time">{{ post.data.time }}</span>
+        <span class="price">{{ post.data.price }}</span>
+    </div>
+</a>

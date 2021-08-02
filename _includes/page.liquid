@@ -41,9 +41,22 @@ layout: base.liquid
 
         {% endcase %}
     {% endfor %}
+    
+    {% assign itemType = title | slug %} 
+    {% comment %} itemType works {% endcomment %}
+    
+    {% if itemType != 'coaching' %}
 
-    {% comment %} 
-        CALENDAR FOR PAGE
-    {% endcomment %}
+    <section class="kalender">
+    <h3>Nächste Termine</h3>
+        <div class="grid">               
+            {%- for post in collections.calendar -%}
+                {% if post.data.category == itemType %}
+                    {% include _cal_grid_item.liquid %}
+                {% endif %}
+            {%- endfor -%}
+        </div>
+    </section>
+    {% endif %}
 
 </main>

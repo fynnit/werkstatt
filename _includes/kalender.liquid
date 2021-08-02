@@ -22,32 +22,23 @@ layout: base.liquid
     </div>
     <div class="grid">
         {%- for post in collections.calendar -%}
-        <a class="item {{post.data.category}}" href="{{post.url}}">
-            <span class="title">{{ post.data.title }}</span>
-            {% if post.data.trainer %}
-                <span class="trainer">{{ post.data.trainer }}</span>
-            {% endif %}
-            
-            <span class="location">{{ post.data.location_ort }}</span>
-            
-            <span class="dates"><span class="date">{{ post.data.date | dateformat }}</span> - <span
-                    class="end_date">{{ post.data.end_date | dateformat }}</span></span>
-            <div class="more">
-                <span class="time">{{ post.data.time }}</span>
-                <span class="price">{{ post.data.price }}</span>
-            </div>
-        </a>
+             {% include _cal_grid_item.liquid %}
         {%- endfor -%}
     </div>
-<script>
-    function toggleGrid(el) {
-        const grid = document.querySelector('.grid');
-        const elType = el.classList[1];
-        const activeChild = document.querySelector('.switch-item.active');
-        grid.classList.value = 'grid';
-        el.classList.toggle('active');
-        if (el !== activeChild) grid.classList.add(elType);
-    }
-</script>
+    <script>
+        function toggleGrid(el) {
+            const grid = document.querySelector('.grid');
+            const elType = el.classList[1];
+            const activeChild = document.querySelector('.switch-item.active');
+            // reset
+            grid.classList.value = 'grid';
+
+            if (el !== activeChild) {
+                if (activeChild) activeChild.classList.remove('active');
+                el.classList.toggle('active');
+                grid.classList.toggle(elType);
+            }
+        }
+    </script>
 </main>
 

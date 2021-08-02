@@ -57,19 +57,4 @@ module.exports = function(eleventyConfig) {
         return val.substr(0,val.indexOf(' '));
       }
     });
-
-    // make list
-    // eleventyConfig.addFilter('toList', (str) => {
-    //   if(str) {
-    //     str.split("*").join("</li><li>")
-    //     str = '<ul><li>' + str + '</li></ul>'; 
-    //     return str;
-    //   }
-    // });
-    
-    // eleventyConfig.addCollection('newsrev', function(collectionApi) {
-    //   return collectionApi.getFilteredByTag('news').slice(0,2).sort(function(a, b) {
-    //     return b.date - a.date;
-    //   });
-    // });
 };
