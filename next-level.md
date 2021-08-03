@@ -7,7 +7,7 @@ permalink: "/next-level/"
 tags: page
 date: 2021-03-01
 header:
-  image: "/uploads/956e2dff-4d23-459a-b925-4ffe722b01d5.jpeg"
+  image: _site/uploads/956e2dff-4d23-459a-b925-4ffe722b01d5.jpeg
   copyright: ''
 sections:
 - template: quote
