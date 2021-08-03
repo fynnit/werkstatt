@@ -566,6 +566,7 @@ main.page {
 }
 main.page.forschungsraum {
   color: #3b5264;
+  background-color: #f9fafc;
 }
 main.page.forschungsraum + footer {
   color: inherit;
@@ -580,6 +581,7 @@ main.page.forschungsraum ::placeholder {
 }
 main.page.next-level {
   color: #5f0700;
+  background-color: #fef6f0;
 }
 main.page.next-level + footer {
   color: inherit;
@@ -594,6 +596,7 @@ main.page.next-level ::placeholder {
 }
 main.page.freisinn {
   color: #5a693c;
+  background-color: #f7f8f3;
 }
 main.page.freisinn + footer {
   color: inherit;
@@ -607,7 +610,8 @@ main.page.freisinn ::placeholder {
   color: white;
 }
 main.page.projekte-workshops {
-  color: #1e2422;
+  color: #6C6532;
+  background-color: #f9f8f1;
 }
 main.page.projekte-workshops h1 {
   max-width: 50%;
@@ -624,8 +628,9 @@ main.page.projekte-workshops ::placeholder {
   color: white;
 }
 main.page.coaching {
-  color: #bf7023;
+  color: #7f4a17;
   min-height: 40vh;
+  background-color: #faeee2;
 }
 main.page.coaching + footer {
   color: inherit;

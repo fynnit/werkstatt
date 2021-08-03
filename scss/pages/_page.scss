@@ -41,9 +41,12 @@ main.page {
 
     &.forschungsraum {
         color: darken($forschungsraum, 20%);
+        background-color: lighten($forschungsraum-background, 5%);
+
         + footer {
             color: inherit;
-            background-color: $forschungsraum-background;}
+            background-color: $forschungsraum-background;
+        }
 
         input, textarea {
             background-color: $forschungsraum;
@@ -56,6 +59,7 @@ main.page {
     }
     &.next-level {
         color: darken($next-level-pink,10%);
+        background-color: lighten($next-level-background, 10%);
         + footer {
             color: inherit;
             background-color: $next-level-background;}
@@ -71,9 +75,11 @@ main.page {
     }
     &.freisinn {
         color: darken($freisinn, 10%);
+        background-color: lighten($freisinn-background, 12%);
         + footer {
             color: inherit;
-            background-color: $freisinn-background;}
+            background-color: $freisinn-background;
+        }
 
         input, textarea {
             background-color: $freisinn;
@@ -85,7 +91,9 @@ main.page {
 
     }
     &.projekte-workshops {
-        color: $dark;
+        color: $projekte-workshops;
+        background-color: lighten($projekte-workshops-background, 23%);
+
         h1 {max-width: 50%;}
 
         + footer {
@@ -102,8 +110,9 @@ main.page {
 
     }
     &.coaching {
-        color: darken($coaching,30%);
+        color: darken($coaching,45%);
         min-height: 40vh;
+        background-color: lighten($coaching-background, 4%);
 
         + footer {
             color: inherit;
