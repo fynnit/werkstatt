@@ -64,6 +64,14 @@ main.home {
             line-height: 1.7;
         }
     }
+
+
+
+    form {
+        input, textarea, .submit {
+            background-color: $next-level-background;
+        }
+    }
 }
 .teasers {
     display: flex;
@@ -237,3 +245,5 @@ main.home {
         display: block;
     }
 }
+
+

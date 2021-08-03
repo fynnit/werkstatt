@@ -366,6 +366,9 @@ main.home {
 main.home .text-block .copytext {
   line-height: 1.7;
 }
+main.home form input, main.home form textarea, main.home form .submit {
+  background-color: #fad9c1;
+}
 
 .teasers {
   display: flex;
@@ -1138,6 +1141,7 @@ form [class^=part] {
 
 input,
 textarea {
+  border-radius: 20px;
   background-color: #efe4d8;
   padding: 11px 20px;
   border: none;

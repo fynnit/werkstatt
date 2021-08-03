@@ -32,7 +32,7 @@ sections:
   path: impressum.md
   label: Impressum
 upload_dir: uploads
-public_path: _site/uploads
+public_path: _site/assets/uploads
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
