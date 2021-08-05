@@ -34,7 +34,6 @@ sections:
 - type: document
   path: datenschutz.md
   label: Datenschutz
-  match: "**/*"
 upload_dir: uploads
 public_path: _site/assets/uploads
 front_matter_path: ''
