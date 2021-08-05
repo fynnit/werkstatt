@@ -5,10 +5,23 @@ header.home {
     justify-content: center;
     flex-flow: column;
     align-items: flex-start;
+
+    position: relative;
+    &:after {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(#222,0.25);
+        z-index: 1;
+    }
     @media (min-width: 777px) {
         padding: 80px 32px;
     }
-
+    
     color: $white;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     background-size: cover;
@@ -19,18 +32,44 @@ header.home {
         margin-top: 32px;
         position: absolute;
         bottom: 32px;right: 32px;
+        z-index: 2;
     }
 }
 
 .header-content {
+    position: relative;
+    z-index: 2;
     max-width: 1032px;
     margin: 0 auto;
 }
 main.home {
-    background-color: hsl(42, 100%, 99%);
+    padding-bottom: 180px;
+    padding-bottom: 180px;
+    padding-top: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    @media (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }   
+    @media (min-width: 1024px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    background-color: hsl(30, 80%, 98%);
     .text-block {
         .copytext {
             line-height: 1.7;
+        }
+    }
+
+
+
+    form {
+        input, textarea, .submit {
+            background-color: $next-level-background;
         }
     }
 }
@@ -45,7 +84,12 @@ main.home {
 }
 
 .teaser {
-    max-width: calc(50% - 16px);
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    @media (min-width: 775px) {
+        max-width: calc(50% - 16px);
+    }    
     padding: 32px;
     display: inline-block;
     flex-grow: 0;
@@ -56,17 +100,19 @@ main.home {
         transform: scale(1.02);
         transition: transform 300ms;
     }
-    &:nth-child(1) {
-        border-top-left-radius: 32px;
-    }
-    &:nth-child(2) {
-        border-top-right-radius: 32px;
-    }
-    &:nth-child(5) {
-        border-bottom-left-radius: 32px;
-    }
-    &:last-child {
-        border-bottom-right-radius: 32px;
+    @media (min-width: 775px) {
+        &:nth-child(1) {
+            border-top-left-radius: 32px;
+        }
+        &:nth-child(2) {
+            border-top-right-radius: 32px;
+        }
+        &:nth-child(5) {
+            border-bottom-left-radius: 32px;
+        }
+        &:last-child {
+            border-bottom-right-radius: 32px;
+        }
     }
     &.forschungsraum {
         color: $forschungsraum;
@@ -109,8 +155,8 @@ main.home {
         background-color: $projekte-workshops-background;
     }
     &.kalender {
-        color: $projekte-workshops;
-        background-color: hsl(236, 84%, 80%);
+        color: lighten($dark, 20%);
+        background-color: hsl(236, 21%, 87%);
         align-self: auto;
         flex: 1 1 auto;
         
@@ -145,7 +191,15 @@ main.home {
     .member {
         cursor: pointer;
         max-width: 25%;
+        min-width: 25%;
         transition: transform 400ms;
+
+        &.order {
+            &-1 { order:1}
+            &-2 { order:2}
+            &-3 { order:3}
+            &-4 { order:4}
+        }
 
         h5 {
             font-weight: 500;
@@ -191,3 +245,5 @@ main.home {
         display: block;
     }
 }
+
+

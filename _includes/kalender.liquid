@@ -12,25 +12,33 @@ layout: base.liquid
 </header>
 
 <main class="calendar">
+
+    <div class="switch">
+        <div class="switch-item forschungsraum" onclick="toggleGrid(this);">forschungsraum</div>
+        <div class="switch-item next-level" onclick="toggleGrid(this);">next-level</div>
+        <div class="switch-item freisinn" onclick="toggleGrid(this);">freisinn</div>
+        <!--div class="switch-item coaching" onclick="toggleGrid(this);">coaching</div-->
+        <div class="switch-item projekte-workshops" onclick="toggleGrid(this);">projekte workshops</div>
+    </div>
     <div class="grid">
         {%- for post in collections.calendar -%}
-        <a class="item {{post.data.category}}" href="{{post.url}}">
-            <span class="title">{{ post.data.title }}</span>
-            {% if post.data.trainer %}
-                <span class="trainer">{{ post.data.trainer }}</span>
-            {% endif %}
-            {% if post.data.description %}
-                <span class="description">{{ post.data.description }}</span>
-            {% endif %}
-            <span class="location">{{ post.data.location_ort }}</span>
-            
-            <span class="dates"><span class="date">{{ post.data.date | dateformat }}</span> - <span
-                    class="end_date">{{ post.data.end_date | dateformat }}</span></span>
-            <div class="more">
-                <span class="time">{{ post.data.time }}</span>
-                <span class="price">{{ post.data.price }}</span>
-            </div>
-        </a>
+             {% include _cal_grid_item.liquid %}
         {%- endfor -%}
     </div>
+    <script>
+        function toggleGrid(el) {
+            const grid = document.querySelector('.grid');
+            const elType = el.classList[1];
+            const activeChild = document.querySelector('.switch-item.active');
+            // reset
+            grid.classList.value = 'grid';
+
+            if (el !== activeChild) {
+                if (activeChild) activeChild.classList.remove('active');
+                el.classList.toggle('active');
+                grid.classList.toggle(elType);
+            }
+        }
+    </script>
 </main>
+

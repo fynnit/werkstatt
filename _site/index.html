@@ -6,19 +6,39 @@
     <link rel="stylesheet" href="/css/main.css" type="text/css">
     
 
-    <title>Werkstatt für Verantwortung und Führung</title>
+    <title> Werkstatt für Verantwortung und Führung </title>
 
-    
-    <!-- Meta Tags Generated via http://heymeta.com -->
+    <title>Werkstatt f&uuml;r Verantwortung und F&uuml;hrung - undefined</title>
+
+<meta name="description" content="">
+<meta name="robots" content="index,follow">
+<meta name="author" content="">
+
+<link rel="canonical" href="/">
+
+<meta property="og:title" content="Werkstatt f&uuml;r Verantwortung und F&uuml;hrung - undefined">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/">
+<meta property="og:description" content="">
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:url" content="/">
+<meta name="twitter:title" content="Werkstatt f&uuml;r Verantwortung und F&uuml;hrung - undefined">
+<meta name="twitter:description" content="">
+
+
+
 </head>
-<body class="body werkstatt-fur-verantwortung-und-fuhrung" class="loading"><nav>
-    <div class="button-wrapper" onclick="this.classList.toggle('active');">
-        <span class="button button-top"></span>
-        <span class="button button-bottom"></span>
-    </div>
+<body class="body werkstatt-fur-verantwortung-und-fuhrung" class="loading"><div class="button-wrapper" onclick="toggleMenu()">
+    <span class="button button-top"></span>
+    <span class="button button-bottom"></span>
+</div>
 
+<nav>
     <div class="nav-container">
-        <div class="mainpages">
+        <div class="nav-links mainpages">
             
                 
                     <a href="/" class="large-type"  aria-current="page">Werkstatt</a>
@@ -46,12 +66,27 @@
             
         </div>
 
-        <div class="secondarypages">
-        
+        <div class="nav-links secondarypages">
+            
+                
+                    <a href="/kalender/" >Kalender</a>
+                
+            
+                
+                    <a href="/impressum/" >Impressum</a>
+                
+            
         </div>
     </div>
 </nav>
-
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('nav');
+        const button = document.querySelector('.button-wrapper');
+        menu.classList.toggle('active');
+        button.classList.toggle('active');
+    }
+</script>
 
     
 <header class="home" style="background-image: url(/assets/arco.jpg);">
@@ -132,7 +167,7 @@
             <h5 class="headline">Forschungsraum</h5>
             <p class="description">Themen und Methoden: Fokus finden, Absichten klären, experimentelle Arbeit mit realen Berufssituationen</p>
             
-                <img class="teaser-icon" src="/assets/icons/forschungsraum-2.svg" alt="Fünf Pfeile zeigen auf einen Kreis">
+                <img class="teaser-icon" src="/assets/icons/forschungsraum-icon.svg" alt="Fünf Pfeile zeigen auf einen Kreis">
             
             <a href="/forschungsraum" class="link">Raum öffnen</a>
         </div>
@@ -269,10 +304,16 @@ Nach der Promotion in Schweden Gruppen- und Projektleiter im Unternehmenskontext
         const randomMember = mems[randomNumber];
         toogleMember(randomMember);
     }
+    function shuffleMembers() {
+        const mems = document.querySelectorAll(`.member`);
+        let order = [1,2,3,4];
+        order.sort(() => (Math.random() > .5) ? 1 : -1);
+        mems.forEach((i, index) => { i.classList.add(`order-${order[index]}`)});
+    }
     setRandomMember();
+    shuffleMembers();
 </script>
 
-</main>
 <section class="form-section">
     <h3>Kontakt</h3>
     <form name="contact homepage" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -288,12 +329,13 @@ Nach der Promotion in Schweden Gruppen- und Projektleiter im Unternehmenskontext
     </form>
 
 </section>
+</main>
 
 
 
     <footer>
     <div class="inner">
-        <span>© 2020 Werkstatt für Verantwortung und Führung</span>
+        <span>© 2021 Werkstatt für Verantwortung und Führung E.V.</span>
         <a href="/kontakt/">Kontakt</a>    
         <a href="/impressum/">Impressum</a>    
     </div>

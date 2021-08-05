@@ -6,19 +6,39 @@
     <link rel="stylesheet" href="/css/main.css" type="text/css">
     
 
-    <title>Kalender</title>
+    <title> Werkstatt - Kalender</title>
 
-    
-    <!-- Meta Tags Generated via http://heymeta.com -->
+    <title>Kalender - undefined</title>
+
+<meta name="description" content="">
+<meta name="robots" content="index,follow">
+<meta name="author" content="">
+
+<link rel="canonical" href="/kalender/">
+
+<meta property="og:title" content="Kalender - undefined">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/kalender/">
+<meta property="og:description" content="">
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:url" content="/kalender/">
+<meta name="twitter:title" content="Kalender - undefined">
+<meta name="twitter:description" content="">
+
+
+
 </head>
-<body class="body kalender" class="loading"><nav>
-    <div class="button-wrapper" onclick="this.classList.toggle('active');">
-        <span class="button button-top"></span>
-        <span class="button button-bottom"></span>
-    </div>
+<body class="body kalender" class="loading"><div class="button-wrapper" onclick="toggleMenu()">
+    <span class="button button-top"></span>
+    <span class="button button-bottom"></span>
+</div>
 
+<nav>
     <div class="nav-container">
-        <div class="mainpages">
+        <div class="nav-links mainpages">
             
                 
                     <a href="/" class="large-type" >Werkstatt</a>
@@ -46,12 +66,27 @@
             
         </div>
 
-        <div class="secondarypages">
-        
+        <div class="nav-links secondarypages">
+            
+                
+                    <a href="/kalender/"  aria-current="page" class="active">Kalender</a>
+                
+            
+                
+                    <a href="/impressum/" >Impressum</a>
+                
+            
         </div>
     </div>
 </nav>
-
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('nav');
+        const button = document.querySelector('.button-wrapper');
+        menu.classList.toggle('active');
+        button.classList.toggle('active');
+    }
+</script>
 
     
 <header style="
@@ -64,60 +99,121 @@
 </header>
 
 <main class="calendar">
-    <div class="grid"><a class="item next-level" href="/termine/termin1/">
-            <span class="title">ETB Juli 21</span>
-            
-                <span class="trainer">Marietta, Stefan</span>
-            
-            
-                <span class="description">ANGST TANZEN</span>
-            
-            <span class="location">Wilsted</span>
-            
-            <span class="dates"><span class="date">15. Jul</span> - <span
-                    class="end_date">19. Jul</span></span>
-            <div class="more">
-                <span class="time"></span>
-                <span class="price">650€ - 950€</span>
-            </div>
-        </a><a class="item forschungsraum" href="/termine/termin1 copy/">
-            <span class="title">GAB</span>
-            
-                <span class="trainer">Martin</span>
-            
-            
-                <span class="description">Seminar Grundkenntnisse und Moderation</span>
-            
-            <span class="location">Hamburg</span>
-            
-            <span class="dates"><span class="date">24. Aug</span> - <span
-                    class="end_date">26. Aug</span></span>
-            <div class="more">
-                <span class="time">5pm</span>
-                <span class="price">null</span>
-            </div>
-        </a><a class="item forschungsraum" href="/termine/termin1 copy 2/">
-            <span class="title">GAB</span>
-            
-                <span class="trainer">Martin</span>
-            
-            
-                <span class="description">Aufbauseminar „Qualitätsarbeit intensivieren“</span>
-            
-            <span class="location">Hamburg</span>
-            
-            <span class="dates"><span class="date">10. Sep</span> - <span
-                    class="end_date">11. Sep</span></span>
-            <div class="more">
-                <span class="time">5pm</span>
-                <span class="price">null</span>
-            </div>
-        </a></div>
+
+    <div class="switch">
+        <div class="switch-item forschungsraum" onclick="toggleGrid(this);">forschungsraum</div>
+        <div class="switch-item next-level" onclick="toggleGrid(this);">next-level</div>
+        <div class="switch-item freisinn" onclick="toggleGrid(this);">freisinn</div>
+        <!--div class="switch-item coaching" onclick="toggleGrid(this);">coaching</div-->
+        <div class="switch-item projekte-workshops" onclick="toggleGrid(this);">projekte workshops</div>
+    </div>
+    <div class="grid"><a class="item projekte-workshops" href="/termine/freiheit-fuhrung-und-verantwortung-einfuhrungsworkshop-werkstattmethoden/">
+    <span class="title">FREIHEIT, FÜHRUNG UND VERANTWORTUNG Einführungsworkshop Werkstattmethoden </span>
+    
+        <span class="trainer">Prof. Dr. Stefan Ackermann, Dr. Marietta Schürholz, Dr. Andreas Beutler, Martin Lehnert, Raphaelle Mellé</span>
+    
+    
+    <span class="location"></span>
+    
+    <span class="dates"><span class="date">18. Sep</span> - <span
+            class="end_date">18. Sep</span></span>
+    <div class="more">
+        <span class="time"></span>
+        <span class="price">30 € Kostenpauschale zzgl. Entwicklungsbeitrag 20 € - 150 € </span>
+    </div>
+</a><a class="item projekte-workshops" href="/termine/die-revolution-sind-wir-beuys-zum-100ersten-geburtstag/">
+    <span class="title">"Die Revolution sind wir!" Beuys zum 100ersten Geburtstag</span>
+    
+        <span class="trainer"></span>
+    
+    
+    <span class="location"></span>
+    
+    <span class="dates"><span class="date">24. Sep</span> - <span
+            class="end_date">26. Sep</span></span>
+    <div class="more">
+        <span class="time"></span>
+        <span class="price"></span>
+    </div>
+</a><a class="item next-level" href="/termine/etb-wilstedt/">
+    <span class="title">ETB September</span>
+    
+        <span class="trainer">Marietta und Stefan</span>
+    
+    
+    <span class="location"></span>
+    
+    <span class="dates"><span class="date">30. Sep</span> - <span
+            class="end_date">03. Oct</span></span>
+    <div class="more">
+        <span class="time"></span>
+        <span class="price">650€ - 950€</span>
+    </div>
+</a><a class="item freisinn" href="/termine/allchemie-der-freude/">
+    <span class="title">Allchemie der Freude</span>
+    
+        <span class="trainer">Raphaelle Mellé</span>
+    
+    
+    <span class="location"></span>
+    
+    <span class="dates"><span class="date">10. Oct</span> - <span
+            class="end_date">10. Oct</span></span>
+    <div class="more">
+        <span class="time"></span>
+        <span class="price">Spendenempfehlung 60-120 €</span>
+    </div>
+</a><a class="item forschungsraum" href="/termine/verantwortung-fuhrung-im-kreuzfeuer-externer-verordnungen/">
+    <span class="title">Verantwortung: Führung im Kreuzfeuer externer Verordnungen</span>
+    
+        <span class="trainer">Stefan Ackermann, Martin Lehnert</span>
+    
+    
+    <span class="location"></span>
+    
+    <span class="dates"><span class="date">23. Oct</span> - <span
+            class="end_date">23. Oct</span></span>
+    <div class="more">
+        <span class="time"></span>
+        <span class="price"></span>
+    </div>
+</a><a class="item next-level" href="/termine/expand-the-box/">
+    <span class="title">Expand the Box</span>
+    
+        <span class="trainer"></span>
+    
+    
+    <span class="location"></span>
+    
+    <span class="dates"><span class="date">30. Dec</span> - <span
+            class="end_date">02. Jan</span></span>
+    <div class="more">
+        <span class="time"></span>
+        <span class="price"></span>
+    </div>
+</a></div>
+    <script>
+        function toggleGrid(el) {
+            const grid = document.querySelector('.grid');
+            const elType = el.classList[1];
+            const activeChild = document.querySelector('.switch-item.active');
+            // reset
+            grid.classList.value = 'grid';
+
+            if (el !== activeChild) {
+                if (activeChild) activeChild.classList.remove('active');
+                el.classList.toggle('active');
+                grid.classList.toggle(elType);
+            }
+        }
+    </script>
 </main>
+
+
 
     <footer>
     <div class="inner">
-        <span>© 2020 Kalender</span>
+        <span>© 2021 Werkstatt für Verantwortung und Führung E.V.</span>
         <a href="/kontakt/">Kontakt</a>    
         <a href="/impressum/">Impressum</a>    
     </div>

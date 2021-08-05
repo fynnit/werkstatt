@@ -6,19 +6,39 @@
     <link rel="stylesheet" href="/css/main.css" type="text/css">
     
 
-    <title>Freisinn</title>
+    <title> Werkstatt - Freisinn</title>
 
-    
-    <!-- Meta Tags Generated via http://heymeta.com -->
+    <title>Freisinn - undefined</title>
+
+<meta name="description" content="">
+<meta name="robots" content="index,follow">
+<meta name="author" content="">
+
+<link rel="canonical" href="/freisinn/">
+
+<meta property="og:title" content="Freisinn - undefined">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/freisinn/">
+<meta property="og:description" content="">
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:url" content="/freisinn/">
+<meta name="twitter:title" content="Freisinn - undefined">
+<meta name="twitter:description" content="">
+
+
+
 </head>
-<body class="body freisinn" class="loading"><nav>
-    <div class="button-wrapper" onclick="this.classList.toggle('active');">
-        <span class="button button-top"></span>
-        <span class="button button-bottom"></span>
-    </div>
+<body class="body freisinn" class="loading"><div class="button-wrapper" onclick="toggleMenu()">
+    <span class="button button-top"></span>
+    <span class="button button-bottom"></span>
+</div>
 
+<nav>
     <div class="nav-container">
-        <div class="mainpages">
+        <div class="nav-links mainpages">
             
                 
                     <a href="/" class="large-type" >Werkstatt</a>
@@ -46,12 +66,27 @@
             
         </div>
 
-        <div class="secondarypages">
-        
+        <div class="nav-links secondarypages">
+            
+                
+                    <a href="/kalender/" >Kalender</a>
+                
+            
+                
+                    <a href="/impressum/" >Impressum</a>
+                
+            
         </div>
     </div>
 </nav>
-
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('nav');
+        const button = document.querySelector('.button-wrapper');
+        menu.classList.toggle('active');
+        button.classList.toggle('active');
+    }
+</script>
 
     
 <header class="page freisinn" 
@@ -83,7 +118,7 @@ In unseren »Freisinn«-Räumen dienen verschiedenste kreative, künstlerische u
         
         
                 <section class="single-image">
-    <img src="/assets/freisinn/freisinn-icon.svg" alt="Freisinn - überlappende Rechtecke bilden neue Rechtecke, neue Räume">
+    <img src="/assets/icons/werkstatt-freisinn.svg" alt="Freisinn - überlappende Rechtecke bilden neue Rechtecke, neue Räume">
 </section>
             
             
@@ -102,12 +137,39 @@ Inspirationsträger:innen für rituelle Räume kokreieren Erfahrungsfelder, in 	
 
             
     
+    
+     
+    
+    
+    
+
+    <section class="kalender">
+    <h3>Nächste Termine</h3>
+        <div class="grid">
+                    <a class="item freisinn" href="/termine/allchemie-der-freude/">
+    <span class="title">Allchemie der Freude</span>
+    
+        <span class="trainer">Raphaelle Mellé</span>
+    
+    
+    <span class="location"></span>
+    
+    <span class="dates"><span class="date">10. Oct</span> - <span
+            class="end_date">10. Oct</span></span>
+    <div class="more">
+        <span class="time"></span>
+        <span class="price">Spendenempfehlung 60-120 €</span>
+    </div>
+</a>
+                </div>
+    </section>
+    
 
 </main>
 
     <footer>
     <div class="inner">
-        <span>© 2020 Freisinn</span>
+        <span>© 2021 Werkstatt für Verantwortung und Führung E.V.</span>
         <a href="/kontakt/">Kontakt</a>    
         <a href="/impressum/">Impressum</a>    
     </div>

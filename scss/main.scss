@@ -18,3 +18,23 @@
 @import 'components/tabs';
 @import 'pages/cal';
 
+footer {
+    padding: 16px 32px;
+    display: flex;
+    @media (max-width: 774px) {
+        justify-content: center;
+        .inner {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    a {
+        padding-top: 8px;
+    @media (min-width: 775px) {
+        padding-top: 0;
+        padding-left: 32px;
+    }
+    }
+}

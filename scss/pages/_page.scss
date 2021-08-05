@@ -1,100 +1,34 @@
 header.page {
-    
-    
-    + main {
-        color: $dark;
+    .copyright {
+        padding: 0 16px;
     }
     &.forschungsraum {
-        color: $forschungsraum;
-        + main {
-            color: $forschungsraum;
-            background-color: $forschungsraum-background;
-            input, textarea {
-                background-color: $forschungsraum;
-                color: $white;
-            }
-            ::placeholder {
-                color: white;
-            }
-
-        }
+        color: darken($forschungsraum, 20%);
+        
     }
     &.next-level {
         color: $white;
-        + main {
-            color: darken($next-level-pink,10%);
-            background-color: $next-level-background;
-            input, textarea {
-                background-color: $next-level;
-                color: $white;
-            }
-            ::placeholder {
-                color: white;
-            }
-
-        }
+        
     }
     &.freisinn {
-        color: $freisinn;
-        + main {
-            color: $freisinn;
-            background-color: $freisinn-background;
-            input, textarea {
-                background-color: $freisinn;
-                color: $white;
-            }
-            ::placeholder {
-                color: white;
-            }
-
-        }
+        color: darken($freisinn, 10%);
+        
     }
     &.projekte-workshops {
         color: white;
-        h1 {max-width: 50%;}
-
-        + main {
-            color: $projekte-workshops;
-            background-color: $projekte-workshops-background;
-            input, textarea {
-                background-color: $projekte-workshops;
-                color: $white;
-            }
-            ::placeholder {
-                color: white;
-            }
-
-        }
-    }
-
-    + main {
-        padding-top: 50px;
+        
     }
     &.coaching {
-        color: $coaching;
-
-        + main {
-            color: $dark;
-            background-color: $coaching-background;
-            input, textarea {
-                background-color: $coaching;
-                color: $white;
-            }
-            ::placeholder {
-                color: white;
-            }
-
-        }
+        color: darken($coaching, 0%);
     }
-
-    + main {
-        padding-top: 50px;
-    }
+    
 }
-
-main {
-    padding-left: 16px;
-    padding-right: 16px;
+main.page {
+    color: $dark;
+    padding-bottom: 180px;
+    padding-top: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
 
     @media (min-width: 768px) {
         padding-left: 32px;
@@ -103,8 +37,98 @@ main {
     @media (min-width: 1024px) {
         padding-left: 32px;
         padding-right: 32px;
-    }   
+    }
+
+    &.forschungsraum {
+        color: darken($forschungsraum, 20%);
+        background-color: lighten($forschungsraum-background, 5%);
+
+        + footer {
+            color: inherit;
+            background-color: $forschungsraum-background;
+        }
+
+        input, textarea {
+            background-color: $forschungsraum;
+            color: $white;
+        }
+        ::placeholder {
+            color: white;
+        }
+
+    }
+    &.next-level {
+        color: darken($next-level-pink,10%);
+        background-color: lighten($next-level-background, 10%);
+        + footer {
+            color: inherit;
+            background-color: $next-level-background;}
+
+        input, textarea {
+            background-color: $next-level;
+            color: $white;
+        }
+        ::placeholder {
+            color: white;
+        }
+
+    }
+    &.freisinn {
+        color: darken($freisinn, 10%);
+        background-color: lighten($freisinn-background, 12%);
+        + footer {
+            color: inherit;
+            background-color: $freisinn-background;
+        }
+
+        input, textarea {
+            background-color: $freisinn;
+            color: $white;
+        }
+        ::placeholder {
+            color: white;
+        }
+
+    }
+    &.projekte-workshops {
+        color: $projekte-workshops;
+        background-color: lighten($projekte-workshops-background, 23%);
+
+        h1 {max-width: 50%;}
+
+        + footer {
+            color: inherit;
+            background-color: $projekte-workshops-background;}
+
+        input, textarea {
+            background-color: $projekte-workshops;
+            color: $white;
+        }
+        ::placeholder {
+            color: white;
+        }
+
+    }
+    &.coaching {
+        color: darken($coaching,45%);
+        min-height: 40vh;
+        background-color: lighten($coaching-background, 4%);
+
+        + footer {
+            color: inherit;
+            background-color: $coaching-background;}
+
+        input, textarea {
+            background-color: $coaching;
+            color: $white;
+        }
+        ::placeholder {
+            color: white;
+        }
+
+    }
 }
+
 .single-image {
     text-align: center;
     padding: 48px 0;
@@ -112,4 +136,8 @@ main {
 .text-block + .single-image,
 .single-image + .text-block {
     margin-top: -50px;
+}
+
+section.kalender {
+    padding-top: 80px;
 }

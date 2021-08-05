@@ -10,14 +10,50 @@ $coaching-text: #8d700f;
 $projekte-workshops: $dark;
 $next-level-light: #e43d24;
 $next-level-pink: #a5213b;
+
 $forschungsraum-background: #e8eff8;
 $next-level-background: #ffecec;
 $freisinn-background: #fffaf1;
 $projekte-workshops-background: #ffe8ce;
 $coaching-background: #fff5ca;
+
 $active: #ff8a4d;
 $white: #ffffff;
 $grey: #d8d8d8;
+
+
+.alt-theme {
+  color: #658DA6;
+  color: #8C6542;
+  color: #59321B;
+  color: #D9BFB0;
+  color: #731702;
+}
+// theme 2
+$next-level: #D26412;
+$next-level-background: lighten($next-level, 42%);
+$next-level-pink: lighten(#5F0700, 10%);
+
+$forschungsraum: #6286A3;
+$forschungsraum-background: lighten($forschungsraum, 42%);
+
+$freisinn: #76894F;
+$freisinn-background: lighten($freisinn, 42%);
+
+$coaching: #EBBD90;
+$coaching-background: lighten($coaching, 15%);
+
+$projekte-workshops: #6C6532;
+$projekte-workshops-background: lighten($projekte-workshops, 42%);
+
+.alt-theme2 {
+  color: #6C6532;
+  color: #76894F;
+  color: #6286A3;
+  color: #C05900; color: #D26412; color: #5F0700;
+  color: #EBBD90;
+}
+
 
 :root {
 --dark: #{$dark};

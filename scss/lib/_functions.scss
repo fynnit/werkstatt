@@ -63,7 +63,7 @@
       transform: translate(#{$x}, 0);
     }
   }
-  animation: #{$name} 2000ms $del ease-in-out  infinite;
+  animation: #{$name} 2000ms $del ease-in-out 5;
 }
 
 @mixin container() {

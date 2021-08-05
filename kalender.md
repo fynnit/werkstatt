@@ -1,8 +1,9 @@
 ---
+
 title: Kalender
 layout: kalender.liquid
 permalink: "/kalender/"
-tags: secondary-page
+tags: secpages
 date: 2021-01-01
 
 ---

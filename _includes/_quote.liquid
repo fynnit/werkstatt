@@ -1,4 +1,6 @@
+{% if block.title %}
 <section class="section-quote">
     <span class="quote">{{ block.title | mdfy}}</span>
     <span class="from">{{ block.text }}</span>
 </section>
+{% endif %}

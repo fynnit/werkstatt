@@ -17,22 +17,99 @@
         }
     }
     main {
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding: 32px;
     }
+    .switch {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 8px;
+        margin: 0 auto 32px;
+        justify-content: space-between;
+        max-width: 800px;
+        &-item {
+            padding: 8px 16px;
+            border-radius: 16px;
+            gap: 16px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &.forschungsraum {
+                background-color: $forschungsraum-background;
+                &.active {
+                    color: white;
+                    background-color: $forschungsraum;
+                }
+            }
+            &.next-level {
+                background-color: $next-level-background;
+                &.active {
+                    color: white;
+                    background-color: $next-level;
+                }
+            }
+            &.freisinn {
+                background-color: $freisinn-background;
+                &.active {
+                    color: white;
+                    background-color: $freisinn;
+                }
+            }
+            &.coaching {
+                background-color: $coaching-background;
+                &.active {
+                    background-color: $coaching;
+                }
+            }
+            &.projekte-workshops {
+                background-color: $projekte-workshops-background;
+                &.active {
+                    color: white;
+                    background-color: $projekte-workshops;
+                }
+            }
+        }
+    }
+
     .grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        @media (min-width: 321px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 550px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width: 770px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        // @media (min-width: 1024px) {
+        //     grid-template-columns: repeat(4, 1fr);
+        // }
         column-gap: 16px;
         row-gap: 16px;
-
+        &.forschungsraum {
+            .item:not(.forschungsraum) {display: none;}
+        }
+        &.next-level {
+            .item:not(.next-level) {display: none;}
+        }
+        &.freisinn {
+            .item:not(.freisinn) {display: none;}
+        }
+        &.coaching {
+            .item:not(.coaching) {display: none;}
+        }
+        &.projekte-workshops {
+            .item:not(.projekte-workshops) {display: none;}
+        }
     }
 
     .item {
-        border: 1px solid $dark;
+        // border: 1px solid $dark;
         padding: 16px;
         display: inline-flex;
         gap: 4px;
+        align-self: start;
         flex-flow: column;
         &.forschungsraum {
             color: $forschungsraum;
@@ -72,5 +149,4 @@
 .post-description {
     padding: 32px 0;
     text-align: center;
-
 }

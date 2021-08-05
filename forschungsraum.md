@@ -1,6 +1,12 @@
 ---
 
 title: Forschungsraum
+excerpt: Im Forschungsraum stehen Fragen und reale Situationen unserer Teilnehmenden im Zentrum. Wir erkunden konkrete Fragestellungen, die uns leiten und die wir so konkret und effektiv wie möglich bearbeiten
+author: Martin Lehnert
+image: /assets/forschungsraum-bg.jpg
+ogtype: website
+
+
 subtitle: Im Forschungsraum stehen Fragen und reale Situationen unserer Teilnehmenden im Zentrum. Wir erkunden konkrete Fragestellungen, die uns leiten und die wir so konkret und effektiv wie möglich bearbeiten.
 layout: page.liquid
 permalink: "/forschungsraum/"
