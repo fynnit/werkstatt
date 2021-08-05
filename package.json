@@ -27,6 +27,7 @@
     "sass": "^1.35.1"
   },
   "dependencies": {
+    "eleventy-plugin-seo": "^0.5.2",
     "markdown-it": "^12.0.6"
   }
 }

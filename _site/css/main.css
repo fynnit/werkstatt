@@ -654,6 +654,10 @@ main.page.coaching ::placeholder {
   margin-top: -50px;
 }
 
+section.kalender {
+  padding-top: 80px;
+}
+
 .i-want {
   margin: 0 auto;
   padding: 40px 32px 64px;
@@ -662,6 +666,7 @@ main.page.coaching ::placeholder {
 .i-want h2 {
   text-align: center;
   color: #920b00;
+  color: #a53e00;
 }
 @media (max-width: 503px) {
   .i-want {
@@ -683,6 +688,7 @@ main.page.coaching ::placeholder {
   padding: 10px 20px;
   border-radius: 16px;
   background-color: #fada8e;
+  background-color: #ffe5a6;
   color: #1e2422;
   max-width: 100%;
   display: inline-flex;
@@ -732,7 +738,7 @@ main.page.coaching ::placeholder {
 @media (min-width: 873px) {
   .wants:first-child .want-item:nth-child(1) {
     border-bottom-right-radius: 0;
-    animation: regu 2000ms 700ms ease-in-out infinite;
+    animation: regu 2000ms 700ms ease-in-out 5;
   }
   @keyframes regu {
     0% {
@@ -753,7 +759,7 @@ main.page.coaching ::placeholder {
   }
   .wants:first-child .want-item:nth-child(2) {
     border-bottom-left-radius: 0;
-    animation: regu 2000ms 900ms ease-in-out infinite;
+    animation: regu 2000ms 900ms ease-in-out 5;
   }
   @keyframes regu {
     0% {
@@ -774,7 +780,8 @@ main.page.coaching ::placeholder {
   }
   .wants:first-child .want-item:nth-child(3) {
     border-bottom-right-radius: 0;
-    animation: viermi 2000ms 300ms ease-in-out infinite;
+    animation: viermi 2000ms 300ms ease-in-out 5;
+    transform: translate(-40%);
   }
   @keyframes viermi {
     0% {
@@ -795,7 +802,8 @@ main.page.coaching ::placeholder {
   }
   .wants:first-child .want-item:nth-child(4) {
     border-bottom-left-radius: 0;
-    animation: vierplu 2000ms 1700ms ease-in-out infinite;
+    animation: vierplu 2000ms 1700ms ease-in-out 5;
+    transform: translate(40%);
   }
   @keyframes vierplu {
     0% {
@@ -816,7 +824,8 @@ main.page.coaching ::placeholder {
   }
   .wants:last-child .want-item:nth-child(1) {
     border-top-right-radius: 0;
-    animation: viermi 2000ms 100ms ease-in-out infinite;
+    animation: viermi 2000ms 100ms ease-in-out 5;
+    transform: translate(-40%);
   }
   @keyframes viermi {
     0% {
@@ -837,7 +846,8 @@ main.page.coaching ::placeholder {
   }
   .wants:last-child .want-item:nth-child(2) {
     border-top-left-radius: 0;
-    animation: vierplu 2000ms 900ms ease-in-out infinite;
+    animation: vierplu 2000ms 900ms ease-in-out 5;
+    transform: translate(40%);
   }
   @keyframes vierplu {
     0% {
@@ -858,7 +868,7 @@ main.page.coaching ::placeholder {
   }
   .wants:last-child .want-item:nth-child(3) {
     border-top-right-radius: 0;
-    animation: regu 2000ms 400ms ease-in-out infinite;
+    animation: regu 2000ms 400ms ease-in-out 5;
   }
   @keyframes regu {
     0% {
@@ -879,7 +889,7 @@ main.page.coaching ::placeholder {
   }
   .wants:last-child .want-item:nth-child(4) {
     border-top-left-radius: 0;
-    animation: regu 2000ms 770ms ease-in-out infinite;
+    animation: regu 2000ms 770ms ease-in-out 5;
   }
   @keyframes regu {
     0% {
@@ -902,7 +912,7 @@ main.page.coaching ::placeholder {
 @media (min-width: 1070px) {
   .wants:first-child .want-item:nth-child(1) {
     border-bottom-right-radius: 0;
-    animation: regu 2000ms 700ms ease-in-out infinite;
+    animation: regu 2000ms 700ms ease-in-out 5;
   }
   @keyframes regu {
     0% {
@@ -923,7 +933,7 @@ main.page.coaching ::placeholder {
   }
   .wants:first-child .want-item:nth-child(2) {
     border-bottom-left-radius: 0;
-    animation: regu 2000ms 900ms ease-in-out infinite;
+    animation: regu 2000ms 900ms ease-in-out 5;
   }
   @keyframes regu {
     0% {
@@ -944,7 +954,7 @@ main.page.coaching ::placeholder {
   }
   .wants:first-child .want-item:nth-child(3) {
     border-bottom-right-radius: 0;
-    animation: viermi 2000ms 300ms ease-in-out infinite;
+    animation: viermi 2000ms 300ms ease-in-out 5;
   }
   @keyframes viermi {
     0% {
@@ -965,7 +975,7 @@ main.page.coaching ::placeholder {
   }
   .wants:first-child .want-item:nth-child(4) {
     border-bottom-left-radius: 0;
-    animation: vierplu 2000ms 1700ms ease-in-out infinite;
+    animation: vierplu 2000ms 1700ms ease-in-out 5;
   }
   @keyframes vierplu {
     0% {
@@ -986,7 +996,7 @@ main.page.coaching ::placeholder {
   }
   .wants:last-child .want-item:nth-child(1) {
     border-top-right-radius: 0;
-    animation: viermi 2000ms 100ms ease-in-out infinite;
+    animation: viermi 2000ms 100ms ease-in-out 5;
   }
   @keyframes viermi {
     0% {
@@ -1007,7 +1017,7 @@ main.page.coaching ::placeholder {
   }
   .wants:last-child .want-item:nth-child(2) {
     border-top-left-radius: 0;
-    animation: vierplu 2000ms 900ms ease-in-out infinite;
+    animation: vierplu 2000ms 900ms ease-in-out 5;
   }
   @keyframes vierplu {
     0% {
@@ -1028,7 +1038,7 @@ main.page.coaching ::placeholder {
   }
   .wants:last-child .want-item:nth-child(3) {
     border-top-right-radius: 0;
-    animation: regu 2000ms 400ms ease-in-out infinite;
+    animation: regu 2000ms 400ms ease-in-out 5;
   }
   @keyframes regu {
     0% {
@@ -1049,7 +1059,7 @@ main.page.coaching ::placeholder {
   }
   .wants:last-child .want-item:nth-child(4) {
     border-top-left-radius: 0;
-    animation: regu 2000ms 770ms ease-in-out infinite;
+    animation: regu 2000ms 770ms ease-in-out 5;
   }
   @keyframes regu {
     0% {
@@ -1183,7 +1193,7 @@ label.hidden {
 .text_image_block {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   max-width: 800px;
   margin: 0 auto 80px;
   gap: 32px;

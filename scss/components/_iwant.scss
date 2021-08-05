@@ -7,6 +7,7 @@
     h2 {
         text-align: center;
         color: $next-level-pink;
+        color: #a53e00;
     }
 
     @media (max-width: 503px) {
@@ -32,6 +33,7 @@
         box-shadow: 0 2px 20px -12px $next-level;
     }
     background-color: #fada8e;
+    background-color: #ffe5a6;
     color: $dark;
     max-width: 100%;
 
@@ -88,10 +90,12 @@
             &:nth-child(3) {
                 border-bottom-right-radius: 0;
                 @include hoverAnimation(300ms, -20%, viermi);
+                transform: translate(-40%);
             }
             &:nth-child(4) {
                 border-bottom-left-radius: 0;
                 @include hoverAnimation(1700ms, 20%, vierplu);
+                transform: translate(40%);
             }
         }
 
@@ -99,10 +103,12 @@
             &:nth-child(1) {
                 border-top-right-radius: 0;
                 @include hoverAnimation(100ms, -20%, viermi);
+                transform: translate(-40%);
             }
             &:nth-child(2) {
                 border-top-left-radius: 0;
                 @include hoverAnimation(900ms, 20%, vierplu);
+                transform: translate(40%);
             }
             &:nth-child(3) {
                 border-top-right-radius: 0;

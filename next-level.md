@@ -15,7 +15,7 @@ sections:
     Art von Unterschied du machen möchtest.«"
   text: Jane Goodall
 - template: text_image_block
-  image: "/assets/icons/next-level-1.svg"
+  image: "/assets/icons/werkstatt-focus.svg"
   text: In einem drei- bis viertägigen Training erweitern wir den Focus lösungsorientierten
     Denkens, um vielschichtige Wirkfelder in Entscheidungen einzubeziehen. Welche
     Antriebe und Absichten, welche Hindernisse und Schatten sind im Raum? Wie bin
@@ -24,14 +24,14 @@ sections:
     Werkstattraum. Behutsam erkunden wir Wege zu gesteigerter eigenverantwortlicher
     Führung in Selbstführung und Selbstwahrnehmung.
 - template: text_image_block
-  image: "/assets/icons/next-level-2.svg"
+  image: "/assets/icons/werkstatt-contact.svg"
   text: 'Dabei unterstützen wir uns gegenseitig, Beziehungen im Kontakt zu gestalten,
     situativ zu führen und sich seiner selbst bewusst Verantwortung zu tragen. Die
     Fähigkeit mit Gefühlen im professionellen Kontext kompetent umzugehen wird dabei
     zu einem Schlüssel. Komplexe Situationen und Ungewissheit lassen sich heute mit
     Vernunft und Wissen allein nicht bewältigen. '
 - template: text_image_block
-  image: "/assets/icons/next-level-3.svg"
+  image: "/assets/icons/werkstatt-powers.svg"
   text: Die Unterscheidung „Gefühle als Kraft“ und „unbewusste Emotionen“ will geschult,
     Achtsamkeit, Einfühlen und Abwägen geübt werden.  Wer sich eigene innere Prozesse
     und Reaktionen bewusst macht und mit diesen verantwortlich umgeht, legt auch einen
