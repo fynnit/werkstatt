@@ -3,7 +3,7 @@ const pluginSEO = require("eleventy-plugin-seo");
 
 moment.tz.add("Europe/Berlin|CET CEST CEMT|-10 -20 -30|01010101010101210101210101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010|-2aFe0 11d0 1iO0 11A0 1o00 11A0 Qrc0 6i00 WM0 1fA0 1cM0 1cM0 1cM0 kL0 Nc0 m10 WM0 1ao0 1cp0 dX0 jz0 Dd0 1io0 17c0 1fA0 1a00 1ehA0 1a00 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1fA0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1fA0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1cM0 1fA0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00 11A0 1qM0 WM0 1qM0 WM0 1qM0 WM0 1qM0 11A0 1o00 11A0 1o00|41e5");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   let markdownIt = require("markdown-it");
 
   let markdownItRenderer = new markdownIt({
@@ -12,7 +12,7 @@ module.exports = function(eleventyConfig) {
     typographer: true,
     qoutes: '»«'
   });
-  
+
   let mdOptions = {
     html: true,
     breaks: true,
@@ -20,44 +20,56 @@ module.exports = function(eleventyConfig) {
     qoutes: '»«',
   };
 
-  eleventyConfig.addPlugin(pluginSEO, require("./_data/seo.json"));
+  eleventyConfig.addPlugin(pluginSEO, require("./src/_data/seo.json"));
 
   eleventyConfig.setLibrary("md", markdownIt(mdOptions));
 
   eleventyConfig.setTemplateFormats('md, liquid');
-    eleventyConfig.setBrowserSyncConfig({files: './_site/css/**/*.css'});
-    eleventyConfig.addPassthroughCopy({'assets/': '/assets/'});
-    
-    eleventyConfig.setFrontMatterParsingOptions({
-      excerpt: true,
-      excerpt_separator: '---'
-    });
+  eleventyConfig.setBrowserSyncConfig({
+    files: './_site/css/**/*.css'
+  });
+  eleventyConfig.addPassthroughCopy({
+    'assets/': '/assets/'
+  });
 
-    eleventyConfig.addFilter('dateformat', (dateIn) => {
-      return moment(dateIn).tz('CET').format('DD. MMM');
-    });
-    eleventyConfig.addFilter('starttime', (dateIn) => {
-      return moment(dateIn).tz('CET').format('hh:mm');
-    });
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_separator: '---'
+  });
 
-    // render as markdown
-    eleventyConfig.addFilter('mdfy', (str) => {
-      if (str) {
-        markdownItRenderer.renderInline(str);
-        return str;
-      } 
-    });
+  eleventyConfig.addFilter('dateformat', (dateIn) => {
+    return moment(dateIn).tz('CET').format('DD. MMM');
+  });
+  eleventyConfig.addFilter('starttime', (dateIn) => {
+    return moment(dateIn).tz('CET').format('hh:mm');
+  });
 
-    // to lower case 
-    eleventyConfig.addFilter('tlc', (val) => {
-      if(val) {
-      return val.toLowerCase();}
-    });
+  // render as markdown
+  eleventyConfig.addFilter('mdfy', (str) => {
+    if (str) {
+      markdownItRenderer.renderInline(str);
+      return str;
+    }
+  });
 
-    // render only first word
-    eleventyConfig.addFilter('fw', (val) => {
-      if(val) {
-        return val.substr(0,val.indexOf(' '));
-      }
-    });
+  // to lower case 
+  eleventyConfig.addFilter('tlc', (val) => {
+    if (val) {
+      return val.toLowerCase();
+    }
+  });
+
+  // render only first word
+  eleventyConfig.addFilter('fw', (val) => {
+    if (val) {
+      return val.substr(0, val.indexOf(' '));
+    }
+  });
+
+  return {
+    dir: {
+      input: "src"
+    }
+  }
+
 };
