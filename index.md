@@ -76,7 +76,7 @@ teaser:
     text: Mehr erfahren
     url: kalender
 team:
-  title: Die Begleiter:innen & Mitmacher:innen
+  title: Team
   members:
   - name: Marietta
     image:

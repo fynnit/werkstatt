@@ -5,7 +5,7 @@ permalink: "/kontakt/"
 tags: secpages
 
 header:
-    color: '#ffeeee'
+    color: '#feeefe'
 
 ---
 
