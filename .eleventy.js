@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
     qoutes: '»«',
   };
 
-  eleventyConfig.addPlugin(pluginSEO, require("./src/_data/seo.json"));
+  eleventyConfig.addPlugin(pluginSEO, require("./_data/seo.json"));
 
   eleventyConfig.setLibrary("md", markdownIt(mdOptions));
 
@@ -65,11 +65,5 @@ module.exports = function (eleventyConfig) {
       return val.substr(0, val.indexOf(' '));
     }
   });
-
-  return {
-    dir: {
-      input: "src"
-    }
-  }
 
 };
