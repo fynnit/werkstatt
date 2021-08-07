@@ -3,20 +3,7 @@ layout: base.liquid
 ---
 
 
-<header class="page {{title | slug }}" 
-    style="
-    {% if header.image %} background-image: url({{header.image}}); {% endif %}
-    {% if header.color  %} background-color: {{header.color}};{% endif %}
-    "
-    >
-    
-    <h1 class="page-title">{{title}}</h1>
-    {% if subtitle %}<span class="page-subtitle">{{subtitle}}</span>{% endif %}
-    {% if header.copyright %}<span class="copyright">{{header.copyright}}</span>{% endif %}
-
-</header>
-
----
+{% include _header.liquid %}
 
 <main class="secondary-page page">
     <section>
