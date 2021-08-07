@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: "/werkbank"
 webhook_url: 
 sections:
+- type: directory
+  path: team
+  label: Team
+  create: all
+  match: "*.md"
 - type: document
   path: index.md
   label: Home
