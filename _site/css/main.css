@@ -1426,13 +1426,25 @@ body.kontakt header {
   color: white;
   background-position: 0% 30%;
 }
+body.kontakt main {
+  padding: 0 32px;
+  background-color: #fff;
+}
 
 .contact-profiles .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   max-width: 1024px;
   margin: 80px auto;
-  gap: 32px;
+  gap: 16px;
+}
+@media (min-width: 800px) {
+  .contact-profiles .cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1024px;
+    margin: 80px auto;
+    gap: 32px;
+  }
 }
 .contact-profiles .card {
   padding: 32px;

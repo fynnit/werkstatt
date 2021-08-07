@@ -1,17 +1,17 @@
 <section class="team">
     <h3>{{team.title}}</h3>
     <div class="members">
-        {% for item in team.members %}
-            <div class="member {{item.name | tlc}} {% if forloop.first %}active{% endif %}" onclick="toogleMember(this)">
-                <img class="member-image" src="{{item.image.url}}" alt="{{item.image.name}}">
-                <h5>{{item.name}}</h5>
+        {% for member in collections.team %}
+            <div class="member {{member.data.first-name | tlc}} {% if forloop.first %}active{% endif %}" onclick="toogleMember(this)">
+                <img class="member-image" src="{{member.data.image.url}}" alt="{{member.data.image.name}}">
+                <h5>{{member.data.first-name}}</h5>
             </div>
         {% endfor %}
     </div>
     <div class="member-descriptions">
-        {% for item in team.members %}
-            <div class="member-description {{item.name | tlc}} {% if forloop.first %}active{% endif %}">
-                <p>{{item.description |mdfy }}</p>
+        {% for member in collections.team %}
+            <div class="member-description {{member.data.first-name | tlc}} {% if forloop.first %}active{% endif %}">
+                <p>{{member.data.about |mdfy }}</p>
             </div>
         {% endfor %}
     </div>

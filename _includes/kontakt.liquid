@@ -9,11 +9,11 @@ class: contact
 <main>
     <section class="contact-profiles">
         <div class="cards">
-            {% for member in members %}
-                <div class="card {{member.color}}">
-                    <h5>{{member.member}}</h5>
-                    <a href="tel:{{member.phone}}">{{member.phone}}</a>
-                    <a href="mailto:{{member.mail}}">{{member.mail}}</a>
+            {% for member in collections.team %}
+                <div class="card {{member.data.color}}">
+                    <h5>{{member.data.name}}</h5>
+                    <a href="tel:{{member.data.phone}}">{{member.data.phone}}</a>
+                    <a href="mailto:{{member.data.mail}}">{{member.data.mail}}</a>
                 </div>
             {% endfor %}
         </div>
