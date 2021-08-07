@@ -1,22 +1,25 @@
 ---
 
 layout: base.liquid
+class: contact
 ---
 
 {% include _header.liquid %}
 
-<section class="contact-profiles">
-    <div class="cards">
-        {% for member in members %}
-            <div class="card">
-                <h5>{{member.member}}</h5>
-                <a href="tel:{{member.phone}}">{{member.phone}}</a>
-                <a href="mailto:{{member.mail}}">{{member.mail}}</a>
-            </div>
-        {% endfor %}
-    </div>
-</section>
+<main>
+    <section class="contact-profiles">
+        <div class="cards">
+            {% for member in members %}
+                <div class="card {{member.color}}">
+                    <h5>{{member.member}}</h5>
+                    <a href="tel:{{member.phone}}">{{member.phone}}</a>
+                    <a href="mailto:{{member.mail}}">{{member.mail}}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 
-<section class="contact-section">
-    {{content}}
-</section>
+    <section class="contact-section">
+        {{content}}
+    </section>
+</main>

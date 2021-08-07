@@ -1,15 +1,43 @@
+body.kontakt {
+    header {
+        color: white;
+        background-position: 0% 30%;
+    }
+}
 .contact-profiles {
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         max-width: 1024px;
         margin: 80px auto;
+        gap: 32px;
     }
     .card {
         padding: 32px;
         border-radius: 32px;
         display: flex;
         flex-flow: column;
+
+        &.forschungsraum {
+            color: darken($forschungsraum, 20%);
+            background-color: $forschungsraum-background;
+        }
+        &.next-level {
+            color: darken($next-level-pink,10%);
+            background-color: $next-level-background;
+        }
+        &.freisinn {
+            color: $freisinn;
+            background-color: $freisinn-background;
+        }
+        &.projekte-workshops {
+            color: $projekte-workshops;
+            background-color: $projekte-workshops-background;
+        }
+        &.coaching {
+            color: darken($coaching, 50%);
+            background-color: $coaching-background;
+        }
     }
 }
 .contact-section {

@@ -1422,17 +1422,43 @@ label.hidden {
   text-align: center;
 }
 
+body.kontakt header {
+  color: white;
+  background-position: 0% 30%;
+}
+
 .contact-profiles .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 1024px;
   margin: 80px auto;
+  gap: 32px;
 }
 .contact-profiles .card {
   padding: 32px;
   border-radius: 32px;
   display: flex;
   flex-flow: column;
+}
+.contact-profiles .card.forschungsraum {
+  color: #3b5264;
+  background-color: #e9eef2;
+}
+.contact-profiles .card.next-level {
+  color: #5f0700;
+  background-color: #fad9c1;
+}
+.contact-profiles .card.freisinn {
+  color: #76894F;
+  background-color: #dbe2cc;
+}
+.contact-profiles .card.projekte-workshops {
+  color: #6C6532;
+  background-color: #d3cda1;
+}
+.contact-profiles .card.coaching {
+  color: #693e13;
+  background-color: #f7e4d1;
 }
 
 .contact-section {
