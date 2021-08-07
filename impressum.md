@@ -5,7 +5,8 @@ permalink: "/impressum/"
 tags: secpages
 
 header:
-    color: '#ffeeee'
+  image: "/assets/arco.jpg"
+  color: '#ffeeee'
 
 ---
 
