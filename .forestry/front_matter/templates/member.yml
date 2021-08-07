@@ -5,6 +5,7 @@ fields:
 - type: text
   name: tags
   label: tags
+  hidden: true
 - type: text
   name: name
   label: name
