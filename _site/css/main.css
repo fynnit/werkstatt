@@ -292,9 +292,18 @@ header:not(.home).projekte-workshops {
   color: #6C6532;
   background-color: #d3cda1;
 }
+@media (max-width: 939px) {
+  header:not(.home).projekte-workshops {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
 header:not(.home).coaching {
   color: #EBBD90;
   background-color: #f7e4d1;
+}
+header:not(.home).impressum, header:not(.home).datenschutz {
+  color: white;
 }
 
 header.home {

@@ -37,9 +37,17 @@ header:not(.home) {
     &.projekte-workshops {
         color: $projekte-workshops;
         background-color: $projekte-workshops-background;
+        @media (max-width: 939px) {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
     &.coaching {
         color: $coaching;
         background-color: $coaching-background;
+    }
+    &.impressum,
+    &.datenschutz {
+        color: white;
     }
 }

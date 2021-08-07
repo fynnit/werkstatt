@@ -5,7 +5,6 @@ permalink: "/datenschutz/"
 tags: secpages
 header:
   image: "/assets/arco.jpg"
-  color: "#ffeeee"
 
 ---
 ### Paragraph 1

@@ -6,7 +6,6 @@ tags: secpages
 
 header:
   image: "/assets/arco.jpg"
-  color: '#ffeeee'
 
 ---
 
