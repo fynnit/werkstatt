@@ -2,8 +2,7 @@
 tags: team
 name: Dr. Andreas Beutler
 first-name: Andreas
-image:
-  url: "/uploads/andreas.jpg"
+image: "/uploads/andreas.jpg"
 phone: 
 mail: andreas@werkstatt-fuer-verantwortung-und-fuehrung.de
 color: coaching

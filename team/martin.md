@@ -2,8 +2,7 @@
 tags: team
 name: Martin Lehnert
 first-name: Martin
-image:
-  url: "/uploads/martin.jpg"
+image: "/uploads/martin.jpg"
 phone: 040 57003724
 mail: martin@werkstatt-fuer-verantwortung-und-fuehrung.de
 color: forschungsraum

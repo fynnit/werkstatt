@@ -2,8 +2,7 @@
 tags: team
 name: Dr. Marietta Johanna Schürholz
 first-name: Marietta
-image:
-  url: "/uploads/marietta.jpg"
+image: "/uploads/marietta.jpg"
 phone: 04283-6082027
 mail: marietta@werkstatt-fuer-verantwortung-und-fuehrung.de
 color: next-level

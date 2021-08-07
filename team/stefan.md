@@ -2,8 +2,7 @@
 tags: team
 name: Prof. Dr. Stefan Ackermann
 first-name: Stefan
-image:
-      url: "/uploads/stefan.jpg"
+image: "/uploads/stefan.jpg"
 phone: 04283-6082027
 mail: stefan@werkstatt-fuer-verantwortung-und-fuehrung.de
 color: next-level

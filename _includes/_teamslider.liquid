@@ -3,7 +3,7 @@
     <div class="members">
         {% for member in collections.team %}
             <div class="member {{member.data.first-name | tlc}} {% if forloop.first %}active{% endif %}" onclick="toogleMember(this)">
-                <img class="member-image" src="{{member.data.image.url}}" alt="{{member.data.image.name}}">
+                <img class="member-image" src="{{member.data.image.url}}" alt="{{member.data.first-name}}">
                 <h5>{{member.data.first-name}}</h5>
             </div>
         {% endfor %}
