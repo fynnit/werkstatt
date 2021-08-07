@@ -1,0 +1,28 @@
+---
+label: member
+hide_body: true
+fields:
+- type: text
+  name: tags
+  label: tags
+- type: text
+  name: name
+  label: name
+- type: text
+  name: first-name
+  label: first-name
+- type: file
+  name: image
+  label: image
+- type: text
+  name: phone
+  label: phone
+- type: text
+  name: mail
+  label: mail
+- type: text
+  name: color
+  label: color
+- type: textarea
+  name: about
+  label: about
