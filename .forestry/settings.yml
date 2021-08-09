@@ -39,7 +39,7 @@ sections:
 - type: document
   path: datenschutz.md
   label: Datenschutz
-upload_dir: uploads
+upload_dir: assets/uploads
 public_path: _site/assets/uploads
 front_matter_path: ''
 use_front_matter_path: false
