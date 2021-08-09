@@ -143,10 +143,18 @@
         }
     }
 }
-.calendar-post .form-section{
-    padding-top: 32px;
+.calendar-post { 
+    header h1.title {
+        font-size: 4rem;
+    }
+    .form-section{
+        padding-top: 32px;
+    }
 }
 .post-description {
-    padding: 32px 0;
+    padding: 32px 16px;
+    @media (min-width: 800px){padding: 32px 32px;}
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
