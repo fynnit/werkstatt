@@ -1,5 +1,9 @@
 ---
 title: Projekte Workshops
+excerpt: "Von kurzen Workshops bis zu Veranstaltungsreihen in Projekten individueller Entwicklung und Organisationsentwicklung – wir bieten eine Palette von Angeboten"
+author: Werkstätter
+image: /assets/projekte-bg.jpg
+ogtype: website
 
 layout: page.liquid
 permalink: "/projekte-workshops/"

@@ -20,7 +20,13 @@ module.exports = function (eleventyConfig) {
     qoutes: '»«',
   };
 
-  eleventyConfig.addPlugin(pluginSEO, require("./_data/seo.json"));
+  eleventyConfig.addPlugin(pluginSEO, {
+    title: "Werkstatt für Verantwortung und Führung",
+    description: "Die Werkstatt dient der gemeinsamen Entwicklung von Verantwortung und Führung auf der individuellen wie der beruflichen Ebene. Das wollen wir miteinander praktisch erforschen und lernen: Wie will ich Verantwortung übernehmen und tragen? Wie praktiziere ich Führung  (d. h. Selbst-, Team- und Organisationsführung)? Alle unsere Werkstatträume sind Lern- und Begegnungsräume, in denen aus dem konkreten »Material« einer Situation schöpferisch neue Möglichkeiten entwickelt werden. So erproben wir von Anfang an Lernen im Team, erleben uns im Spiegel anderer, erkunden kokreative Prozesse und gewinnen spielerisch Einsichten durch konkrete Beispiele.",
+    url: "https://werkstatt-fuer-verantwortung-und-fuehrung.de",
+    author: "Werkstätter",
+    image: "/assets/arco.jpg"
+  });
 
   eleventyConfig.setLibrary("md", markdownIt(mdOptions));
 

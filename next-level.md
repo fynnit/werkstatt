@@ -2,6 +2,13 @@
 title: Next Level
 subtitle: "»Next Level« bildet den Rahmen unserer gemeinsamen Arbeit und ist gleichzeitig
   ein Basis-Tool."
+
+excerpt: "»Next Level« bildet den Rahmen unserer gemeinsamen Arbeit und ist gleichzeitig
+  ein Basis-Tool."
+author: Werkstätter
+image: /assets/fynn-drawing-next-level.jpg
+ogtype: website
+
 layout: page.liquid
 permalink: "/next-level/"
 tags: page

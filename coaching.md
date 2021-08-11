@@ -1,5 +1,11 @@
 ---
 title: Coaching
+excerpt: "Begleitung ganz nah dran, Stärken wertschätzen, beobachten, was die individuelle Entwicklung behindert, Hindernisse transformieren"
+
+author: Werkstätter
+image: /assets/coaching-bg.jpg
+ogtype: website
+
 layout: page.liquid
 permalink: "/coaching/"
 tags: page

@@ -1,6 +1,11 @@
 ---
 title: Freisinn
 subtitle: Die Sinne freisetzen, meine Wahrnehmung erweitern, erleben, was sich mit und jenseits des physisch Erscheinenden gestalten lässt.
+excerpt: Die Sinne freisetzen, meine Wahrnehmung erweitern, erleben, was sich mit und jenseits des physisch Erscheinenden gestalten lässt.
+author: Werkstätter
+image: /assets/freisinn-bg.jpg
+ogtype: website
+
 layout: page.liquid
 permalink: /freisinn/
 tags: page
