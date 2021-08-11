@@ -37,7 +37,7 @@ teaser:
   description: Ein mehrtägiger Intensiv Workshop, um die Grundlagen für eine verantwortliche
     und wertschöpfende Zusammenarbeit zu legen
   icon:
-    url: "/assets/icons/next-level-icon.svg"
+    url: "/assets/icons/werkstatt-contact.svg"
     name: Fokuspunkt
   link:
     text: Raum öffnen
@@ -45,7 +45,7 @@ teaser:
 - headline: Freisinn
   description: Künstlerische Medien, kontemplative Wege, Natur erleben
   icon:
-    url: "/assets/icons/freisinn-icon.svg"
+    url: "/assets/icons/werkstatt-freisinn-3.svg"
     name: Rechtecke übereinander die neue Rechtecke bilden
   link:
     text: Raum öffnen

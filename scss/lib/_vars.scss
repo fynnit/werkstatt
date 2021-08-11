@@ -31,17 +31,22 @@ $grey: #d8d8d8;
 }
 // theme 2
 $next-level: #D26412;
-$next-level-background: lighten($next-level, 42%);
+$next-level: #B04900; // more contrast
+$next-level-background: #FAD9C1;
 $next-level-pink: lighten(#5F0700, 10%);
 
 $forschungsraum: #6286A3;
-$forschungsraum-background: lighten($forschungsraum, 42%);
+$forschungsraum: #466B84; // more contrast
+$forschungsraum-background: #E9EEF2;
 
 $freisinn: #76894F;
-$freisinn-background: lighten($freisinn, 42%);
+$freisinn: #50612D; // more contrast
+$freisinn-background: #DBE2CC;
 
 $coaching: #EBBD90;
-$coaching-background: lighten($coaching, 15%);
+$coaching-text: #7f4a17;
+$coaching-background: #faeee2;
+
 
 $projekte-workshops: #6C6532;
 $projekte-workshops-background: lighten($projekte-workshops, 42%);

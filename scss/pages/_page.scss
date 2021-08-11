@@ -7,8 +7,7 @@ header.page {
         
     }
     &.next-level {
-        color: $white;
-        
+        color: $white;   
     }
     &.freisinn {
         color: darken($freisinn, 10%);
@@ -16,10 +15,9 @@ header.page {
     }
     &.projekte-workshops {
         color: white;
-        
     }
     &.coaching {
-        color: darken($coaching, 0%);
+        color: $coaching;
     }
     
 }
@@ -58,8 +56,8 @@ main.page {
 
     }
     &.next-level {
-        color: darken($next-level-pink,10%);
-        background-color: lighten($next-level-background, 10%);
+        color: $next-level;
+        background-color: lighten($next-level-background, 7%);
         + footer {
             color: inherit;
             background-color: $next-level-background;}
@@ -110,7 +108,7 @@ main.page {
 
     }
     &.coaching {
-        color: darken($coaching,45%);
+        color: $coaching-text;
         min-height: 40vh;
         background-color: lighten($coaching-background, 4%);
 

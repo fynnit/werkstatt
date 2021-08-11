@@ -95,9 +95,10 @@ p {
     color: $dark;
 }
 
+ul {
+    padding-left: 22px;
+}
 li {
-    list-style-image: url(/assets/icons/bullet-icon.svg);
-    list-style-position: inside;
 
     &::marker {
         padding-right: 8px;
