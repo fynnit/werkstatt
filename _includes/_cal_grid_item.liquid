@@ -4,10 +4,20 @@
         <span class="trainer">{{ post.data.trainer }}</span>
     {% endif %}
     
+    {% capture start_date %} {{ post.data.date  | date: '%d' }} {% endcapture %}
+    {% capture ending_date %} {{ post.data.end_date  | date: '%d' }} {% endcapture %}
+    
     <span class="location">{{ post.data.location_ort }}</span>
     
-    <span class="dates"><span class="date">{{ post.data.date | dateformat }}</span> - <span
-            class="end_date">{{ post.data.end_date | dateformat }}</span></span>
+    <span class="dates">
+        <span class="date">
+            {% if start_date != ending_date %}
+            {{ post.data.date | dateformat }}</span> - <span class="end_date">{{ post.data.end_date | dateformat }}
+                {% else%}
+                {{post.data.date | dateformat }}
+                {% endif%}
+            </span>
+        </span>
     <div class="more">
         <span class="time">{{ post.data.time }}</span>
         <span class="price">{{ post.data.price }}</span>
