@@ -36,9 +36,6 @@ sections:
 - type: document
   path: impressum.md
   label: Impressum
-- type: document
-  path: datenschutz.md
-  label: Datenschutz
 upload_dir: assets/uploads
 public_path: _site/assets/uploads
 front_matter_path: ''
