@@ -6,7 +6,55 @@
     <link rel="stylesheet" href="/css/main.css" type="text/css">
 
     {% seo %}
-    
+
+
+    {% case page.fileSlug %}
+        {% when 'forschungsraum' %}
+            <meta name="theme-color" 
+            content="#E9EEF2" 
+            media="(prefers-color-scheme: light)">
+
+            <meta name="theme-color" 
+            content="#466B84" 
+            media="(prefers-color-scheme: dark)">
+        
+        {% when 'next-level' %}
+            <meta name="theme-color" 
+            content="#FAD9C1" 
+            media="(prefers-color-scheme: light)">
+
+            <meta name="theme-color" 
+            content="#B04900" 
+            media="(prefers-color-scheme: dark)">
+        
+        {% when 'freisinn' %}
+            <meta name="theme-color" 
+            content="#DBE2CC" 
+            media="(prefers-color-scheme: light)">
+
+            <meta name="theme-color" 
+            content="#50612D" 
+            media="(prefers-color-scheme: dark)">
+        
+        {% when 'projekte-workshops' %}
+            <meta name="theme-color" 
+            content="#D3CDA1" 
+            media="(prefers-color-scheme: light)">
+
+            <meta name="theme-color" 
+            content="#6C6532" 
+            media="(prefers-color-scheme: dark)">
+        
+        {% when 'coaching' %}
+            <meta name="theme-color" 
+            content="#F7E4D1" 
+            media="(prefers-color-scheme: light)">
+
+            <meta name="theme-color" 
+            content="#7F4A17" 
+            media="(prefers-color-scheme: dark)">
+        
+      {% endcase %}
 </head>
 <body class="body {{title | slug}} {{class}}" class="loading">
 
