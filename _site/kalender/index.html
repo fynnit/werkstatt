@@ -254,13 +254,25 @@
     <script>
         function toggleGrid(el) {
             const grid = document.querySelector('.grid');
-            const elType = el.classList[1];
-            const activeChild = document.querySelector('.switch-item.active');
-            // reset
+            const elType = el.classList[1]; // forsch, next, frei etc
+            const activeChild = document.querySelector('.switch-item.active'); // previously clicked item
+
             grid.classList.value = 'grid';
 
-            if (el !== activeChild) {
-                if (activeChild) activeChild.classList.remove('active');
+            
+            if (activeChild) {
+
+                if (el == activeChild ) {
+                    activeChild.classList.remove('active')
+                    grid.classList.value = 'grid';
+                    
+                } else if (el !== activeChild) {
+                    activeChild.classList.remove('active');
+                    el.classList.toggle('active');
+                    grid.classList.toggle(elType);
+                }
+
+            } else {
                 el.classList.toggle('active');
                 grid.classList.toggle(elType);
             }
