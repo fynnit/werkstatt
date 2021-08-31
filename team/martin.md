@@ -17,11 +17,11 @@ about: "<strong>Martin Lehnert</strong>\nFacilitator im Kraftfeld sozialer Plast
   und Erkenntnisse sammelte ich in großen Kornzernen ebenso wie in kleinen Initiativen,
   in Fortbildungen und als Seminarleiter. Zu meinen Kompetenzen gehören Facilitator
   im Dialog nach David Bohm, Theorie U Praxis, Konflikt- und Projektmanagementtechniken,
-  Qualitäts- und Organisationsentwicklung sowie spirituelle Wege, Karmaarbeit und
-  kultur-ko-kreative Gestaltung der Sozialen Plastik im Bewusstsein für die Rhythmen
-  des agilen Miteinanders. \n\n<strong>Stefan über Martin:</strong> Bei Martin geht
-  mir das Herz auf. Mit wertschätzendem Interesse, Humor und Selbstreflektion schafft
-  er Vertrauen. Er hat große vielfältige Erfahrung in der Begleitung von Organisationen.
+  Qualitäts- und Organisationsentwicklung. Wo irdische Wege an Grenzen stoßen, biete
+  ich spirituelle an. Ich finde es beeindruckend, wie wirksam Verantwortung aus geistigen
+  Quellen gestärkt und vertieft werden kann.\n\n<strong>Stefan über Martin:</strong>
+  Bei Martin geht mir das Herz auf. Mit wertschätzendem Interesse, Humor und Selbstreflektion
+  schafft er Vertrauen. Er hat große vielfältige Erfahrung in der Begleitung von Organisationen.
   Sein Sinn für soziale Prozesse und seine methodische Sicherheit bahnen produktive
   ko-kreative Wege."
 
