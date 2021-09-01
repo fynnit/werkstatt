@@ -83,6 +83,28 @@ teaser:
 team:
   title: Team
 
+satzung: 
+  title: "Satzung: Zweck"
+  excerpt: "Zweck des Vereins ist die Förderung von Wissenschaft und Forschung, Kunst und Kultur sowie der Berufsbildung. Der Verein fördert Transformationen im Bereich der Führungskultur hin zu Verantwortung. Führungs-Kultur bedeutet eine bewusste und verantwortliche Art und Weise der Gestaltung und Entwicklung von vertikalen und horizontalen Führungskompetenzen und Führungsphilosophien sowie dadurch eine Stärkung der Gesamtkultur." 
+  button:
+    name: zur Seite 
+    link: /satzung
+
+leitbild:
+  title: "Leitbild: Unsere Prämissen"
+  excerpt: "
+  <ol class='r'>
+      <li>Was wir im Miteinander verlernt haben, können wir im Miteinander wieder lernen: als ganze Menschen berührbar und kraftvoll da zu sein, auch in der Arbeit.</li>
+      <li>Jeder ist ein unabdingbarer Teil des Ganzen und bringt unentbehrliche Möglichkeiten für das Ganze mit.</li>
+      <li>Menschen können sich selber führen.</li>
+      <li>Verantwortung wird von Individuen übernommen.</li>
+    </ol>
+    "
+
+  button:
+    name: zur Seite
+    link: /leitbild
+
 form:
   title: Kontakt
   id: homepage

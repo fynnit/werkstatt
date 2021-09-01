@@ -103,7 +103,7 @@ h3,
 h4 {
   font-size: 32px;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 h5,
@@ -681,11 +681,22 @@ main.secondary-page h5 {
 main.secondary-page h4, main.secondary-page h5 {
   text-align: left;
 }
-main.secondary-page ol {
+main.secondary-page ol:not(.r) {
   padding-left: 16px;
 }
-main.secondary-page ol li {
+main.secondary-page ol:not(.r) li {
   margin-bottom: 8px;
+}
+
+section.satzung {
+  width: 800px;
+  margin: 130px auto 0;
+  padding: 0 32px;
+}
+@media (min-width: 1088px) {
+  section.satzung {
+    width: 1024px;
+  }
 }
 
 .i-want {
@@ -1517,6 +1528,10 @@ body.kontakt main {
   padding: 0 32px;
 }
 
+body, html {
+  background-color: #fff;
+}
+
 footer {
   padding: 16px 32px;
   display: flex;
@@ -1540,6 +1555,50 @@ footer a {
     padding-top: 0;
     padding-left: 32px;
   }
+}
+
+ol.r {
+  padding-left: 32px;
+  list-style-type: upper-roman;
+}
+
+.two-col {
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+}
+@media (min-width: 1088px) {
+  .two-col {
+    flex-flow: row;
+    gap: 100px;
+  }
+}
+.two-col h3 {
+  text-align: left;
+  margin-bottom: 8px;
+}
+.two-col [class^=col-] {
+  width: 100%;
+}
+@media (min-width: 1088px) {
+  .two-col [class^=col-] {
+    width: 50%;
+  }
+}
+a.button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 32px;
+  background-color: #50612D;
+  color: #DBE2CC;
+  height: auto;
+  width: auto;
+}
+
+.footnote {
+  margin-top: 50px;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -155,10 +155,20 @@ main.secondary-page {
         text-align: left;
 
     }
-    ol {
+    ol:not(.r) {
         padding-left: 16px;
         li {
             margin-bottom: 8px;
         }
     }
+}
+
+
+section.satzung {
+    width: 800px;
+    @media (min-width: 1088px) {
+        width: 1024px;
+    }
+    margin: 130px auto 0;
+    padding: 0 32px;
 }
