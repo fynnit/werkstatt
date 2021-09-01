@@ -1,10 +1,9 @@
 <header class="page {{title | slug }}" 
     style="
-    {% if header.image %} background-image: url({{header.image}}); {% endif %}
-    {% if header.color  %} background-color: {{header.color}};{% endif %}
-    {% if header.text-color  %} color: {{header.text-color}};{% endif %}
-    "
-    >
+        {% if header.image %} background-image: url({{header.image}}); {% endif %}
+        {% if header.color  %} background-color: {{header.color}};{% endif %}
+        {% if header.text-color  %} color: {{header.text-color}};{% endif %}
+    ">
     
     <h1 class="page-title">{{title}}</h1>
     {% if subtitle %}<span class="page-subtitle">{{subtitle}}</span>{% endif %}
