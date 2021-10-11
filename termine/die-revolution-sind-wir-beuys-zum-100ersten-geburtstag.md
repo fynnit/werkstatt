@@ -7,7 +7,7 @@ date: 2021-11-13T19:00:00+01:00
 end_date: 2021-11-13T21:00:00+01:00
 location: '"Raum" Ottersberg'
 description: 'Gespräch, Aktionen, Vorträge ... Beuys und die soziale Plastik '
-trainer: Marietta Schürholz
+trainer: Marietta Schürholz und andere
 price: Spende
 
 ---
