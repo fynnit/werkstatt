@@ -57,5 +57,77 @@ sections:
     Traurigkeit über mein bisherigen (Selbst-)Abwertungserfahrungen. --- Stefan
   copytext: ''
   template: text_block
+- title: Der Prozess des deepdive
+  from: ''
+  text: ''
+  template: text_block
+  copytext: "Der Laptop steht auf einem Stuhl. Es liegen 4 Menschen im physischen
+    Raum, zwei in anderen physischen Räumen. Die Verbindung ist materiell und digital
+    über ZOOM.\nRaphaëlle lädt in diesen Raum. Jede formuliert seine Frage für diese
+    bevorstehende TransFormance und legt sich noch Block und Schreib/Malzeug neben
+    die Matratze. Dann geht es los. Meine Augen bleiben geschlossen. Meine Frage verschwimmt
+    – was war es noch mal – irgendetwas, sowas wie: Worauf möchte ich meine entspannte
+    Initiative als Projektor ausrichten? – oder eher: - ich hatte sie doch vorhin
+    klar gehabt – Wie möchte sich mein Leben entspannt initiativ entwickeln? – Es
+    entschwindet mir. Meine Augen sind geschlossen. Ich nehme Töne wahr, verfolge
+    anfangs deren Laute, unspezifisch, aus und für den Moment. Und irgendwann bin
+    ich woanders. Ich kann es noch wahrnehmen. Chronos hat sich schon lang verabschiedet
+    – es waren 23 Min Aufzeichnung – jedoch Kairos schlich sich in den Raum und erfüllte
+    zeitfrei einen mir unbekannten Kontakt. Bin ich noch hier? Kann ich mich noch
+    beobachten? Interesselos? Was fühle ich noch? – alles entspannt sich.\nIrgendwann
+    scheint eine Katze durch den Raum zu tönen. Ich bin irritiert. Ich blinzle. Ist
+    Raphaëlle noch auf dem Bildschirm? Wo sind die anderen? Ich bin unsicher. Wie
+    ist der Übergang aus dieser TransFormance in das mir vertraute, bekannte? Dann
+    kommt der Auftrag: Wenn ihr etwas aufschreiben oder zeichnen wollt, macht das
+    bitte jetzt. Wie bekommen etwa 3 Minuten Zeit. Ich bin verwirrt, überfordert,
+    meine Angst rotiert zwischen: Was, wenn mir jetzt nichts einfällt? – Und: ich
+    bin ja ganz nackig? Mein Scham steigt hoch: oh Stefan, jetzt hast Du hier was
+    eingeladen und Dich darauf eingelassen – und jetzt kommt nix dabei raus. Meine
+    Traurigkeit steigt hoch: Wie oft habe dieses Gefühl, alleine und verloren zu sein,
+    keiner da, der mich empfängt. \nUnd da manifestiert es sich wie aus dem „Nichts“:
+    zwei Lemniskaten, eine waagrecht, eine senkrecht. Mein Hand beginnt zu malen –
+    wie beim Formenzeichnen – ich ärger mich, dass ich einen Longliner habe und keine
+    Wachsmalkreiden. Und nachdem die waagrechte Lemniskate gemalt war, fügt sich die
+    senkrechte ein. Es bildet sein ein vierblättriges Kleeblatt – doch das ist zu
+    wenig. Nicht nur Freude taucht auf über so ein Glücksgeschenk. Auch die Angst
+    schaut erneut vorbei: wie soll sich die Unendlichkeit (horizontal) mit der Allverbundenheit
+    (vertikal) verschmelzen? Woher kommt diese Klarheit? Woher kommt dieser Impuls?
+    Ich gehe mit, kann mich dabei beobachten. Und es kommen Worte: „Ich bin“. Ich
+    schreib sie auf. Und es folgt das „der“ darunter und inspiriert durch die beiden
+    Lemniskaten malen sich Pfeile vom n des bin zum r der der und vom d der der zum
+    I des Ich bin. Auch dort bildet sich ein zirkuläre Schleife. \nIch bin verwirrt
+    – und überrascht. Ist das so einfach? Ich bin der ich bin der ich bin der ich
+    bin – unendlich. Und der Ich bin verbindet Himmel und Erde, das Göttliche mit
+    der Materie in mir Individuum?!?! Sowas. \nAls ich meine Erfahrung und Einsichten
+    mitteile aktiviert sich wieder mein Beobachter samt seinem inneren Kritiker. Ich
+    beobachte den Kritiker und sage ihm: jetzt nicht! Ich sprechen zum Teil noch aus
+    dem Gefühl der Trans – und berichte über die Form, die sich nun auf dem Blatt
+    Papier vor mir sich befindet. Es fühlt sich zugleich unglaublich nah und intim
+    und auch so unendlich fern an: Ist das wirklich von mir? Wo befinde ich mich grade
+    hier im Lebensspiel „fake it until you make it?“ Was denken sich die anderen,
+    was sich Raphaëlle?\nEntspannung kehrt ein. Raphaëlle teilt mit, dass wir jetzt
+    nichts tun müssen. Wir sollen drei Tage warten. Danach freut sie sich über einen
+    Austausch. Was hat die TansFormance bis dahin manifestiert? Und just. Ich vergessen
+    den Termin drei Tage später obwohl mein Kalender mich daran erinnert. Erst einen
+    Tag später rufe ich Raphaëlle an und teile meine weiter Erkenntnisse im Kontakt
+    mit ihr.\nDer unendliche sich durch mich manifestiert habende „Ich bin der Ich
+    bin der …“ Kreislauf hat zur Erkenntnis und Einsicht geführt, das meine Individualität
+    und meine Identität mit dem Stefan sich auf zweierlei Weisen ausdrückt: Einmal
+    eingebunden in meine irdische Biographie und dem Erkennen Mit-Sein der unterschiedlichen
+    Dimensionen, verschiedene Ebenen von Matrix(en) der Eingebundenheit. Und mein
+    Eingebundensein in den unendlichen göttlichen Kreislauf, der sich in meinen mir
+    aktuell bewusst wahrnehmbaren Körpern (Physisch, Lebendig, Emotional, Mental,
+    Energetisch usw.) ausdrückt. Und dass ich wie in einem „Vierfachthorus“ wählen
+    kann, aus welcher Energie ich mich gerade speise und welchen Prinzipien ich damit
+    dienen will. \nUnd das ist jetzt kein Konzept oder nur ausgedacht. Nein, mein
+    Verstand war in der TransFormance für mich fast nicht Anwesend, bei Schreiben
+    dieser Zeilen jedoch sehr. Es ist eine tiefere Ebene der Verankerung dieses Lebensspiels
+    bezüglich meiner Identität mir bewusst geworden und in meinem emotionalen Körper
+    verankert. Beide durch die Lemniskaten ausgedrückten Identitätsbildungsprozesse
+    sind nicht Theorie und schon gar nicht getrennt. Ich schöpfe meine Manifestation
+    in Präsenz, im hier und jetzt. \nUnd was hat das alles mit Raphaëlles Einladung
+    und Angebot über ein ZOOM-online-Event zu tun? Welche Qualitäten und Dimensionen
+    stellt Raphaëlle in einer TansFormance zur Verfügung?\nLies bitte wieder von oben.
+    Gehe selbst in die Erfahrung. Öffne und Lausche auf Deine Manifestationen. \n"
 
 ---
