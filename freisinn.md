@@ -34,21 +34,21 @@ sections:
     verspielte Kind, den wagemutigen Abendteurer oder die Hüterin des Heiligen doch
     einmal die Führung zur  Essenz unserer Lebensabsicht übernehmen. Von der Höhe
     des Gipfels gewinnen wir einen anderen Blick auf den Alltag."
-- template: text_image_block
-  title: ''
-  copytext: ''
-  text: TransFormance --- Eine TransFormance ist ein künstlerischer Deepdive in Präsenz
-    jenseits von Identität in die einzigartige Energiekomposition eines Momentes.  Sie
-    ist eine Einladung an alle Anwesenden sich in ihr Sein zu Entspannen, vertrauensvoll
-    die Zügel in die schönen Hände ihrer tiefsten Weisheit zu legen.  Eine TransFormance
+- template: text_block
+  title: TransFormance
+  copytext: " Eine TransFormance ist ein künstlerischer Deepdive in Präsenz jenseits
+    von Identität in die einzigartige Energiekomposition eines Momentes.  \nSie ist
+    eine Einladung an alle Anwesenden sich in ihr Sein zu Entspannen, vertrauensvoll
+    die Zügel in die schönen Hände ihrer tiefsten Weisheit zu legen.  \nEine TransFormance
     ist wie ein Tandemsprung in Präsenz, wobei wir zwar gemeinsam springen, aber jede
-    und jeder Einzelne in seiner einzigartigen Präsenz auf Reisen geht. Ich weiß nicht,
-    was jetzt wichtig oder gut für dich ist, Du weißt es manchmal und manchmal nicht,
-    aber ich weiß jenseits aller Zweifel, dass dein Sein, deine Anwesenheit, Deine
-    Präsenz es weiß. Ich weiß, dass Du es weißt. Mit einer TransFormance öffne ich
-    einen magischen Bewusstseinsraum in dem es jeder und jedem, die oder der das möchte
-    möglich ist, mit spielerischer Leichtigkeit sich jenseits von Zeit und Raum für
-    sich Selbst zu öffnen, dem eigenen Licht & Dunkel zu begegnen.
+    und jeder Einzelne in seiner einzigartigen Präsenz auf Reisen geht. \nIch weiß
+    nicht, was jetzt wichtig oder gut für dich ist, Du weißt es manchmal und manchmal
+    nicht, aber ich weiß jenseits aller Zweifel, dass dein Sein, deine Anwesenheit,
+    Deine Präsenz es weiß. Ich weiß, dass Du es weißt. \nMit einer TransFormance öffne
+    ich einen magischen Bewusstseinsraum in dem es jeder und jedem, die oder der das
+    möchte möglich ist, mit spielerischer Leichtigkeit sich jenseits von Zeit und
+    Raum für sich Selbst zu öffnen, dem eigenen Licht & Dunkel zu begegnen."
+  text: ''
 - title: 'Erfahrungsbericht Ergebnis --- '
   from: ''
   text: Für mich entsteht Freude durch Loslassen, Klarheit durch Entscheidung und
