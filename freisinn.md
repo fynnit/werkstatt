@@ -56,6 +56,6 @@ sections:
     durch meine Angst und im Annehmen und Fühlen meiner durch die Scham sich zeigende
     Traurigkeit über mein bisherigen (Selbst-)Abwertungserfahrungen. --- Stefan
   copytext: ''
-  template: text-block
+  template: text_block
 
 ---
