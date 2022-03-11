@@ -63,7 +63,7 @@ sections:
   template: text_block
   copytext: "Der Laptop steht auf einem Stuhl. Es liegen 4 Menschen im physischen
     Raum, zwei in anderen physischen Räumen. Die Verbindung ist materiell und digital
-    über ZOOM.\nRaphaëlle lädt in diesen Raum. Jede formuliert seine Frage für diese
+    über ZOOM. \nRaphaëlle lädt in diesen Raum. Jede formuliert seine Frage für diese
     bevorstehende TransFormance und legt sich noch Block und Schreib/Malzeug neben
     die Matratze. Dann geht es los. Meine Augen bleiben geschlossen. Meine Frage verschwimmt
     – was war es noch mal – irgendetwas, sowas wie: Worauf möchte ich meine entspannte
@@ -128,6 +128,6 @@ sections:
     in Präsenz, im hier und jetzt. \nUnd was hat das alles mit Raphaëlles Einladung
     und Angebot über ein ZOOM-online-Event zu tun? Welche Qualitäten und Dimensionen
     stellt Raphaëlle in einer TansFormance zur Verfügung?\nLies bitte wieder von oben.
-    Gehe selbst in die Erfahrung. Öffne und Lausche auf Deine Manifestationen. \n"
+    \nGehe selbst in die Erfahrung. Öffne und Lausche auf Deine Manifestationen. \n"
 
 ---
