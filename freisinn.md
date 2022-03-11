@@ -35,7 +35,7 @@ sections:
     einmal die Führung zur  Essenz unserer Lebensabsicht übernehmen. Von der Höhe
     des Gipfels gewinnen wir einen anderen Blick auf den Alltag."
 - template: text_block
-  title: TransFormance
+  title: 'TransFormance '
   copytext: " Eine TransFormance ist ein künstlerischer Deepdive in Präsenz jenseits
     von Identität in die einzigartige Energiekomposition eines Momentes.  \nSie ist
     eine Einladung an alle Anwesenden sich in ihr Sein zu Entspannen, vertrauensvoll
@@ -49,7 +49,7 @@ sections:
     möchte möglich ist, mit spielerischer Leichtigkeit sich jenseits von Zeit und
     Raum für sich Selbst zu öffnen, dem eigenen Licht & Dunkel zu begegnen."
   text: ''
-- title: Erfahrungsbericht Ergebnis
+- title: Erfahrungsbericht Ergebnis vom 12.02.2022
   from: ''
   text: ''
   copytext: Für mich entsteht Freude durch Loslassen, Klarheit durch Entscheidung
