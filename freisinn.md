@@ -35,7 +35,7 @@ sections:
     einmal die Führung zur  Essenz unserer Lebensabsicht übernehmen. Von der Höhe
     des Gipfels gewinnen wir einen anderen Blick auf den Alltag."
 - template: text_block
-  title: 'TransFormance '
+  headline: 'TransFormance '
   copytext: " Eine TransFormance ist ein künstlerischer Deepdive in Präsenz jenseits
     von Identität in die einzigartige Energiekomposition eines Momentes.  \nSie ist
     eine Einladung an alle Anwesenden sich in ihr Sein zu Entspannen, vertrauensvoll
@@ -49,18 +49,14 @@ sections:
     möchte möglich ist, mit spielerischer Leichtigkeit sich jenseits von Zeit und
     Raum für sich Selbst zu öffnen, dem eigenen Licht & Dunkel zu begegnen."
   text: ''
-- title: Erfahrungsbericht Ergebnis vom 12.02.2022
-  from: ''
-  text: ''
-  copytext: Für mich entsteht Freude durch Loslassen, Klarheit durch Entscheidung
+- template: text_block
+  headline: Erfahrungsbericht Ergebnis vom 12.02.2022
+  copytext: 'Stefan: Für mich entsteht Freude durch Loslassen, Klarheit durch Entscheidung
     und Raushalten von Störern, vom Himmel fallende Kreativität im Annehmen und Durchgehen
     durch meine Angst und im Annehmen und Fühlen meiner durch die Scham sich zeigende
-    Traurigkeit über mein bisherigen (Selbst-)Abwertungserfahrungen. --- Stefan
-  template: text_block
-- title: Der Prozess des deepdive
-  from: ''
-  text: ''
-  template: text_block
+    Traurigkeit über mein bisherigen (Selbst-)Abwertungserfahrungen.'
+- template: text_block
+  headline: Der Prozess des deepdive
   copytext: "Der Laptop steht auf einem Stuhl. Es liegen 4 Menschen im physischen
     Raum, zwei in anderen physischen Räumen. Die Verbindung ist materiell und digital
     über ZOOM. \nRaphaëlle lädt in diesen Raum. Jede formuliert seine Frage für diese

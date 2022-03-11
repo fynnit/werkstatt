@@ -1,6 +1,6 @@
 <section class="text-block">
     {% if text_block.headline or block.headline or block.title %} 
-        <h3 class="headline">{{block.headline}}{{text_block.headline }{{text_block.title}}</h3>
+        <h3 class="headline">{{block.headline}}{{text_block.headline }{{block.title}}</h3>
     {% endif %} 
     <p class="copytext">{{block.copytext | mdfy}}{{text_block.copytext}}</p>
 </section>
