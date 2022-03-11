@@ -3,8 +3,8 @@ tags: calendar
 layout: cal_post.liquid
 category: next-level
 title: Next Level > Expand the Box
-date: 2022-01-13T10:00:00+01:00
-end_date: 2021-12-16T17:00:00+01:00
+date: 2022-03-17T14:30:00+01:00
+end_date: 2022-03-20T17:30:00+01:00
 location: Wilstedt
 description: Transformatives Intensiv Training in bewusstem Fühlen, Lernraum um mit
   Gefühlen verantwortlich und professionell zu kommunizieren. Basis für alle weiteren
