@@ -1,11 +1,12 @@
+{% capture start_now %} {{ post.data.date  | date: '%s' }} {% endcapture %}
+{% capture start_date %} {{ post.data.date  | date: '%d' }} {% endcapture %}
+{% capture ending_date %} {{ post.data.end_date  | date: '%d' }} {% endcapture %}
+
 <a class="item {{post.data.category}}" href="{{post.url}}">
     <span class="title">{{ post.data.title }}</span>
     {% if post.data.trainer %}
         <span class="trainer">{{ post.data.trainer }}</span>
     {% endif %}
-    
-    {% capture start_date %} {{ post.data.date  | date: '%d' }} {% endcapture %}
-    {% capture ending_date %} {{ post.data.end_date  | date: '%d' }} {% endcapture %}
     
     <span class="location">{{ post.data.location_ort }}</span>
     

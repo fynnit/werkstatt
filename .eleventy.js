@@ -58,6 +58,15 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  // to integer
+  eleventyConfig.addFilter('minusDays', (val) => {
+    now = Date.now();
+    if (val) {
+      dat = parseInt(val);
+      dat - 345600;
+      if (dat > now) return true;
+    }
+  });
   // to lower case 
   eleventyConfig.addFilter('tlc', (val) => {
     if (val) {
