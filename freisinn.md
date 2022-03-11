@@ -15,7 +15,7 @@ header:
   image: "/assets/freisinn/freisinn-bg.jpg"
 sections:
 - template: text_image_block
-  title: TransFormance
+  title: ''
   copytext: ''
   text: TransFormance --- Eine TransFormance ist ein künstlerischer Deepdive in Präsenz
     jenseits von Identität in die einzigartige Energiekomposition eines Momentes.  Sie
