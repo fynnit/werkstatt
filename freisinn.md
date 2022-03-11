@@ -49,13 +49,13 @@ sections:
     möchte möglich ist, mit spielerischer Leichtigkeit sich jenseits von Zeit und
     Raum für sich Selbst zu öffnen, dem eigenen Licht & Dunkel zu begegnen."
   text: ''
-- title: 'Erfahrungsbericht Ergebnis --- '
+- title: Erfahrungsbericht Ergebnis
   from: ''
-  text: Für mich entsteht Freude durch Loslassen, Klarheit durch Entscheidung und
-    Raushalten von Störern, vom Himmel fallende Kreativität im Annehmen und Durchgehen
+  text: ''
+  copytext: Für mich entsteht Freude durch Loslassen, Klarheit durch Entscheidung
+    und Raushalten von Störern, vom Himmel fallende Kreativität im Annehmen und Durchgehen
     durch meine Angst und im Annehmen und Fühlen meiner durch die Scham sich zeigende
     Traurigkeit über mein bisherigen (Selbst-)Abwertungserfahrungen. --- Stefan
-  copytext: ''
   template: text_block
 - title: Der Prozess des deepdive
   from: ''
