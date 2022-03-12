@@ -54,7 +54,7 @@ sections:
   copytext: 'Stefan: Für mich entsteht Freude durch Loslassen, Klarheit durch Entscheidung
     und Raushalten von Störern, vom Himmel fallende Kreativität im Annehmen und Durchgehen
     durch meine Angst und im Annehmen und Fühlen meiner durch die Scham sich zeigende
-    Traurigkeit über mein bisherigen (Selbst-)Abwertungserfahrungen.'
+    Traurigkeit über meine bisherigen (Selbst-)Abwertungserfahrungen.'
 - template: text_block
   headline: Der Prozess des deepdive
   copytext: "Der Laptop steht auf einem Stuhl. Es liegen 4 Menschen im physischen
