@@ -36,18 +36,19 @@ sections:
     des Gipfels gewinnen wir einen anderen Blick auf den Alltag."
 - template: text_block
   headline: 'TransFormance '
-  copytext: " Eine TransFormance ist ein künstlerischer Deepdive in Präsenz jenseits
-    von Identität in die einzigartige Energiekomposition eines Momentes.  \nSie ist
-    eine Einladung an alle Anwesenden sich in ihr Sein zu Entspannen, vertrauensvoll
-    die Zügel in die schönen Hände ihrer tiefsten Weisheit zu legen.  \nEine TransFormance
+  copytext: "Eine TransFormance ist ein künstlerischer Deepdive in Präsenz jenseits
+    von Identität, in die einzigartige Energeikomposition eines Momentes.\n \nSie
+    ist eine Einladung an alle Anwesenden sich in ihr Sein zu Entspannen, vertrauensvoll
+    die Zügel in die schönen Hände ihrer tiefsten Weisheit zu legen.. \nEine TransFormance
     ist wie ein Tandemsprung in Präsenz, wobei wir zwar gemeinsam springen, aber jede
-    und jeder Einzelne in seiner einzigartigen Präsenz auf Reisen geht. \nIch weiß
-    nicht, was jetzt wichtig oder gut für dich ist, Du weißt es manchmal und manchmal
-    nicht, aber ich weiß jenseits aller Zweifel, dass dein Sein, deine Anwesenheit,
-    Deine Präsenz es weiß. Ich weiß, dass Du es weißt. \nMit einer TransFormance öffne
-    ich einen magischen Bewusstseinsraum in dem es jeder und jedem, die oder der das
-    möchte möglich ist, mit spielerischer Leichtigkeit sich jenseits von Zeit und
-    Raum für sich Selbst zu öffnen, dem eigenen Licht & Dunkel zu begegnen."
+    und jeder Einzelne in ihrer einzigartigen Präsenz auf Reisen geht. \n\nIch weiß
+    nicht, was jetzt wichtig oder richtig für Dich ist, Du weißt es manchmal und manchmal
+    nicht, aber ich weiß jenseits aller Zweifel, dass Dein Sein, deine Anwesenheit,
+    Dein Ich Bin es weiß. Ich weiß, dass Du weißt.\n\nMit einer TranFormance öffne
+    ich einen magischen Bewusstseinsraum in dem es jedem Menschen mit etwas Neugierde
+    und Abenteuergeist möglich ist, sich mit spielerischer Leichtigkeit sich über
+    Zeit und Raum hinaus mit sich Selbst zu verbinden, dem eigenen Licht & Dunkel
+    zu begegnen, und, zurück zum Anfang, sich in das Sein zu entspannen."
   text: ''
 - template: text_block
   headline: Erfahrungsbericht Ergebnis vom 12.02.2022
