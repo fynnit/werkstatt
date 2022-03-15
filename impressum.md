@@ -20,7 +20,7 @@ Vorwerker Str. 12, 27412 Wilstedt
 ##### Telefon
 Marietta Schürholz +49 160 7522716; Stefan Ackermann +49 172 8171128
 ##### Email
-Willkommen@wfvf.de  (Bitte einrichten)
+Willkommen@wfvf.de
 ##### Inhaltlich Verantwortlicher gemäß § 7 TMG
 Dr. Marietta J. Schürholz und Prof. Dr. Stefan Ackermann
 #### Grundlagen der Werkstatt für Verantwortung und Führung e.V.
