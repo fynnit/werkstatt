@@ -39,5 +39,6 @@ fields:
   default: next-level
   description: forschungsraum<br>next-level<br>freisinn<br>projekte-workshops<br>coaching
 pages:
+- termine/mittwochsgesprache.md
 - termine/next-level-expand-the-box-training-1.md
 - termine/next-level-expand-the-box.md
