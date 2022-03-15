@@ -44,10 +44,13 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter('dateformat', (dateIn) => {
-    return moment(dateIn).tz('CET').format('DD. MMM');
+    return moment(dateIn).locale('de').tz('CET').format('DD. MMM');
+  });
+  eleventyConfig.addFilter('fulldateformat', (dateIn) => {
+    return moment(dateIn).locale('de').tz('CET').format('DD. MMMM');
   });
   eleventyConfig.addFilter('starttime', (dateIn) => {
-    return moment(dateIn).tz('CET').format('hh:mm');
+    return moment(dateIn).locale('de').tz('CET').format('HH:mm');
   });
 
   // render as markdown

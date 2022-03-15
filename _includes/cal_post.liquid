@@ -17,8 +17,13 @@ form:
     <span class="page-subtitle">
         <span>{{ location_ort }}</span>
         <div class="dates">
-            <span class="date">{{ date | dateformat }}</span> - <span
-                class="end_date">{{ end_date | dateformat }}</span>
+            <span class="date">
+            {% if start_date != ending_date %}
+            {{ date | fulldateformat }}</span> - <span class="end_date">{{ end_date | fulldateformat }}
+                {% else%}
+                {{date | fulldateformat }}
+                {% endif%}
+            </span>
         </div>
     </span>
 </header>
@@ -34,7 +39,7 @@ form:
     {% endif %}
 
 
-    <div class="time">start um: {{ date | starttime }}</div>
+    <div class="time">Start um {{ date | starttime }} Uhr</div>
     <div class="price">Kosten: {{ price }}{% if price == '' %} auf Anfrage {% endif %}</div>
     
 </section>
