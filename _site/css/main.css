@@ -99,7 +99,7 @@ h2,
   }
 }
 
-h3,
+h3, main.page .content h1, main.page .content h2, main.page .content h3, main.page .content h4,
 h4 {
   font-size: 32px;
   text-align: center;
@@ -651,6 +651,17 @@ main.page.coaching input, main.page.coaching textarea {
 }
 main.page.coaching ::placeholder {
   color: white;
+}
+main.page .content {
+  margin: 50px auto 0;
+  max-width: 800px;
+}
+main.page .content h1, main.page .content h2, main.page .content h3, main.page .content h4 {
+  margin-top: 100px;
+}
+main.page .content img {
+  display: block;
+  margin: 50px auto;
 }
 
 .single-image {
@@ -1573,7 +1584,7 @@ ol.r {
     gap: 100px;
   }
 }
-.two-col h3 {
+.two-col h3, .two-col main.page .content h1, main.page .content .two-col h1, .two-col main.page .content h2, main.page .content .two-col h2, .two-col main.page .content h3, main.page .content .two-col h3, .two-col main.page .content h4, main.page .content .two-col h4 {
   text-align: left;
   margin-bottom: 8px;
 }
