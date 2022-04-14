@@ -1,24 +1,37 @@
 <div class="i-want">
-    
+
     <div class="wants">
-    
-        {% for item in i_want.wants limit: 4 %}
-            <div class="want-item">
-                <span class="title">{{-item.title}}</span>
-            </div>
-        {% endfor %}
+        <div class="want-item next-level">
+            <span class="title">Verantwortung übernehmen</span>
+        </div>
+        <div class="want-item next-level">
+            <span class="title">Meine Schatten integrieren</span>
+        </div>
+        <div class="want-item  next-level">
+            <span class="title">Meine Schatten transformieren</span>
+        </div>
+        <div class="want-item  forschungsraum">
+
+            <span class="title">Führungswerkzeuge nutzen</span>
+        </div>
 
     </div>
-    
+
     <h2>{{i_want.title}}</h2>
 
     <div class="wants">
-    
-        {% for item in i_want.wants offset: 4 %}
-            <div class="want-item">
-                <span class="title">{{-item.title}}</span>
-            </div>
-    
-        {% endfor %}
+
+        <div class="want-item coaching">
+            <span class="title">Wertvolles realisieren</span>
+        </div>
+        <div class="want-item coaching ">
+            <span class="title">Neue Wege gehen</span>
+        </div>
+        <div class="want-item freisinn">
+            <span class="title">Ko-kreieren</span>
+        </div>
+        <div class="want-item freisinn">
+            <span class="title">Bewusst führen</span>
+        </div>
     </div>
 </div>

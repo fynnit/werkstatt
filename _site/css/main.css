@@ -719,6 +719,7 @@ section.satzung {
   text-align: center;
   color: #920b00;
   color: #a53e00;
+  color: #301504;
 }
 @media (max-width: 503px) {
   .i-want {
@@ -739,8 +740,6 @@ section.satzung {
 .want-item {
   padding: 10px 20px;
   border-radius: 16px;
-  background-color: #fada8e;
-  background-color: #ffe5a6;
   color: #1e2422;
   max-width: 100%;
   display: inline-flex;
@@ -760,6 +759,26 @@ section.satzung {
     text-align: center;
     display: inline;
   }
+}
+.want-item.forschungsraum {
+  color: #466B84;
+  background-color: #E9EEF2;
+}
+.want-item.next-level {
+  color: #5f0700;
+  background-color: #FAD9C1;
+}
+.want-item.freisinn {
+  color: #50612D;
+  background-color: #DBE2CC;
+}
+.want-item.projekte-workshops {
+  color: #6C6532;
+  background-color: #d3cda1;
+}
+.want-item.coaching {
+  color: #7f4a17;
+  background-color: #faeee2;
 }
 
 .wants {

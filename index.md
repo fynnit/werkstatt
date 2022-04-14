@@ -15,15 +15,6 @@ header:
     target="_blank">©Andrew Moore</a>
 i_want:
   title: Ich will
-  wants:
-  - title: Verantwortung übernehmen
-  - title: Meine Schatten integrieren
-  - title: Meine Schatten transformieren
-  - title: Führungswerkzeuge nutzen
-  - title: Wertvolles realisieren
-  - title: Neue Wege gehen
-  - title: Ko-kreieren
-  - title: Bewusst führen
 text_block:
   headline: Willkommen in der Werkstatt
   copytext: 'Die Werkstatt dient der gemeinsamen Entwicklung von Verantwortung und Führung auf der individuellen wie der beruflichen Ebene. Das wollen wir miteinander praktisch erforschen und lernen: Wie will ich Verantwortung übernehmen und tragen? Wie praktiziere ich Führung  (d. h. Selbst-, Team- und Organisationsführung)? 

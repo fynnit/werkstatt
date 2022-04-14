@@ -31,6 +31,7 @@ Eine TransFormance ist ein künstlerischer Deepdive in Präsenz jenseits von Ide
 
 Stefan: Für mich entsteht Freude durch Loslassen, Klarheit durch Entscheidung und Raushalten von Störern, vom Himmel fallende Kreativität im Annehmen und Durchgehen durch meine Angst und im Annehmen und Fühlen meiner durch die Scham sich zeigende Traurigkeit über meine bisherigen (Selbst-)Abwertungserfahrungen.
 
+<br>
 <iframe width="800" height="400" src="https://www.youtube.com/embed/vnUwfOwcudw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Der Prozess des deepdive
