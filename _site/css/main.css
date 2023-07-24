@@ -86,15 +86,15 @@ h2,
 }
 @media (min-width: 490px) {
   h1,
-h2,
-.large-type {
+  h2,
+  .large-type {
     font-size: 4rem;
   }
 }
 @media (min-width: 777px) {
   h1,
-h2,
-.large-type {
+  h2,
+  .large-type {
     font-size: 6rem;
   }
 }
@@ -122,10 +122,10 @@ li {
 }
 @media (min-width: 490px) {
   h5,
-h6,
-p,
-div,
-li {
+  h6,
+  p,
+  div,
+  li {
     font-size: 20px;
   }
 }
@@ -358,7 +358,7 @@ main.home {
   padding-top: 50px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #fefaf6;
+  background-color: hsl(30, 80%, 98%);
 }
 @media (min-width: 768px) {
   main.home {
@@ -456,7 +456,7 @@ main.home form input, main.home form textarea, main.home form .submit {
 }
 .teaser.kalender {
   color: #4c5c57;
-  background-color: #d7d8e5;
+  background-color: hsl(236, 21%, 87%);
   align-self: auto;
   flex: 1 1 auto;
 }
