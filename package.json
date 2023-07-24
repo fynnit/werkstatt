@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/fynnit/werkstatt#readme",
   "devDependencies": {
+    "@tinacms/cli": "^1.5.26",
     "@11ty/eleventy": "^0.12.1",
     "moment-timezone": "^0.5.33",
     "sass": "^1.35.1"
