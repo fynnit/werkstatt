@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass scss:_site/css/ --watch",
-    "start": "npm run watch:eleventy && watch:sass",
-    "build": "npx @11ty/eleventy && sass scss:_site/css/"
+    "start": "tinacms dev -c \"npm run watch:eleventy && watch:sass\"",
+    "build": "tinacms build && npx @11ty/eleventy && sass scss:_site/css/"
   },
   "repository": {
     "type": "git",
